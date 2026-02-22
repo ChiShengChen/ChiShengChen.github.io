@@ -1,7 +1,7 @@
 1. About Me
 Chi-Sheng (Michael) Chen is a Research Fellow at Harvard Medical School and Beth Israel Deaconess Medical Center (BIDMC). His research lies at the intersection of quantum machine learning, EEG/biosignal AI, and multimodal learning, with applications spanning clinical neuroscience, brain-computer interfaces, and financial AI.
 He specializes in developing hybrid quantum-classical architectures for time-series and sequential data, including the Quantum Adaptive Self-Attention (QASA) Transformer and QuantumRWKV models. His EEG-based depression treatment prediction models have been clinically deployed at Taipei Veterans General Hospital, demonstrating real-world translational impact. He also collaborates with Omnis Labs on AI-driven automated market maker (AMM) strategies for decentralized finance (DeFi).
-Previously, he served as CTO of Neuro Industry, Inc. and worked as a Digital IC Design Engineer at MediaTek. He holds an M.S. in Computer Science and Bioinformatics from National Taiwan University and dual bachelor's degrees (B.Eng. & B.S.) from National Chiao Tung University (now National Yang Ming Chiao Tung University). He was also a research intern at the Max Planck Institute for Chemical Physics of Solids.
+Previously, he served as CTO of Neuro Industry, Inc. and worked as a Digital IC Design Engineer at MediaTek. He holds an M.S. in Computer Science and Bioinformatics from National Taiwan University and dual bachelor's degrees (B.Eng. & B.S.) in Physics from National Chiao Tung University (now National Yang Ming Chiao Tung University). He was also a research intern at the Max Planck Institute for Chemical Physics of Solids.
 
 2. Contact
 Email (alternative): m50816m50816 [at] gmail.com
