@@ -214,6 +214,11 @@ ul li {
   margin-right: 14px;
 }
 
+.links a img {
+  height: 20px;
+  vertical-align: middle;
+}
+
 /* === Responsive === */
 @media (max-width: 600px) {
   .about {
