@@ -197,6 +197,7 @@ ul li {
 
 .pub-list .me {
   font-weight: bold;
+  color: #1a73e8;
 }
 
 .pub-list .venue {
@@ -295,5 +296,79 @@ p img[alt="Stars"] {
   .entry-header .location,
   .entry-role .dates {
     font-size: 0.88em;
+  }
+}
+
+/* === Sticky Navigation === */
+.sticky-nav {
+  position: sticky;
+  top: 0;
+  background: rgba(255, 255, 255, 0.97);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 100;
+  padding: 10px 0;
+  border-bottom: 1px solid #e0e0e0;
+  text-align: center;
+  font-size: 0.95em;
+}
+
+.sticky-nav a {
+  margin: 0 6px;
+  color: #1a0dab;
+}
+
+.sticky-nav .sep {
+  color: #bbb;
+  margin: 0 1px;
+}
+
+/* === Research Vision Enhanced === */
+.vision-text {
+  line-height: 2.0;
+}
+
+.vision-text strong {
+  color: #1a73e8;
+}
+
+/* === Publication Link Buttons === */
+.pub-list li a {
+  display: inline-block;
+  padding: 1px 7px;
+  margin: 1px 1px;
+  font-size: 0.88em;
+  color: #1a73e8;
+  background: #f0f6ff;
+  border: 1px solid #d2e3fc;
+  border-radius: 3px;
+  text-decoration: none;
+  transition: background 0.15s;
+}
+
+.pub-list li a:hover {
+  background: #d2e3fc;
+  text-decoration: none;
+}
+
+/* === Publication Category Tags === */
+.pub-tags {
+  display: block;
+  margin-top: 4px;
+}
+
+.pub-tags .tag {
+  font-size: 0.7em;
+  padding: 1px 7px;
+}
+
+/* === Responsive additions === */
+@media (max-width: 600px) {
+  .sticky-nav {
+    font-size: 0.85em;
+    padding: 8px 0;
+  }
+  .sticky-nav a {
+    margin: 0 3px;
   }
 }
