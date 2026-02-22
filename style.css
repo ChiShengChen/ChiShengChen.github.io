@@ -116,6 +116,15 @@ ul li {
   margin-bottom: 5px;
 }
 
+.news-list {
+  list-style: none;
+  margin-left: 0;
+}
+
+.news-list li {
+  margin-bottom: 6px;
+}
+
 /* === Experience / Education Entries === */
 .entry {
   margin-bottom: 18px;
