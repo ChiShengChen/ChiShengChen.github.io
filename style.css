@@ -376,18 +376,17 @@ p img[alt="Stars"] {
 }
 
 .selected-pub-img {
-  flex: 0 0 220px;
-  max-width: 220px;
+  flex: 0 0 280px;
+  max-width: 280px;
 }
 
 .selected-pub-img img {
   display: block;
   width: 100%;
-  max-width: 220px;
+  max-width: 280px;
   height: auto;
   border-radius: 4px;
   border: 1px solid #e8e8e8;
-  object-fit: cover;
 }
 
 .selected-pub-info {
