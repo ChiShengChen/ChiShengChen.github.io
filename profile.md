@@ -145,7 +145,7 @@ Engineering Research Express
       {Harvard Medical School \& Beth Israel Deaconess Medical Center}{MA, USA}
       % {Harvard Medical School}{MA, USA}
       % {Research Fellow}{Nov 2024 \textbf{--} Now}
-      {Surgical Informatics Research Assistant, Advisor: Prof. Dr. Gabriel Brat}{Nov 2024 \textbf{--} Now}
+      {Research Fellow, Advisor: Prof. Dr. Gabriel Brat}{Nov 2024 \textbf{--} Now}
         \resumeItemListStart
             \resumeItem{Developing real-time EMS triage pipeline using multimodal AI for trauma prediction.}
             \resumeItem{Collaborating with surgeons on AI-assisted decision support systems.}
