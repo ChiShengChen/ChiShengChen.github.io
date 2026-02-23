@@ -18,6 +18,7 @@ Journal Reviewer (2025–present)
 IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)
 IEEE Transactions on Consumer Electronics
 IEEE Transactions on Audio, Speech, and Language Processing (TASLP)
+IEEE Access
 npj Quantum Information
 EPJ Quantum Technology
 Quantitative Finance and Economics
