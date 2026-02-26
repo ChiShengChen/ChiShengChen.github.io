@@ -1,0 +1,209 @@
+List of Publications
+Chi-Sheng (Michael) Chen
+
+================================================================================
+PEER-REVIEWED — FIRST / CO-FIRST AUTHOR
+================================================================================
+
+Journal Articles
+----------------
+
+[1]  CS Chen, GY Chen, D Zhou, D Jiang, D Chen, SH Chang.
+     "Improving fine-grained food classification using deep residual learning and selective state space models."
+     PLoS ONE (2025). DOI: 10.1371/journal.pone.0322695
+
+[2]  CS Chen, SYC Chen, HH Tseng.
+     "Exploring the potential of QEEGNet for cross-task and cross-dataset electroencephalography encoding with quantum machine learning."
+     Journal of Signal Processing Systems (2025). DOI: 10.1007/s11265-025-01979-2
+
+[3]  CS Chen, EJ Kuo.
+     "Unraveling quantum environments: Transformer-assisted learning in Lindblad dynamics."
+     Physical Review A (2025). DOI: 10.1103/gsxk-45mk
+
+[4]  CS Chen, SH Chang, CW Liu, TM Pan.
+     "Exploring the potential of electroencephalography signal-based image generation using diffusion models: Integrative framework combining mixed methods and multimodal analysis."
+     JMIR Medical Informatics (2025). DOI: 10.2196/72027
+
+[5]  CT Li, CS Chen (co-first), CM Cheng, CP Chen, JP Chen, MH Chen, YM Bai, et al.
+     "Prediction of antidepressant responses to non-invasive brain stimulation using frontal electroencephalogram signals: Cross-dataset comparisons and validation."
+     Journal of Affective Disorders (JAD) (2023). DOI: 10.1016/j.jad.2023.08.059
+
+[6]  SL Lai, CS Chen (co-first), BR Lin, RF Chang.
+     "Intraoperative detection of surgical gauze using deep convolutional neural network."
+     Annals of Biomedical Engineering, 51, 352-362 (2023). DOI: 10.1007/s10439-022-03033-9
+
+
+Conference Papers
+-----------------
+
+[7]  CS Chen, EJ Kuo.
+     "Quantum Reinforcement Learning-Guided Diffusion Model for Image Synthesis via Hybrid Quantum-Classical Generative Model Architectures."
+     2026 IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP). arXiv: 2509.14163
+
+[8]  CS Chen, AHW Tsai.
+     "Quantum and Classical Machine Learning in Decentralized Finance: Comparative Evidence from Multi-Asset Backtesting of Automated Market Makers."
+     2026 IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP). arXiv: 2510.15903
+
+[9]  CS Chen, AHW Tsai, SC Huang.
+     "Quantum multimodal contrastive learning framework."
+     2025 IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP). DOI: 10.1109/ICASSP49660.2025.10889504
+
+[10] CS Chen, X Zhang, YC Chen.
+     "Quantum Reinforcement Learning Trading Agent for Sector Rotation in the Taiwan Stock Market."
+     2025 IEEE International Conference on Quantum Computing and Engineering (QCE). DOI: 10.1109/QCE62983.2025.11250048
+
+[11] CS Chen, SYC Chen.
+     "Q-DPTS: Quantum Differentially Private Time Series Forecasting via Variational Quantum Circuits."
+     IEEE Global Communications Conference Workshop (GLOBECOM Workshop) 2025. arXiv: 2508.05036
+
+[12] CS Chen, SYC Chen, YC Tsai.
+     "Benchmarking Quantum and Classical Sequential Models for Urban Telecommunication Forecasting."
+     IEEE Global Communications Conference Workshop (GLOBECOM Workshop) 2025. arXiv: 2508.04488
+
+[13] CS Chen, SYC Chen, AHW Tsai, CS Wei.
+     "QEEGNet: Quantum machine learning for enhanced electroencephalography encoding."
+     2024 IEEE International Workshop on Signal Processing Systems (SiPS). DOI: 10.1109/SiPS62058.2024.00035
+
+
+================================================================================
+PEER-REVIEWED — CONTRIBUTING AUTHOR
+================================================================================
+
+Journal Articles
+----------------
+
+[14] Z Wang, T Zhang, X Zhang, R Fu, D de la Calle, CS Chen, AE Loshelder, et al.
+     "Unsupervised Sensitivity Prior Generation With Diffusion Model for EIT Image Reconstruction."
+     IEEE Transactions on Industrial Informatics (2026). DOI: 10.1109/TII.2025.3642293
+
+[15] SL Lai, YC Chou, CS Chen, TC Tung, BR Lin, RF Chang.
+     "Detection and tracking of a gauze sponge in minimally invasive surgery using a YOLO and R-CNN based model."
+     Medical & Biological Engineering & Computing (2025). DOI: 10.1007/s11517-025-03471-2
+
+[16] SH Chang, D Chen, CS Chen, D Zhou, LK Yeh.
+     "Device Failures and Adverse Events Associated With Rhinolaryngoscopes: Analysis of the Manufacturer and User Facility Device Experience (MAUDE) Database."
+     JMIR Human Factors (2025). DOI: 10.2196/67036
+
+[17] D Takegami, L Nicolai, Y Utsumi, A Melendez-Sans, DA Balatsky, et al.
+     "Direct imaging of valence orbitals using hard x-ray photoelectron spectroscopy."
+     Physical Review Research, 4, 033108 (2022). DOI: 10.1103/PhysRevResearch.4.033108
+
+[18] J Falke, CF Chang, CE Liu, D Takegami, A Melendez-Sans, CS Chen, et al.
+     "Electronic structure of the metallic oxide ReO3."
+     Physical Review B, 103, 115125 (2021). DOI: 10.1103/PhysRevB.103.115125
+
+
+Conference Papers
+-----------------
+
+[19] YJ Chen, A Albarqawi, CS Chen.
+     "Enhancing Clinical Decision-Making: Integrating Multi-Agent Systems with Ethical AI Governance."
+     2025 IEEE Conference on Computational Intelligence in Bioinformatics and Computational Biology (CIBCB). DOI: 10.1109/CIBCB66090.2025.11177136
+
+
+================================================================================
+PREPRINTS / UNDER REVIEW
+================================================================================
+
+First / Co-first Author
+------------------------
+
+[20] CS Chen, X Zhang, EJ Kuo, GY Chen, Q Xie, F Zhang.
+     "FreqLens: Interpretable Frequency Attribution for Time Series Forecasting."
+     arXiv preprint (2026). arXiv: 2602.08768
+
+[21] CS Chen, EJ Kuo, GY Chen, X Zhang, F Zhang.
+     "A Unified SPD Token Transformer Framework for EEG Classification: Systematic Comparison of Geometric Embeddings."
+     arXiv preprint (2026). arXiv: 2601.21521
+
+[22] CS Chen, EJ Kuo.
+     "Quantum adaptive self-attention for quantum transformer models."
+     arXiv preprint (2025). arXiv: 2504.05336
+
+[23] CS Chen, YJ Chen, AHW Tsai.
+     "Large cognition model: Towards pretrained EEG foundation model."
+     arXiv preprint (2025). arXiv: 2502.17464
+
+[24] CS Chen, WA Hou, HW Hu, ZS Cai.
+     "Quantum Generative Models for Image Generation: Insights from MNIST and MedMNIST."
+     arXiv preprint (2025). arXiv: 2504.00034
+
+[25] CS Chen, EJ Kuo.
+     "Quantum-enhanced channel mixing in RWKV models for time series forecasting."
+     arXiv preprint (2025). arXiv: 2505.13524
+
+[26] CS Chen, YJ Chen.
+     "Optimizing supply chain networks with the power of graph neural networks."
+     arXiv preprint (2025). arXiv: 2501.06221
+
+[27] CS Chen, EJ Kuo.
+     "Quantum-enhanced natural language generation: A multi-model framework with hybrid quantum-classical architectures."
+     arXiv preprint (2025). arXiv: 2508.21332
+
+[28] JTY Lu, J Chiang, CS Chen (co-first), ANY Tung, HW Hu, YC Cheng.
+     "EEG2text-CN: An exploratory study of open-vocabulary chinese text-EEG alignment via large language model and contrastive learning on ChineseEEG."
+     arXiv preprint (2025). arXiv: 2506.00854
+
+[29] CS Chen, AHW Tsai.
+     "Benchmarking classical and quantum models for DeFi yield prediction on Curve Finance."
+     arXiv preprint (2025). arXiv: 2508.02685
+
+[30] CS Chen, AHW Tsai.
+     "Quantum Adaptive Self-Attention for Financial Rebalancing: An Empirical Study on Automated Market Makers in Decentralized Finance."
+     arXiv preprint (2025). arXiv: 2509.16955
+
+[31] CS Chen.
+     "Vision-QRWKV: Exploring Quantum-Enhanced RWKV Models for Image Classification."
+     arXiv preprint (2025). arXiv: 2506.06633
+
+[32] CS Chen, X Zhang, R Fu, Q Xie, F Zhang.
+     "Quantum Temporal Convolutional Neural Networks for Cross-Sectional Equity Return Prediction: A Comparative Benchmark Study."
+     arXiv preprint (2025). arXiv: 2512.06630
+
+[33] CS Chen, GY Chen, D Zhou, D Jiang, DS Chen.
+     "Res-VMamba: Fine-grained food category visual classification using selective state space models with deep residual learning."
+     arXiv preprint (2024). arXiv: 2402.15761
+
+[34] CS Chen, CS Wei.
+     "Mind's eye: Image recognition by EEG via multimodal similarity-keeping contrastive learning."
+     arXiv preprint (2024). arXiv: 2406.16910
+
+[35] CS Chen.
+     "NECOMIMI: Neural-cognitive multimodal EEG-informed image generation with diffusion models."
+     arXiv preprint (2024). arXiv: 2410.00712
+
+[36] CS Chen, WS Wang.
+     "Psycho Gundam: Electroencephalography based real-time robotic control system with deep learning."
+     arXiv preprint (2024). arXiv: 2411.06414
+
+[37] CS Chen, YH Yang, GY Chen, SH Chang.
+     "Food classification for dietary support using fine-grained visual recognition with the HERBS Network."
+     Preprints (2024).
+
+
+Contributing Author
+--------------------
+
+[38] HW Hu, CM Huang, HJ Chiang, LJ Chen, CS Chen, KB Cheng.
+     "AI-Based Performance Evaluation in Synchronized Ballroom Dance via Custom Vector Similarity and YOLOv8 Pose Estimation."
+     SSRN (2025). DOI: 10.2139/ssrn.5603878
+
+
+================================================================================
+MASTER THESIS
+================================================================================
+
+[39] CS Chen.
+     "EEG Analysis for Prediction of Antidepressant Responses of Transcranial Magnetic Stimulation in Major Depressive Disorder Based on Attentional Convolution Time Series Prototypical Neural Network Model and Classical/Quantum Machine Learning Approaches."
+     National Taiwan University (2021). NDLTD: https://hdl.handle.net/11296/58m9z5
+
+
+================================================================================
+SUMMARY
+================================================================================
+
+Total publications: 39
+  - Peer-reviewed (first/co-first author): 13 (6 journal + 7 conference)
+  - Peer-reviewed (contributing author):    6 (5 journal + 1 conference)
+  - Preprints / under review:             19 (18 first/co-first + 1 contributing)
+  - Master thesis:                          1
