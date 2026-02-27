@@ -105,7 +105,7 @@ Conference Papers
 PREPRINTS / UNDER REVIEW
 ================================================================================
 
-First / Co-first Author
+First / Co-first Author / Main Contributor
 ------------------------
 
 [20] CS Chen, X Zhang, EJ Kuo, GY Chen, Q Xie, F Zhang.
