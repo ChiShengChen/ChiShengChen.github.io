@@ -24,11 +24,11 @@ Journal Articles
      "Exploring the potential of electroencephalography signal-based image generation using diffusion models: Integrative framework combining mixed methods and multimodal analysis."
      JMIR Medical Informatics (2025). DOI: 10.2196/72027
 
-[5]  CT Li, CS Chen (co-first), CM Cheng, CP Chen, JP Chen, MH Chen, YM Bai, et al.
+[5]  CT Li, CS Chen, CM Cheng, CP Chen, JP Chen, MH Chen, YM Bai, et al.  [Related to master's thesis]
      "Prediction of antidepressant responses to non-invasive brain stimulation using frontal electroencephalogram signals: Cross-dataset comparisons and validation."
      Journal of Affective Disorders (JAD) (2023). DOI: 10.1016/j.jad.2023.08.059
 
-[6]  SL Lai, CS Chen (co-first), BR Lin, RF Chang.
+[6]  SL Lai, CS Chen, BR Lin, RF Chang.
      "Intraoperative detection of surgical gauze using deep convolutional neural network."
      Annals of Biomedical Engineering, 51, 352-362 (2023). DOI: 10.1007/s10439-022-03033-9
 
