@@ -108,75 +108,79 @@ PREPRINTS / UNDER REVIEW
 First / Co-first Author / Main Contributor
 ------------------------
 
-[20] CS Chen, X Zhang, EJ Kuo, GY Chen, Q Xie, F Zhang.
+[20] CS Chen, X Zhang, GY Chen, Q Xie, F Zhang, EJ Kuo.
+     "Few-Shot Continual Learning for 3D Brain MRI with Frozen Foundation Models."
+     arXiv preprint (2026). arXiv: 2602.23533
+
+[21] CS Chen, X Zhang, EJ Kuo, GY Chen, Q Xie, F Zhang.
      "FreqLens: Interpretable Frequency Attribution for Time Series Forecasting."
      arXiv preprint (2026). arXiv: 2602.08768
 
-[21] CS Chen, EJ Kuo, GY Chen, X Zhang, F Zhang.
+[22] CS Chen, EJ Kuo, GY Chen, X Zhang, F Zhang.
      "A Unified SPD Token Transformer Framework for EEG Classification: Systematic Comparison of Geometric Embeddings."
      arXiv preprint (2026). arXiv: 2601.21521
 
-[22] CS Chen, EJ Kuo.
+[23] CS Chen, EJ Kuo.
      "Quantum adaptive self-attention for quantum transformer models."
      arXiv preprint (2025). arXiv: 2504.05336
 
-[23] CS Chen, YJ Chen, AHW Tsai.
+[24] CS Chen, YJ Chen, AHW Tsai.
      "Large cognition model: Towards pretrained EEG foundation model."
      arXiv preprint (2025). arXiv: 2502.17464
 
-[24] CS Chen, WA Hou, HW Hu, ZS Cai.
+[25] CS Chen, WA Hou, HW Hu, ZS Cai.
      "Quantum Generative Models for Image Generation: Insights from MNIST and MedMNIST."
      arXiv preprint (2025). arXiv: 2504.00034
 
-[25] CS Chen, EJ Kuo.
+[26] CS Chen, EJ Kuo.
      "Quantum-enhanced channel mixing in RWKV models for time series forecasting."
      arXiv preprint (2025). arXiv: 2505.13524
 
-[26] CS Chen, YJ Chen.
+[27] CS Chen, YJ Chen.
      "Optimizing supply chain networks with the power of graph neural networks."
      arXiv preprint (2025). arXiv: 2501.06221
 
-[27] CS Chen, EJ Kuo.
+[28] CS Chen, EJ Kuo.
      "Quantum-enhanced natural language generation: A multi-model framework with hybrid quantum-classical architectures."
      arXiv preprint (2025). arXiv: 2508.21332
 
-[28] JTY Lu, J Chiang, CS Chen (co-first), ANY Tung, HW Hu, YC Cheng.
+[29] JTY Lu, J Chiang, CS Chen (co-first), ANY Tung, HW Hu, YC Cheng.
      "EEG2text-CN: An exploratory study of open-vocabulary chinese text-EEG alignment via large language model and contrastive learning on ChineseEEG."
      arXiv preprint (2025). arXiv: 2506.00854
 
-[29] CS Chen, AHW Tsai.
+[30] CS Chen, AHW Tsai.
      "Benchmarking classical and quantum models for DeFi yield prediction on Curve Finance."
      arXiv preprint (2025). arXiv: 2508.02685
 
-[30] CS Chen, AHW Tsai.
+[31] CS Chen, AHW Tsai.
      "Quantum Adaptive Self-Attention for Financial Rebalancing: An Empirical Study on Automated Market Makers in Decentralized Finance."
      arXiv preprint (2025). arXiv: 2509.16955
 
-[31] CS Chen.
+[32] CS Chen.
      "Vision-QRWKV: Exploring Quantum-Enhanced RWKV Models for Image Classification."
      arXiv preprint (2025). arXiv: 2506.06633
 
-[32] CS Chen, X Zhang, R Fu, Q Xie, F Zhang.
+[33] CS Chen, X Zhang, R Fu, Q Xie, F Zhang.
      "Quantum Temporal Convolutional Neural Networks for Cross-Sectional Equity Return Prediction: A Comparative Benchmark Study."
      arXiv preprint (2025). arXiv: 2512.06630
 
-[33] CS Chen, GY Chen, D Zhou, D Jiang, DS Chen.
+[34] CS Chen, GY Chen, D Zhou, D Jiang, DS Chen.
      "Res-VMamba: Fine-grained food category visual classification using selective state space models with deep residual learning."
      arXiv preprint (2024). arXiv: 2402.15761
 
-[34] CS Chen, CS Wei.
+[35] CS Chen, CS Wei.
      "Mind's eye: Image recognition by EEG via multimodal similarity-keeping contrastive learning."
      arXiv preprint (2024). arXiv: 2406.16910
 
-[35] CS Chen.
+[36] CS Chen.
      "NECOMIMI: Neural-cognitive multimodal EEG-informed image generation with diffusion models."
      arXiv preprint (2024). arXiv: 2410.00712
 
-[36] CS Chen, WS Wang.
+[37] CS Chen, WS Wang.
      "Psycho Gundam: Electroencephalography based real-time robotic control system with deep learning."
      arXiv preprint (2024). arXiv: 2411.06414
 
-[37] CS Chen, YH Yang, GY Chen, SH Chang.
+[38] CS Chen, YH Yang, GY Chen, SH Chang.
      "Food classification for dietary support using fine-grained visual recognition with the HERBS Network."
      Preprints (2024).
 
@@ -184,7 +188,7 @@ First / Co-first Author / Main Contributor
 Contributing Author
 --------------------
 
-[38] HW Hu, CM Huang, HJ Chiang, LJ Chen, CS Chen, KB Cheng.
+[39] HW Hu, CM Huang, HJ Chiang, LJ Chen, CS Chen, KB Cheng.
      "AI-Based Performance Evaluation in Synchronized Ballroom Dance via Custom Vector Similarity and YOLOv8 Pose Estimation."
      SSRN (2025). DOI: 10.2139/ssrn.5603878
 
@@ -193,7 +197,7 @@ Contributing Author
 MASTER THESIS
 ================================================================================
 
-[39] CS Chen.
+[40] CS Chen.
      "EEG Analysis for Prediction of Antidepressant Responses of Transcranial Magnetic Stimulation in Major Depressive Disorder Based on Attentional Convolution Time Series Prototypical Neural Network Model and Classical/Quantum Machine Learning Approaches."
      National Taiwan University (2021). NDLTD: https://hdl.handle.net/11296/58m9z5
 
@@ -202,8 +206,8 @@ MASTER THESIS
 SUMMARY
 ================================================================================
 
-Total publications: 39
+Total publications: 40
   - Peer-reviewed (first/co-first author): 13 (6 journal + 7 conference)
   - Peer-reviewed (contributing author):    6 (5 journal + 1 conference)
-  - Preprints / under review:             19 (18 first/co-first + 1 contributing)
+  - Preprints / under review:             20 (19 first/co-first + 1 contributing)
   - Master thesis:                          1
