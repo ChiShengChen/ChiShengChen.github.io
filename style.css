@@ -270,6 +270,11 @@ ul li {
   background-color: #e6f4ea;
   border: 1px solid #ceead6;
 }
+.annotation.production {
+  color: #1a56db;
+  background-color: #e8f0fe;
+  border: 1px solid #c6dafc;
+}
 
 /* === Inline Stars Badges === */
 p img[alt="Stars"] {
