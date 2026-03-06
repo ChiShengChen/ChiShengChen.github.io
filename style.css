@@ -458,6 +458,38 @@ p img[alt="Stars"] {
   }
 }
 
+/* === Project Cards === */
+.project-card .pub-authors {
+  font-style: normal;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+
+.project-links {
+  margin-bottom: 6px;
+}
+
+.btn-demo {
+  display: inline-block;
+  padding: 3px 12px;
+  margin: 1px 3px 1px 0;
+  font-size: 0.88em;
+  font-weight: 600;
+  color: #fff;
+  background: #1a73e8;
+  border: 1px solid #1a73e8;
+  border-radius: 3px;
+  text-decoration: none;
+  transition: background 0.15s;
+}
+
+.btn-demo:hover {
+  background: #1557b0;
+  border-color: #1557b0;
+  text-decoration: none;
+}
+
 /* === Responsive additions === */
 @media (max-width: 600px) {
   .sticky-nav {
