@@ -50,7 +50,7 @@ Conference Papers
 
 [10] CS Chen, X Zhang, YC Chen.
      "Quantum Reinforcement Learning Trading Agent for Sector Rotation in the Taiwan Stock Market."
-     2025 IEEE International Conference on Quantum Computing and Engineering (QCE). DOI: 10.1109/QCE62983.2025.11250048
+     2025 IEEE International Conference on Quantum Computing and Engineering (QCE). DOI: 10.1109/QCE65121.2025.10322
 
 [11] CS Chen, SYC Chen.
      "Q-DPTS: Quantum Differentially Private Time Series Forecasting via Variational Quantum Circuits."
