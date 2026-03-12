@@ -26,6 +26,7 @@ Quantitative Finance and Economics
 AI, Computer Science and Robotics Technology
 Biomedical Physics & Engineering Express
 Engineering Research Express
+IEEE Transactions on Systems, Man and Cybernetics: Systems (TSMC)
 
 4. Publications
  [Peer-Reviewed - First/Co-first Author]
