@@ -574,5 +574,30 @@
   </ul>
 
 </div>
+
+<div class="lightbox" id="lightbox">
+  <img id="lightbox-img" src="" alt="">
+</div>
+
+<script>
+(function() {
+  var lb = document.getElementById('lightbox');
+  var lbImg = document.getElementById('lightbox-img');
+  document.querySelectorAll('.selected-pub-img img').forEach(function(img) {
+    img.style.cursor = 'zoom-in';
+    img.addEventListener('click', function() {
+      lbImg.src = this.src;
+      lbImg.alt = this.alt;
+      lb.classList.add('active');
+    });
+  });
+  lb.addEventListener('click', function() {
+    lb.classList.remove('active');
+  });
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') lb.classList.remove('active');
+  });
+})();
+</script>
 </body>
 </html>
