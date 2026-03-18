@@ -583,19 +583,25 @@
 (function() {
   var lb = document.getElementById('lightbox');
   var lbImg = document.getElementById('lightbox-img');
+  function open(src, alt) {
+    lbImg.src = src;
+    lbImg.alt = alt;
+    lb.classList.add('active');
+    document.body.classList.add('lightbox-open');
+    document.body.style.overflow = 'hidden';
+  }
+  function close() {
+    lb.classList.remove('active');
+    document.body.classList.remove('lightbox-open');
+    document.body.style.overflow = '';
+  }
   document.querySelectorAll('.selected-pub-img img').forEach(function(img) {
     img.style.cursor = 'zoom-in';
-    img.addEventListener('click', function() {
-      lbImg.src = this.src;
-      lbImg.alt = this.alt;
-      lb.classList.add('active');
-    });
+    img.addEventListener('click', function() { open(this.src, this.alt); });
   });
-  lb.addEventListener('click', function() {
-    lb.classList.remove('active');
-  });
+  lb.addEventListener('click', close);
   document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape') lb.classList.remove('active');
+    if (e.key === 'Escape') close();
   });
 })();
 </script>
