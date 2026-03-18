@@ -507,7 +507,9 @@ p img[alt="Stars"] {
   position: fixed;
   inset: 0;
   z-index: 9999;
-  background: rgba(0, 0, 0, 1);
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   justify-content: center;
   align-items: center;
   cursor: zoom-out;
