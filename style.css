@@ -532,7 +532,14 @@ body.lightbox-open .sticky-nav {
 
 /* === Journal Reviewer Scrollable List === */
 .journal-list {
-  max-height: 180px;
+  max-height: 200px;
   overflow-y: auto;
   padding-right: 6px;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  padding: 8px 8px 8px 30px;
+}
+
+.journal-list li {
+  margin-bottom: 4px;
 }
