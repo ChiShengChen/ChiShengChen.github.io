@@ -253,7 +253,7 @@ ul li {
 .tag-ml { color: #1a73e8; background-color: #e8f0fe; border-color: #d2e3fc; }
 .tag-med { color: #0d652d; background-color: #e6f4ea; border-color: #ceead6; }
 .tag-quantum { color: #7b1fa2; background-color: #f3e5f5; border-color: #e1bee7; }
-.tag-tool { color: #555; background-color: #f5f5f5; border-color: #e0e0e0; }
+.tag-tool { color: #e65100; background-color: #fff3e0; border-color: #ffe0b2; }
 .tag-dh { color: #b45309; background-color: #fef3c7; border-color: #fde68a; }
 
 /* === Annotations === */
