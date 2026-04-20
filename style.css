@@ -217,6 +217,16 @@ ul li {
   margin-bottom: 8px;
 }
 
+.service-summary {
+  margin-bottom: 14px;
+  padding: 10px 14px;
+  background: #f8f9fa;
+  border-left: 3px solid #1a0dab;
+  border-radius: 3px;
+  font-size: 0.95em;
+  color: #333;
+}
+
 /* === Links bar === */
 .links {
   margin-top: 6px;
