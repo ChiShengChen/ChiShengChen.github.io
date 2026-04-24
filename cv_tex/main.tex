@@ -1,0 +1,566 @@
+%-------------------------
+% Resume in Latex
+% Author : Chi-Sheng Chen 
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{hyphenat}
+\usepackage{fontawesome}
+\usepackage{CJKutf8}
+\input{glyphtounicode}
+
+
+%---------- FONT OPTIONS ----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeEducationHeading}[6]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+      \textit{\small#5} & \textit{\small #6} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeProjectHeading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeOrganizationHeading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{\small #2} \\
+      \textit{\small#3}
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%---------- HEADING ----------
+% gbsn can not display "陳", use the bsmi
+\begin{CJK*}{UTF8}{bsmi}
+\begin{center}
+    \textbf{\Huge \scshape Chi-Sheng (Michael) Chen (陳麒升)} \\ \vspace{3pt}
+    % \small \textbf{AI in Medicine, Time Series, Multi-Modal Learning \textbar \ QML \textbar \  Digital IC Design \textbar \ IoT \textbar \ Blockchain} \\ \vspace{3pt}
+    \small \textbf{AI in Medicine/Finance \textbar \ EEG/BCI \textbar \ Multi-Modal Learning \textbar \ Quantum Machine Learning} \\ \vspace{3pt}
+    \small
+    % \faMobile \hspace{.5pt} \href{tel:886966903173}{+886 966 903173}
+    \faMobile \hspace{.5pt} \href{tel:886966903173}{+1 (351) 244-1084}
+    % ||
+    \textbar \ 
+    \faAt \hspace{.5pt} \href{mailto:m50816m50816@gmail.com}{m50816m50816@gmail.com}
+    % ||
+    \textbar \ 
+    \faLinkedinSquare \hspace{.5pt} \href{https://www.linkedin.com/in/michael-chi-sheng-chen-257359137}{LinkedIn}
+    % ||
+    \textbar \ 
+    \faGithub \hspace{.5pt} \href{https://github.com/ChiShengChen}{GitHub}
+    % ||
+    \textbar \ 
+    \faGlobe \hspace{.5pt} \href{https://scholar.google.com.tw/citations?user=5XHD7nkAAAAJ&hl=zh-TW&fbclid=IwAR0G4vwwFx9TO00pSx0BiX8r_UK3HcW08gh259uSTqR4ziYBsVdMuL9OQQQ}{Publication} \\
+    % ||
+    %||
+     % \faMapMarker \hspace{.5pt} \href{https://www.google.com/maps/place/Bogazici+University+North+Campus/@41.0863067,29.0441352,15z/data=!4m5!3m4!1s0x0:0x9d2497b07c8edb2f!8m2!3d41.0863067!4d29.0441352}{Istanbul, Turkey}
+    % \faMapMarker \hspace{.5pt} 
+    % \href{}{Taoyuan, Taiwan}
+    \small Nationality: Taiwan \textbar \ Country of normal residence (last 5 years): Taiwan and USA \textbar \ \\Current address: Apt. 4A, 280 Harvard St. Cambridge, MA, USA, 02139 \\ \vspace{3pt}
+\end{center}
+\end{CJK*}
+
+
+
+
+
+
+%----------- RESEARCH EXPERIENCE -----------
+% Chi-Sheng (Michael) Chen is a biomedical AI researcher specializing in AI models for non-stationary biosignals, with a particular emphasis on EEG-based medical prediction and generative modeling. His research integrates classical deep learning, quantum machine learning, and multimodal contrastive learning to address challenges in brain-computer interfaces, psychiatric treatment personalization, and EEG-to-image generation. He has published in top-tier journals and conferences (JAD, PRB, ICASSP), and has gained hands-on research experience at Harvard Medical School, Max Planck Institute, and Mediatek. He is also the co-founder of an AI startup focused on developing EEG foundation models and applied medical AI systems.
+% Chi-Sheng (Michael) Chen is a biomedical AI researcher specializing in time-series prediction, multimodal learning, and quantum machine learning. He aims to develop scalable and reliable AI systems for modeling non-stationary biomedical signals, with a focus on integrating quantum computing and contrastive learning techniques for clinical deployment. His research has been published in Journal of Affective Disorders, Physical Review B, ICASSP, among others. He has conducted research at Harvard Medical School, the Max Planck Institute, and MediaTek, and co-founded an AI startup focused on EEG foundation model development.
+% Chi-Sheng (Michael) Chen is a biomedical AI researcher focused on building generalizable AI systems for non-stationary biosignals like EEG. His work integrates contrastive learning, quantum models, and multimodal methods to advance personalized neuropsychiatric care. His research has appeared in JAD, Physical Review A, Physical Review B, ICASSP, GLOBECOM, QCE, JMIR MI and others.
+% My name is Chi-Sheng, or Michael Chen. I’m a biomedical AI researcher focused on building generalizable AI systems for non-stationary biosignals like EEG. My research integrates contrastive learning, quantum models, and multimodal techniques to enable more personalized and clinically deployable neuropsychiatric tools. I've worked on EEG-based antidepressant response prediction, EEG-to-image generation with diffusion models, and quantum-enhanced EEG encoders, with results published in Journal of Affective Disorders, Physical Review B, and ICASSP. I’ve conducted research at Harvard Medical School, the Max Planck Institute, and also co-founded a startup focused on EEG foundation models.
+
+% Chi-Sheng (Michael) Chen is a biomedical AI researcher specializing in EEG/time-series AI and Quantum Machine Learning, with 15+ peer-reviewed publications (JAD IF=6.5, Physical Review A/B/R, ICASSP, QCE). His research addresses the fundamental challenge of building generalizable AI for non-stationary biosignals, integrating contrastive learning and variational quantum circuits. His EEG prediction models are clinically deployed at Taipei Veterans General Hospital, demonstrating real-world translational impact.
+
+% Chi-Sheng (Michael) Chen is a biomedical AI researcher and entrepreneur specializing in EEG/time-series AI and Quantum Machine Learning, with 15+ peer-reviewed publications (JAD IF=6.5, Physical Review A/B/R, ICASSP, QCE). Beyond academia, he brings diverse industry experience: contributing to RLHF pipelines at OpenAI, co-founding Omnis Labs to build AI-driven DeFi risk management across AMM and perpetual DEX protocols, and directing quantitative trading systems at Bonanza Quant. His research addresses the fundamental challenge of building generalizable AI for non-stationary time-series data, with methods transferable across domains—from brain signals to financial markets. His EEG prediction models are clinically deployed at Taipei Veterans General Hospital, demonstrating real-world translational impact.
+
+Chi-Sheng (Michael) Chen is a biomedical AI researcher with both academic and industry experience, specializing in EEG/time-series AI and Quantum Machine Learning. With 15+ peer-reviewed publications (JAD IF=6.5, Physical Review A/B/R, ICASSP, QCE), and serving as reviewer for leading journals including IEEE TPAMI and npj Quantum Information, hands-on experience in RLHF development at OpenAI, and entrepreneurial work building AI-driven quantitative trading and DeFi risk management systems, he bridges cutting-edge research with real-world deployment. His work addresses the challenge of building generalizable AI for non-stationary finance/biosignals, with trading systems online and EEG prediction models clinically deployed at real world Hospital.
+
+\section{Research \& Industry Experience}
+  \vspace{3pt}
+  \resumeSubHeadingListStart
+   \resumeSubheading
+      {Harvard Medical School \& Beth Israel Deaconess Medical Center}{MA, USA}
+      % {Harvard Medical School}{MA, USA}
+      % {Research Fellow}{Nov 2024 \textbf{--} Now}
+      {Research Affiliate, Advisor: Prof. Dr. Gabriel Brat}{Nov 2024 \textbf{--} Now}
+        \resumeItemListStart
+            \resumeItem{Developing real-time EMS triage pipeline using multimodal AI for trauma prediction.}
+            \resumeItem{Collaborating with surgeons on AI-assisted decision support systems.}
+        \resumeItemListEnd
+        
+    \resumeSubheading
+      {OpenAI Inc.}{MA, USA}
+      {AI Trainer (Contractor)}{Mar 2025 \textbf{--} Oct 2025}
+        \resumeItemListStart
+            % \resumeItem{Training the large EEG model from scratch, researching EEG application on Time-LLM.}
+            \resumeItem{Performed high-complexity AI data labeling and evaluation tasks, including instruction following, multimodal reasoning, and safety alignment.}
+            \resumeItem{Contributed to Reinforcement Learning from Human Feedback (RLHF) pipelines by providing high-quality comparative judgments, preference rankings, and model-behavior assessments.}
+            
+        \resumeItemListEnd
+        
+    \resumeSubheading
+      {Omnis Labs}{Remote}
+      {Co-Founder}{Sep 2024 \textbf{--} Now}
+        \resumeItemListStart
+            \resumeItem{AI-driven DeFi liquidity positioning protocol with automated market maker (AMM) strategies and backtesting systems.}
+            \resumeItem{Achieved 50\%--120\% base fee APR on WBTC/USDC and ETH/USDC pairs (Katana on SushiSwap) using time-series model-driven AMM strategies.}
+        \resumeItemListEnd
+        
+    \resumeSubheading
+      {Bonanza Quant Corporation}{Delaware, USA}
+      {Backend Engineer}{Dec 2024 \textbf{--} Feb 2026}
+        \resumeItemListStart
+            \resumeItem{Build AI/algorithm-based quant trading/analysis/back test system for a private fund.}
+        \resumeItemListEnd
+        
+    \resumeSubheading
+      {Neuro Industry, Inc.}{CA, USA}
+      {Researcher, Co-Founder \& CTO }{Mar 2024 \textbf{--} Jan 2025}
+        \resumeItemListStart
+            % \resumeItem{Training the large EEG model from scratch, researching EEG application on Time-LLM.}
+            \resumeItem{Built GCP-based MLOps pipeline, enabling training on 10K+ EEG samples.}
+            % \resumeItem{Built the whole AI training infra on GCP, included data cleaning, model training, model deployment, etc.}
+            \resumeItem{2 research papers on quantum machine learning on EEG signal processing.}
+            \resumeItem{1 research paper on EEG-to-image using diffusion model.}
+        \resumeItemListEnd
+        
+    \resumeSubheading
+      {Department of Computer Science, National Yang Ming Chiao Tung University}{Hsinchu, Taiwan}
+      {Research Assistant, Advisor: Prof. Chun-Shu Wei}{Dec 2023 \textbf{--} Aug 2024}
+        \resumeItemListStart
+            \resumeItem{Developed MUSE, a multimodal contrastive learning framework for EEG-based image recognition (22 citations).}
+            \resumeItem{Research on nonstationary EEG dynamics and foundation models for brain-computer interfaces.}
+        \resumeItemListEnd
+
+    \resumeSubheading
+      {MediaTek Inc.}{Hsinchu, Taiwan}
+      {Digital IC R\&D Engineer}{Dec 2021 \textbf{--} Oct 2023}
+        \resumeItemListStart
+            \resumeItem{Responsible for microprocessor IP development for flagship 5G smartphones' display and AMBA SoC implement.}
+            \resumeItem{Hardware virtualization architecture RTL design and IP verification with UVM and SystemVerilog.}
+        \resumeItemListEnd
+  
+    \resumeSubheading
+      {Department of Surgery, National Taiwan University Hospital}{Taipei, Taiwan}
+      {Research Assistant, Advisor: Dr. Shuo-Lun Lai }{Jul 2021 \textbf{--} Sep 2021}
+        \resumeItemListStart
+            \resumeItem{Deep learning applications on surgery automation with YOLO-based model.}
+            \resumeItem{Developed a prototype for a surgical smoke evacuation system.}
+        \resumeItemListEnd
+        
+    \resumeSubheading
+      {Department of Psychiatry, Taipei Veterans General Hospital}{Taipei, Taiwan}
+      {Research Assistant, Advisor: Prof. Dr. Cheng-Ta Li }{Sep 2019 \textbf{--} Jun 2021}
+        \resumeItemListStart
+            % \resumeItem{Conducted brainwave data collection for a study involving patients diagnosed with major depressive disorder.}
+            \resumeItem{Collaborated with researchers and clinicians to identify patterns and trends in brainwave activity related to major depressive disorder.}
+            \resumeItem{Utilized machine learning algorithms to develop predictive models based on real-world brainwave data.}
+        \resumeItemListEnd  
+
+    
+    % \resumeSubheading
+    %   {GDP, Inc.}{Taipei, Taiwan}
+    %   {Blockchain/DAPP R\&D Engineer}{Sep 2018 \textbf{--} Apr 2019}
+    %     \resumeItemListStart
+    %         \resumeItem{Ethereum blockchain smart contract development and deployment.}
+    %         \resumeItem{White paper research on other cryptography consensus mechanism.}
+    %     \resumeItemListEnd
+
+
+    \resumeSubheading
+      {Max Planck Institute for Chemical Physics of Solids (MPI CPfS)}{Dresden, Germany}
+      % {Research Internship in Physics of Correlated MatterAdvisor: Dr. Alexander Komarek \& Dr. Li Zhao }{Jul 2018 \textbf{--} Sep 2018}
+     {Research Internship, Advisor: Dr. Alexander Komarek \& Dr. Li Zhao }{Jul 2018 \textbf{--} Sep 2018}
+        \resumeItemListStart
+            \resumeItem{Searching new possible unconventional superconductors  among Co-based quaternary chalcogenides with diamond like structure CuInCo\textsubscript{2}A\textsubscript{4} / AgInCo\textsubscript{2}A\textsubscript{4} (A = Te, Se, S).} 
+            % \resumeItem{Synthesized Ca\textsubscript{3}Co\textsubscript{2}O\textsubscript{6} via flux method, ReO\textsubscript{3} Rhenium Trioxide Transport.}
+
+        \resumeItemListEnd
+
+    % \resumeSubheading
+    %   {Vernace Tech Inc.}{Hsinchu, Taiwan}
+    %   {Co-Founder \& CTO}{Sep 2017 \textbf{--} Aug 2018}
+    %     \resumeItemListStart
+    %         \resumeItem{Contributed to the establishment of a smart pest monitoring system for an agricultural IoT startup, utilizing embedded development boards to develop prototypes.}
+    %         \resumeItem{Utilized machine learning techniques to develop a pest forecasting model.}   
+    %     \resumeItemListEnd    
+      
+    
+  \resumeSubHeadingListEnd
+
+
+
+
+
+%----------- WORK EXPERIENCE -----------
+
+% \section{Work Experience}
+%   \vspace{3pt}
+%   \resumeSubHeadingListStart
+%      \resumeSubheading
+%       {Neuro Industry, Inc.}{CA, USA}
+%       {Co-Founder \& CTO}{Mar 2024 \textbf{--} Jan 2025}
+%         \resumeItemListStart
+%             \resumeItem{Built GCP-based MLOps pipeline, enabling training on 10K+ EEG samples.}
+%             \resumeItem{Build the whole AI training infra on GCP, included data cleaning, model training, model deployment, etc.}
+%         \resumeItemListEnd
+        
+    % \resumeSubheading
+    %   {MediaTek Inc.}{Hsinchu, Taiwan}
+    %   {Digital IC R\&D Engineer}{Dec 2021 \textbf{--} Oct 2023}
+    %     \resumeItemListStart
+    %         \resumeItem{Responsible for microprocessor IP development for flagship 5G smartphones' display and AMBA SoC implement.}
+    %         \resumeItem{Hardware virtualization architecture RTL design and IP verification with UVM and SystemVerilog.}
+    %     \resumeItemListEnd
+    
+    % \resumeSubheading
+    %   {GDP, Inc.}{Taipei, Taiwan}
+    %   {Blockchain/DAPP R\&D Engineer}{Sep 2018 \textbf{--} Apr 2019}
+    %     \resumeItemListStart
+    %         \resumeItem{Ethereum blockchain smart contract development and deployment.}
+    %         \resumeItem{White paper research on other cryptography consensus mechanism.}
+    %     \resumeItemListEnd
+
+    %    \resumeSubheading
+    %   {Vernace Tech Inc.}{Hsinchu, Taiwan}
+    %   {Co-Founder \& CTO}{Sep 2017 \textbf{--} Aug 2018}
+    %     \resumeItemListStart
+    %         \resumeItem{Contributed to the establishment of a smart pest monitoring system for an agricultural IoT startup, utilizing embedded development boards to develop prototypes.}
+    %         \resumeItem{Utilized machine learning techniques to develop a pest forecasting model.}   
+    %     \resumeItemListEnd    
+
+      %  \resumeSubheading
+      % {National Chiao Tung University (NCTU)}{Hsinchu, Taiwan}
+      % {Teaching Assistant}{Sep 2016 \textbf{--} Sep 2017}
+      %   \resumeItemListStart
+      %       \resumeItem{Teaching assistant in Synthetic Biology II, Department of Biology and Technology.}
+      %       \resumeItem{Guiding students through various laboratory experiments, including Biological Safety Cabinet operation, E. coli transformation, PCR, Gel Electrophoresis, and plasmid purification, etc.}   
+      %   \resumeItemListEnd
+        
+  % \resumeSubHeadingListEnd
+
+%----------- EDUCATION -----------
+
+\section{Education}
+  \vspace{3pt}
+  \resumeSubHeadingListStart
+    % \resumeEducationHeading
+    
+    % \resumeSubheading
+    %   {Harvard University
+    %   % \normalfont{(Admission rate: 0.85\%)}
+    %   }{Cambridge, USA}
+    %   {PhD of Engineering in Bioinformatics
+    %   % \textbf{GPA: 97.03/100}
+    %   }{in progress}
+      
+      
+    \resumeSubheading
+      {National Taiwan University (NTU)
+      % \normalfont{(Admission rate: 0.09\%)}
+      }{Taipei, Taiwan}
+      {Master of Science in Biomedical Electronics and Bioinformatics   
+       \textbf{GPA: 3.74/4.30}}{Sep 2019 \textbf{--} Jun 2021}
+      
+      \emph{Advisor: Prof. Dr. Cheng-Ta Li, MD \& Prof. Chung-Ping Chen}
+        \resumeItemListStart
+            \resumeItem{Machine learning application on non-stationary time series data.}
+            % \resumeItem{Master Thesis: "EEG Analysis for Prediction of Antidepressant Responses of Transcranial Magnetic Stimulation in Major Depressive Disorder Based on Attentional Convolution Time Series Prototypical Neural Network Model and Classical/Quantum Machine Learning Approaches." Advisor: Prof. Cheng-Ta Li \& Prof. Chung-Ping Chen}
+            \resumeItem{The research EEG model for TMS pattern personalized prediction is currently being applied to real outpatient patients in the Precision Depression Intervention Center (PreDIC), Taipei Veterans General Hospital.}
+            % \resumeItem{\textbf{Certificate of the 20th National Innovation Award, clinical research category.}}
+        \resumeItemListEnd
+      
+    
+    \resumeSubheading
+      {National Chiao Tung University (NCTU) 
+      % \normalfont{(Admission rate: 0.85\%)}
+      }{Hsinchu, Taiwan}
+      {Bachelor of Engineering in Electrophysics
+      % \textbf{GPA: 97.03/100}
+      }{Sep 2015 \textbf{--} Jun 2019}
+      
+      \emph{Bachelor of Science in Interdisciplinary Science Degree Program        }
+      \resumeItemListStart
+            \resumeItem{Researching the oxide processing techniques. }
+            \resumeItem{Researching the biomedical signal processing on traditional Chinese medicine data. }
+        \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+
+%----------- SKILLS -----------
+
+\section{Skills}
+  \vspace{2pt}
+  \resumeSubHeadingListStart
+    \small{\item{
+        \textbf{Programming:}{ C/C++, JavaScript, Python, Rust, MATLAB, R, MySQL, Verilog, SystemVerilog, Perl, Solidity} \\ \vspace{3pt}
+        \textbf{Frameworks:}{ PyTorch, HuggingFace, Scikit-learn, MNE, MLflow} \\ \vspace{3pt}
+        \textbf{Tools:}{ Git, Docker, GCP, AWS, HSPICE, Genus, SG-Lint, Verdi, UVM} \\ \vspace{3pt}
+        
+        \textbf{Languages:}{ Chinese (Native), English (Fluent; IELTS Overall 6.5, R 7.0, L 6.5, W 6.0, S 6.0, test date: Dec 2025; IELTS retake scheduled for Mar 2026)}
+        
+        % \textbf{Frameworks}{: X, X, X} \\
+        % \textbf{Developer Tools}{: X, X, X} \\
+        % \textbf{Libraries}{: X, X, X} \\
+        % \textbf{Applications}{: X, X, X}
+    }}
+  \resumeSubHeadingListEnd
+
+%----------- Publication -----------
+
+% \section{Selected Publications (All 14 peer-reviewed, 20 in submission/preprint   (\href{https://scholar.google.com.tw/citations?user=5XHD7nkAAAAJ&hl=zh-TW&fbclid=IwAR0G4vwwFx9TO00pSx0BiX8r_UK3HcW08gh259uSTqR4ziYBsVdMuL9OQQQ}{publication}))}
+\section{Selected Publications (320+ cites, h-index 11, i10-index 12)}
+  \vspace{2pt}
+  [Peer-Reviewed - First/Co-first Author]
+  \resumeSubHeadingListStart
+    \small{\item{
+
+    \textbf{Chen, C.-S., et al. "Exploring the potential of qeegnet for cross-task and cross-dataset electroencephalography encoding with quantum machine learning"}{ Journal of Signal Processing Systems (2025)} \\ \vspace{3pt}
+
+    
+    \textbf{Chen, C.-S., et al. "Unraveling quantum environments: Transformer-assisted learning in Lindblad dynamics"}{ Physical Review A (2025), IF=2.9, https://doi.org/10.1103/gsxk-45mk .} \\ \vspace{3pt}
+    
+    \textbf{Chen, C.-S., et al. "Exploring the Potential of Electroencephalography Signal–Based Image Generation Using Diffusion Models: Integrative Framework Combining Mixed Methods and Multimodal Analysis"}{ JMIR MI (2025), IF=3.8, https://doi.org/10.2196/72027 .} \\ \vspace{3pt}
+    
+    \textbf{Chen, C.S., et al. "Improving fine-grained food classification using deep residual learning and selective state space models"}{ PloS one (2025), IF=2.9, https://doi.org/10.1371/journal.pone.0322695 .}  \\ \vspace{3pt}
+
+    % \textbf{Device Failures and Adverse Events Associated With Rhinolaryngoscopes: Analysis of the Manufacturer and User Facility Device Experience (MAUDE) Database.}{ JMIR Human Factors (2025), IF=2.6, https://humanfactors.jmir.org/2025/1/e67036 .}  \\ \vspace{3pt}
+    
+    Li, C.T., \textbf {Chen, C.S., et al. "Prediction of antidepressant responses to non-invasive brain stimulation using frontal electroencephalogram signals: Cross-dataset comparisons and validation"}{  Journal of Affective Disorders (2023), IF=6.533, https://doi.org/10.1016/j.jad.2023.08.059 .} \\ \vspace{3pt}
+   
+    Lai, S.L., \textbf{Chen, C.S., et al. "Intraoperative Detection of Surgical Gauze Using Deep Convolutional Neural Network"}{  Ann Biomed Eng 51, 352–362 (2023), IF=4.219, https://doi.org/10.1007/s10439-022-03033-9 .} \\ \vspace{3pt}
+
+    \textbf{Chen, C.S., et al. "Quantum Reinforcement Learning-Guided Diffusion Model for Image Synthesis via Hybrid Quantum-Classical Generative Model Architectures"}{ arXiv:2509.14163, 2026 IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP).}  \\ \vspace{3pt}
+
+     \textbf{Chen, C.S., et al. "Quantum and Classical Machine Learning in Decentralized Finance: Comparative Evidence from Multi-Asset Backtesting of Automated Market Makers"}{ arXiv:2510.15903, 2026 IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP).}  \\ \vspace{3pt}
+     
+
+    \textbf{Chen, C.S., et al. "Quantum Contrastive Learning Framework"}{ arXiv:2408.13919. 2025 IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP), doi: 10.1109/ICASSP49660.2025.10889504 .}  \\ \vspace{3pt}
+    
+    \textbf{Chen, C.S., et al. "QEEGNet: Quantum Machine Learning for Enhanced Electroencephalography Encoding"}{arXiv:2407.19214. IEEE International Workshop on Signal Processing Systems (SiPS) 2024, doi: 10.1109/SiPS62058.2024.00035 .}  \\ \vspace{3pt}
+
+    \textbf{Chen, C.S., et al. "Q-DPTS: Quantum Differentially Private Time Series Forecasting via Variational Quantum Circuits"}{IEEE GLOBECOM Workshop 2025, arXiv:2508.05036.}
+
+    \textbf{Chen, C.S., et al. "Quantum Reinforcement Learning Trading Agent for Sector Rotation in the Taiwan Stock Market"}{ IEEE QCE QCRL Workshop 2025, arXiv:2506.20930.}    
+
+    
+
+   }
+   }
+  \resumeSubHeadingListEnd
+
+   [Peer-Reviewed - Contributing Author]
+   \resumeSubHeadingListStart
+    \small{\item{
+   
+    Lai, S.L., Chao, Y.C., \textbf{Chen, C.S., et al. "Detection and tracking of a gauze sponge in minimally invasive surgery using a YOLO and R-CNN based model"} {Medical \& Biological Engineering \& Computing (2025), IF=2.6, https://doi.org/10.1007/s11517-025-03471-2 .}\\ \vspace{3pt}
+    
+   Takegami D., et al.\textbf{"Direct imaging of valence orbitals using hard x-ray photoelectron spectroscopy"} {Phys. Rev. Res. 4, 033108 (2022), IF=4.3, https://doi.org/10.1103/PhysRevResearch.4.033108 .}\\ \vspace{3pt}
+    
+    Falke J., et al.\textbf{"Electronic structure of the metallic oxide ReO\textsubscript{3}"} {Phys. Rev. B 103, 115125 (2021),  IF=3.908, https://doi.org/10.1103/PhysRevB.103.115125 .}
+    
+    }
+   }
+  \resumeSubHeadingListEnd
+
+  
+    [Preprints / Under Review]
+\resumeSubHeadingListStart
+    \small{\item{
+    
+    \textbf{Chen, C.S., et al. "A Unified SPD Token Transformer Framework for EEG Classification: Systematic Comparison of Geometric Embeddings"}{ arXiv preprint (2026), arxiv:2601.21521.} \\ \vspace{3pt}
+
+    \textbf{Chen, C.S., et al. "FreqLens: Interpretable Frequency Attribution for Time Series Forecasting"}{ arXiv preprint (2026), 2602.08768.} \\ \vspace{3pt}
+    
+    \textbf{Chen, C.S., et al. "Quantum Adaptive Self-Attention for Quantum Transformer Models"}{ arXiv preprint (2025),  arXiv:2504.05336.}  \\ \vspace{3pt}
+    
+    % \textbf{Quantum Generative Models for Image Generation: Insights from MNIST and MedMNIST.}{ arXiv preprint (2025),  arXiv:2504.00034.}  \\ \vspace{3pt}
+    
+    \textbf{Chen, C.S., et al. "Large Cognition Model: Towards Pretrained EEG Foundation Model"}{ arXiv preprint (2025),  arXiv:2502.17464.}  \\ \vspace{3pt}
+    
+    % \textbf{NECOMIMI: Neural-Cognitive Multimodal EEG-informed Image Generation with Diffusion Models.}{ arXiv preprint (2024), arXiv:2410.00712.}  \\ \vspace{3pt}
+    
+
+    
+    \textbf{Chen, C.S., et al. "Mind’s Eye: Image Recognition by EEG via Multimodal Similarity-Keeping Contrastive Learning"}{ arXiv preprint (2024), arXiv:2406.16910.}  \\ \vspace{3pt}
+    
+    % \textbf{Res-VMamba: Fine-Grained Food Category Visual Classification Using Selective State Space Models with Deep Residual Learning.}{ arXiv preprint (2024), arXiv: 2402.15761v1 .}  \\ \vspace{3pt}
+
+    
+    
+    % \textbf{EEG Analysis for Prediction of Antidepressant Responses of Transcranial Magnetic Stimulation in Major Depressive Disorder Based on Attentional Convolution Time Series Prototypical Neural Network Model and Classical/Quantum Machine Learning Approaches.} {Master Thesis, National Taiwan University (2021), https://hdl.handle.net/11296/58m9z5 .}
+    }
+   }
+  \resumeSubHeadingListEnd
+
+
+\section{Professional Service}
+    \vspace{2pt}
+  \resumeSubHeadingListStart
+    \small{\item{
+    \textbf{Program Committee:} QNRL Workshop @ IEEE WCCI 2026
+    }}
+    \small{\item{
+    \textbf{Conference Reviewer} (2026):
+    \textbf{NeurIPS}, \textbf{ICML}, \textbf{KDD}, \textbf{MICCAI}, \textbf{ICASSP}
+    }}
+    \small{\item{
+    \textbf{IOP Trusted Reviewer} (2026), recognized by the Institute of Physics Publishing for quality and commitment in peer review.
+    }}
+    \small{\item{
+    \textbf{Journal Reviewer} (2025–present):
+    \textbf{Oxford National Science Review (NSR)},
+    \textbf{IEEE Trans. Pattern Analysis and Machine Intelligence (TPAMI)},
+    \textbf{IEEE Trans. Neural Networks and Learning Systems (TNNLS)},
+    \textbf{IEEE Trans. Neural Systems \& Rehabilitation Engineering (TNSRE)},
+    \textbf{IEEE Trans. Systems, Man and Cybernetics (TSMC)},
+    IEEE Trans. Consumer Electronics,
+    \textbf{IEEE/ACM Trans. Audio, Speech, and Language Processing (TASLP)},
+    IEEE Trans. Cognitive and Developmental Systems (TCDS),
+    \textbf{IEEE Journal of Biomedical and Health Informatics (JBHI)},
+    IEEE Signal Processing Letters (SPL),
+    IEEE Access,
+    Tsinghua Science and Technology,
+    \textbf{npj Quantum Information},
+    EPJ Quantum Technology,
+    IOP Journal of Neural Engineering,
+    Springer International Journal of Machine Learning and Cybernetics,
+    Springer Cognitive Neurodynamics,
+    IOP Biomedical Physics \& Engineering Express,
+    IOP Engineering Research Express,
+    AIMS Quantitative Finance and Economics,
+    AIMS Public Health,
+    IntechOpen AI, Computer Science and Robotics Technology
+    }}
+  \resumeSubHeadingListEnd
+
+%----------- AWARDS & ACHIEVEMENT-----------
+
+\section{Awards \& Achievements}
+  \vspace{2pt}
+  \resumeSubHeadingListStart
+    \small{\item{
+        \textbf{2026 NVIDIA GTC Top 8 Finalist:}{ "GPU-Accelerated Chinese Brain-to-Text Interface Powered by NVIDIA H100 80GB."} \\ \vspace{3pt}
+        \textbf{2026 Berkeley RDI AgentX-AgentBeats:}{ Phase 1 Healthcare Agent 3rd Place (Team MadGAA, 1,300+ teams worldwide).} \\ \vspace{3pt}
+        \textbf{2023 Certificate of the 20th National Innovation Award, clinical research category.} \\ \vspace{3pt}
+        % \textbf{2019 From IP to IPO (FITI) Innovation and Entrepreneurship Incentive Program:}{ Round of 15.} \\ \vspace{3pt}
+         \textbf{2019 International Blockchain Olympiad (IBCOL):}{ World Finalist competition with 100+  teams.} \\ \vspace{3pt}
+        % \textbf{2017 2nd FarEasTone IoT competition:}{ Ericsson Business Award.} \\ \vspace{3pt}
+        
+        % \textbf{2017 ARM Design Contest:}{ Round of 10.} \\ \vspace{3pt}
+        
+        \textbf{2017 Microsoft International Imagine Cup :}{ 2nd place in Taiwan.} \\ \vspace{3pt}
+        % \textbf{2017 TECO Green Tech International Contest:}{ Championship.} \\ \vspace{3pt}
+% \textbf{2017 1st Taoyuan Star Startup Contest :}{ Honorable Mention.} \\ \vspace{3pt}
+% \textbf{2017 11th Longterm Innovation and Entrepreneurship Competition:}{ Honorable Mention.} \\ \vspace{3pt}
+        % \textbf{2016 National Smart Agriculture Innovation and Entrepreneurship Competition:}{ 2nd place.} \\ \vspace{3pt}
+        
+        
+        \textbf{2016 International Genetically Engineered Machine Competition (iGEM):}{ World Gold medal, Best Applied Design, Best Part Collection, Best Presentation competition with 300+ university teams.}
+    }}
+  \resumeSubHeadingListEnd
+
+\end{document}
