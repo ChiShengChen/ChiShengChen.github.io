@@ -12,7 +12,7 @@ ORCID: 0000-0003-0807-0217
 
 3. Professional Service
 Conference Reviewer
-ICML 2026, KDD 2026, ICASSP 2026
+ICML 2026, KDD 2026, ICASSP 2026, NLDL 2027
 
 Journal Reviewer (2025–present)
 IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)
