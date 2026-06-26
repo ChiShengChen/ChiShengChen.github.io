@@ -1,0 +1,365 @@
+%-------------------------
+% Resume in Latex
+% Author : Chi-Sheng Chen
+% Target : VICI Holdings — LLM Algorithm Applications Engineer
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{hyphenat}
+\usepackage{fontawesome}
+\usepackage{CJKutf8}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.6in}
+\addtolength{\textwidth}{1.2in}
+\addtolength{\topmargin}{-.9in}
+\addtolength{\textheight}{1.8in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeEducationHeading}[6]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+      \textit{\small#5} & \textit{\small #6} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeOrganizationHeading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{\small #2} \\
+      \textit{\small#3}
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%---------- HEADING ----------
+\begin{CJK*}{UTF8}{bsmi}
+\begin{center}
+    \textbf{\Huge \scshape Chi-Sheng (Michael) Chen (陳麒升)} \\ \vspace{3pt}
+    \small \textbf{LLM Agents \textbar \ Reinforcement Learning \textbar \ Quantitative Finance \textbar \ Multi-Modal AI} \\ \vspace{3pt}
+    \small
+    \faMobile \hspace{.5pt} \href{tel:+13512441084}{+1 (351) 244-1084}
+    \textbar \
+    \faAt \hspace{.5pt} \href{mailto:m50816m50816@gmail.com}{m50816m50816@gmail.com}
+    \textbar \
+    \faLinkedinSquare \hspace{.5pt} \href{https://www.linkedin.com/in/michael-chi-sheng-chen-257359137}{LinkedIn}
+    \textbar \
+    \faGithub \hspace{.5pt} \href{https://github.com/ChiShengChen}{GitHub}
+    \textbar \
+    \faGlobe \hspace{.5pt} \href{https://scholar.google.com.tw/citations?user=5XHD7nkAAAAJ&hl=zh-TW}{Publications} \\
+    \small Nationality: Taiwan \textbar \ Open to relocation to Taipei \\ \vspace{3pt}
+\end{center}
+\end{CJK*}
+
+%----------- PROFILE -----------
+Chi-Sheng (Michael) Chen is an LLM/RL researcher and engineer with strong quantitative finance experience, holding 43 peer-reviewed and preprint publications (incl. ICASSP$\times$4 with 3 orals, Physical Review A, JAD, JBHI-tier journals), 350+ citations, and \textbf{ICML 2026 Gold Reviewer} status. He brings end-to-end LLM/agent capabilities: contributed to RLHF pipelines at \textbf{OpenAI} (SFT/DPO, preference modeling, safety alignment); co-founded \textbf{Omnis Labs}, operating an AI-driven DeFi liquidity protocol with time-series models running in production (\textbf{50--120\% base fee APR} on WBTC/USDC and ETH/USDC pairs); won \textbf{3rd Place at Berkeley RDI AgentX-AgentBeats} multi-agent competition (1,300+ teams worldwide). His ICASSP 2026 oral on \emph{Quantum Adaptive Self-Attention for Financial Rebalancing} bridges LLM-style attention architectures with real AMM trading.
+
+%----------- RESEARCH & PROFESSIONAL EXPERIENCE -----------
+
+\section{Professional Experience}
+  \vspace{3pt}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Omnis Labs}{Remote}
+      {Co-Founder \& Lead AI/Quant Engineer}{Sep 2024 \textbf{--} Present}
+        \resumeItemListStart
+            \resumeItem{Built and operate an AI-driven DeFi liquidity positioning protocol — \textbf{automated market maker (AMM) strategies, time-series forecasting models, and full backtesting infrastructure}.}
+            \resumeItem{Production results: \textbf{50\%--120\% base fee APR} on WBTC/USDC and ETH/USDC pairs (Katana on SushiSwap) driven by time-series ML strategies; daily execution under real market conditions.}
+            \resumeItem{Built end-to-end MLOps: containerized inference (Docker), feature/model versioning, CI/CD, on-chain event extraction pipeline, and observability dashboards for live trading P\&L and slippage attribution.}
+            \resumeItem{Designed LLM-assisted research tooling for market analysis, factor extraction from on-chain and off-chain text feeds, and rapid strategy prototyping.}
+        \resumeItemListEnd
+
+    \resumeSubheading
+      {OpenAI Inc.}{MA, USA}
+      {AI Trainer (Contractor) — RLHF / Alignment}{Mar 2025 \textbf{--} Oct 2025}
+        \resumeItemListStart
+            \resumeItem{Contributed to \textbf{RLHF pipelines}: produced high-quality comparative judgments, preference rankings, and model-behavior assessments used in \textbf{SFT, DPO, and reward modeling}.}
+            \resumeItem{Performed high-complexity AI data labeling and evaluation across instruction following, multimodal reasoning, tool use, and safety alignment.}
+            \resumeItem{Drove rubric design and dispute resolution that improved labeling consistency on hard prompts (math reasoning, code, ambiguous policy edges).}
+        \resumeItemListEnd
+
+    \resumeSubheading
+      {Harvard Medical School \& Beth Israel Deaconess Medical Center}{MA, USA}
+      {Research Affiliate — Advisor: Prof. Gabriel Brat}{Nov 2024 \textbf{--} Present}
+        \resumeItemListStart
+            \resumeItem{Built real-time EMS triage \textbf{multi-agent} pipeline: ASR (Whisper) $\rightarrow$ event extraction with LLM agents $\rightarrow$ structured trauma prediction. Same agentic patterns (RAG, tool use, task planning) directly transfer to trading research workflows.}
+            \resumeItem{Designed prompt engineering and fine-tuning pipelines (LoRA/SFT) over domain-specific text corpora for clinical event extraction.}
+        \resumeItemListEnd
+
+    \resumeSubheading
+      {Neuro Industry, Inc.}{CA, USA}
+      {Co-Founder \& CTO}{Mar 2024 \textbf{--} Jan 2025}
+        \resumeItemListStart
+            \resumeItem{Built GCP-based MLOps pipeline (Vertex AI, Cloud Run, BigQuery, Cloud Build); enabled \textbf{end-to-end training on 10K+ samples} with reproducible model versioning.}
+            \resumeItem{Shipped 3 research products on quantum ML, generative diffusion, and EEG foundation models.}
+            \resumeItem{Owned hiring, technical architecture, cloud cost optimization, and investor technical due diligence.}
+        \resumeItemListEnd
+
+    \resumeSubheading
+      {Department of Computer Science, National Yang Ming Chiao Tung University}{Hsinchu, Taiwan}
+      {Research Assistant — Advisor: Prof. Chun-Shu Wei}{Dec 2023 \textbf{--} Aug 2024}
+        \resumeItemListStart
+            \resumeItem{Developed \textbf{MUSE}, a multimodal contrastive learning framework (28 citations) using techniques transferable to text--time-series alignment (e.g., news $\leftrightarrow$ price action).}
+        \resumeItemListEnd
+
+    \resumeSubheading
+      {MediaTek Inc.}{Hsinchu, Taiwan}
+      {Digital IC R\&D Engineer}{Dec 2021 \textbf{--} Oct 2023}
+        \resumeItemListStart
+            \resumeItem{Microprocessor IP development for flagship 5G smartphones' display and AMBA SoC — strong systems-level foundation for HPC/GPU/FPGA latency-sensitive engineering.}
+            \resumeItem{Hardware virtualization architecture RTL design and IP verification (UVM, SystemVerilog) — disciplined spec-driven and test-driven workflow.}
+        \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%----------- SELECTED LLM / AGENT / FINANCE PROJECTS -----------
+
+\section{Selected Projects (LLM / Agents / Quant Finance)}
+\vspace{3pt}
+\resumeSubHeadingListStart
+
+  \resumeProjectHeading
+    {\textbf{MadGAA --- OSCE Medical Multi-Agent Judge System} \emph{(Berkeley AgentX-AgentBeats, 3rd Place / 1,300+ teams)}}{2026}
+    \resumeItemListStart
+      \resumeItem{Co-designed a multi-agent LLM evaluation system with role-specialized agents (examiner, patient, judge) and a verifiable scoring rubric.}
+      \resumeItem{Same agentic architecture (RAG + tool use + verifier) is directly portable to trade-strategy review, signal verification, and execution oversight.}
+      \resumeItem{Repo: \href{https://github.com/MadGAA-Lab/OSCE-Project}{github.com/MadGAA-Lab/OSCE-Project}}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{QASA --- Quantum Adaptive Self-Attention for Financial Rebalancing} \emph{(ICASSP 2026, oral)}}{2026}
+    \resumeItemListStart
+      \resumeItem{Empirical study of hybrid quantum--classical attention applied to AMM rebalancing in decentralized finance; backtested across multi-asset universes with rigorous P\&L attribution.}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{QRL Sector Rotation Trading Agent} \emph{(IEEE QCE 2025)}}{2025}
+    \resumeItemListStart
+      \resumeItem{Reinforcement learning agent for sector rotation on Taiwan stock market; closed-loop training with realistic execution costs.}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{Large Cognition Model --- Pretrained EEG Foundation Model} \emph{(arXiv 2502.17464)}}{2025}
+    \resumeItemListStart
+      \resumeItem{End-to-end self-supervised pretraining of a foundation model over heterogeneous time-series; same recipe (mask-prediction + contrastive) generalizes to financial time-series pretraining.}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{NYCU EP Laser Physics AI Tutor} \emph{(RAG-based educational LLM, in production)}}{2025--Present}
+    \resumeItemListStart
+      \resumeItem{Next.js + Gemini + Supabase pgvector RAG system with 8 learning modes (adaptive quiz, exam simulation, knowledge graph, spaced repetition). Serving real NYCU students. Live demo: \href{https://web-eight-hazel-22.vercel.app}{web-eight-hazel-22.vercel.app}.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%----------- SKILLS -----------
+
+\section{Skills}
+  \vspace{2pt}
+  \resumeSubHeadingListStart
+    \small{\item{
+        \textbf{LLM Stack:}{ PyTorch, HuggingFace Transformers/PEFT, LoRA, QLoRA, SFT, DPO, RLHF, quantization (GPTQ/AWQ), distillation, MoE, prompt engineering, vLLM, OpenAI SDK, Anthropic SDK, Gemini SDK, LangChain, LangGraph, Ollama, RAG (pgvector, FAISS, Qdrant)} \\ \vspace{3pt}
+        \textbf{Agent / Tooling:}{ Tool use, function calling, ReAct, multi-agent orchestration, Cursor, Claude Code, GitHub Copilot, TDD / spec-driven development} \\ \vspace{3pt}
+        \textbf{ML/RL:}{ Reinforcement learning (PPO/DPO/Q-learning), contrastive learning, diffusion models, transformers, state-space models, time-series forecasting, Scikit-learn, MLflow, Weights \& Biases} \\ \vspace{3pt}
+        \textbf{MLOps / Infra:}{ Docker, CI/CD (GitHub Actions), Kubernetes basics, GCP (Vertex AI, BigQuery), AWS, model/feature versioning, observability (Prometheus, Grafana)} \\ \vspace{3pt}
+        \textbf{Quant / Finance:}{ Backtesting, factor modeling, event extraction from financial text, AMM/DEX strategy design, on-chain data pipelines, Solidity (read-only contracts), Python (pandas, NumPy, statsmodels)} \\ \vspace{3pt}
+        \textbf{Systems:}{ Python, C/C++, Rust, JavaScript/TypeScript, Next.js, MySQL/PostgreSQL, Git, Verilog/SystemVerilog (legacy)} \\ \vspace{3pt}
+        \textbf{Languages:}{ Chinese (Native), English (Fluent — 1.5+ yrs working in US research environments)}
+    }}
+  \resumeSubHeadingListEnd
+
+%----------- SELECTED PUBLICATIONS -----------
+
+\section{Selected Publications (43 papers, 350+ cites, h-index 11, i10-index 13)}
+  \vspace{2pt}
+  [LLM / Agents / Quant Finance / RL]
+  \resumeSubHeadingListStart
+    \small{\item{
+
+    \textbf{Chen, C.-S., Tsai, A.H.-W. ``Quantum Adaptive Self-Attention for Financial Rebalancing: An Empirical Study on Automated Market Makers in Decentralized Finance''}{ ICASSP 2026 \textbf{(oral)}, doi: 10.1109/ICASSP55912.2026.11460972.} \\ \vspace{3pt}
+
+    \textbf{Chen, C.-S., Tsai, A.H.-W. ``Quantum and Classical Machine Learning in Decentralized Finance: Multi-Asset Backtesting of Automated Market Makers''}{ arXiv:2510.15903 (2025).} \\ \vspace{3pt}
+
+    \textbf{Chen, C.-S., Tsai, A.H.-W. ``Benchmarking Classical and Quantum Models for DeFi Yield Prediction on Curve Finance''}{ arXiv:2508.02685 (2025).} \\ \vspace{3pt}
+
+    \textbf{Chen, C.-S., Zhang, X., Chen, Y.-C. ``Quantum Reinforcement Learning Trading Agent for Sector Rotation in the Taiwan Stock Market''}{ IEEE QCE 2025, arXiv:2506.20930.} \\ \vspace{3pt}
+
+    \textbf{Chen, C.-S., Zhang, X., Kuo, E.-J., et al. ``Quantum Temporal Convolutional Neural Networks for Cross-Sectional Equity Return Prediction''}{ arXiv:2512.06630 (2025).} \\ \vspace{3pt}
+
+    \textbf{Chen, C.-S., Kuo, E.-J. ``Quantum-Enhanced Natural Language Generation: A Multi-Model Framework with Hybrid Quantum-Classical Architectures''}{ arXiv:2508.21332 (2025).} \\ \vspace{3pt}
+
+    \textbf{Chen, C.-S., Kuo, E.-J. ``Quantum Adaptive Self-Attention for Quantum Transformer Models''}{ arXiv:2504.05336 (2025).} \\ \vspace{3pt}
+
+    \textbf{Chen, C.-S., Chen, Y.-J., Tsai, A.H.-W. ``Large Cognition Model: Towards Pretrained EEG Foundation Model''}{ arXiv:2502.17464 (2025).} \\ \vspace{3pt}
+
+    \textbf{Chen, C.-S., Kuo, E.-J. ``Do Quantum Transformers Help? A Systematic VQC Architecture Comparison on Tabular Benchmarks''}{ arXiv:2604.23931 (2026).} \\ \vspace{3pt}
+
+    Chen, Y.-J., Albarqawi, A., \textbf{Chen, C.-S.} ``Enhancing Clinical Decision-Making: Integrating Multi-Agent Systems with Ethical AI Governance.''{ IEEE CIBCB 2025, doi: 10.1109/CIBCB66090.2025.11177136.} \\ \vspace{3pt}
+
+    Lu, J.T.Y., Chiang, J., \textbf{Chen, C.-S.}, et al. ``EEG2text-CN: Open-Vocabulary Chinese Text--EEG Alignment via LLM and Contrastive Learning.''{ arXiv:2506.00854 (2025).}
+
+    }}
+  \resumeSubHeadingListEnd
+
+  [Selected Peer-Reviewed --- Other Top Venues]
+  \resumeSubHeadingListStart
+    \small{\item{
+
+    \textbf{Chen, C.-S., Kuo, E.-J. ``Quantum Reinforcement Learning-Guided Diffusion Model for Image Synthesis''}{ ICASSP 2026 \textbf{(oral)}, doi: 10.1109/ICASSP55912.2026.11461991.} \\ \vspace{3pt}
+
+    \textbf{Chen, C.-S., Tsai, A.H.-W., Huang, S.-C. ``Quantum Multimodal Contrastive Learning Framework''}{ ICASSP 2025 \textbf{(oral)}, doi: 10.1109/ICASSP49660.2025.10889504.} \\ \vspace{3pt}
+
+    \textbf{Chen, C.-S., Kuo, E.-J. ``Unraveling Quantum Environments: Transformer-Assisted Learning in Lindblad Dynamics''}{ Physical Review A (2025).} \\ \vspace{3pt}
+
+    \textbf{Chen, C.-S., et al. ``QEEGNet: Quantum Machine Learning for Enhanced EEG Encoding''}{ IEEE SiPS 2024 / Journal of Signal Processing Systems (2025).} \\ \vspace{3pt}
+
+    Li, C.-T., \textbf{Chen, C.-S.}, et al. ``Prediction of Antidepressant Responses to Non-Invasive Brain Stimulation Using Frontal EEG.''{ Journal of Affective Disorders (2023), IF=6.5.}
+
+    }}
+  \resumeSubHeadingListEnd
+
+%----------- EDUCATION -----------
+
+\section{Education}
+  \vspace{3pt}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {National Taiwan University (NTU) --- College of EECS}{Taipei, Taiwan}
+      {M.S., Biomedical Electronics \& Bioinformatics --- GPA: 3.74/4.30}{Sep 2019 \textbf{--} Jun 2021}
+
+      \emph{Advisors: Prof. Cheng-Ta Li, MD \& Prof. Chung-Ping Chen}
+        \resumeItemListStart
+            \resumeItem{Thesis: Attention-based classical/quantum ML for non-stationary time-series prediction.}
+            \resumeItem{Resulting EEG model deployed at the Precision Depression Intervention Center, Taipei Veterans General Hospital.}
+        \resumeItemListEnd
+
+    \resumeSubheading
+      {National Chiao Tung University (NCTU)}{Hsinchu, Taiwan}
+      {B.Eng., Electrophysics \,/\, B.S., Interdisciplinary Science Degree Program}{Sep 2015 \textbf{--} Jun 2019}
+        \resumeItemListStart
+            \resumeItem{Triple background: Electrical Engineering, Applied Mathematics, Life Sciences --- direct foundation for quantitative cross-disciplinary work.}
+        \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%----------- PROFESSIONAL SERVICE -----------
+
+\section{Professional Service}
+    \vspace{2pt}
+  \resumeSubHeadingListStart
+    \small{\item{
+    \textbf{ICML 2026 Gold Reviewer} --- recognized among the top reviewers based on area chair ratings.
+    }}
+    \small{\item{
+    \textbf{Conference Reviewer (2026):} NeurIPS, ICML, KDD, MICCAI, ICASSP.
+    }}
+    \small{\item{
+    \textbf{Program Committee:} QNRL Workshop @ IEEE WCCI 2026.
+    }}
+    \small{\item{
+    \textbf{IOP Trusted Reviewer (2026)} --- Institute of Physics Publishing.
+    }}
+    \small{\item{
+    \textbf{Journal Reviewer (selected):} TPAMI, TNNLS, TASLP, JBHI, IEEE TNSRE, npj Quantum Information, Oxford National Science Review, IOP Journal of Neural Engineering.
+    }}
+  \resumeSubHeadingListEnd
+
+%----------- AWARDS -----------
+
+\section{Awards \& Achievements}
+  \vspace{2pt}
+  \resumeSubHeadingListStart
+    \small{\item{
+        \textbf{2026 Berkeley RDI AgentX-AgentBeats:}{ Phase 1 Healthcare Multi-Agent System --- \textbf{3rd Place} (Team MadGAA, 1,300+ teams worldwide).} \\ \vspace{3pt}
+        \textbf{2026 NVIDIA GTC Top 8 Finalist:}{ ``GPU-Accelerated Chinese Brain-to-Text Interface Powered by NVIDIA H100 80GB.''} \\ \vspace{3pt}
+        \textbf{2026 ICML Gold Reviewer.} \\ \vspace{3pt}
+        \textbf{2023 Certificate of the 20th National Innovation Award} --- clinical research category. \\ \vspace{3pt}
+        \textbf{2019 International Blockchain Olympiad (IBCOL):}{ World Finalist (100+ teams).} \\ \vspace{3pt}
+        \textbf{2017 Microsoft International Imagine Cup:}{ 2nd place in Taiwan.} \\ \vspace{3pt}
+        \textbf{2016 International Genetically Engineered Machine Competition (iGEM):}{ World Gold medal, Best Applied Design, Best Part Collection, Best Presentation (300+ university teams).}
+    }}
+  \resumeSubHeadingListEnd
+
+\end{document}

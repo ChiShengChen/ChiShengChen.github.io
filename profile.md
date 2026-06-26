@@ -28,6 +28,7 @@ Biomedical Physics & Engineering Express
 Engineering Research Express
 IEEE Transactions on Systems, Man and Cybernetics: Systems (TSMC)
 Discover Artificial Intelligence
+Frontiers in Surgery
 
 4. Publications
  [Peer-Reviewed - First/Co-first Author]
