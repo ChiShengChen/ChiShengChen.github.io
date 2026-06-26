@@ -12,22 +12,42 @@ ORCID: 0000-0003-0807-0217
 
 3. Professional Service
 Conference Reviewer
-ICML 2026, KDD 2026, ICASSP 2026, NLDL 2027
+NeurIPS 2026, ICML 2026 (Gold Reviewer — top tier), KDD 2026, MICCAI 2026, ICASSP 2026, NLDL 2027
 
-Journal Reviewer (2025–present)
+Program Committee
+QNRL Workshop @ IEEE WCCI 2026
+
+Journal Reviewer (2025–present) — 31 journals
+Oxford University Press National Science Review (NSR)
 IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)
-IEEE Transactions on Consumer Electronics
-IEEE Transactions on Audio, Speech, and Language Processing (TASLP)
-IEEE Transactions on Cognitive and Developmental Systems (TCDS)
-IEEE Access
-npj Quantum Information
-EPJ Quantum Technology
-Quantitative Finance and Economics
-AI, Computer Science and Robotics Technology
-Biomedical Physics & Engineering Express
-Engineering Research Express
+IEEE Transactions on Neural Networks and Learning Systems (TNNLS)
+IEEE Transactions on Neural Systems & Rehabilitation Engineering (TNSRE)
 IEEE Transactions on Systems, Man and Cybernetics: Systems (TSMC)
-Discover Artificial Intelligence
+IEEE Transactions on Human-Machine Systems (THMS)
+IEEE Internet of Things Journal (IoT-J)
+IEEE Transactions on Consumer Electronics (TCE)
+IEEE/ACM Transactions on Audio, Speech, and Language Processing (TASLP)
+IEEE Transactions on Cognitive and Developmental Systems (TCDS)
+IEEE Journal of Biomedical and Health Informatics (JBHI)
+BMC Medical Informatics and Decision Making
+IEEE Signal Processing Letters (SPL)
+IEEE Access
+ACM Transactions on Recommender Systems (TORS)
+Tsinghua Science and Technology
+npj Quantum Information
+Scientific Reports (Nature Portfolio)
+EPJ Quantum Technology
+IOP Journal of Neural Engineering
+Taylor & Francis Behaviour & Information Technology (BIT)
+Springer International Journal of Machine Learning and Cybernetics
+Springer Cognitive Neurodynamics
+Springer Journal of Bionic Engineering
+IOP Biomedical Physics & Engineering Express
+IOP Engineering Research Express
+AIMS Quantitative Finance and Economics (QFE)
+AIMS Public Health
+IntechOpen AI, Computer Science and Robotics Technology (ACRT)
+Springer Discover Artificial Intelligence
 Frontiers in Surgery
 
 4. Publications
