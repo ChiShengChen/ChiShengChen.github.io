@@ -172,15 +172,15 @@ Frontiers in Surgery
       {Harvard Medical School \& Beth Israel Deaconess Medical Center}{MA, USA}
       % {Harvard Medical School}{MA, USA}
       % {Research Fellow}{Nov 2024 \textbf{--} Now}
-      {Research Fellow, Advisor: Prof. Dr. Gabriel Brat}{Nov 2024 \textbf{--} Now}
+      {Research Affiliate, Advisor: Prof. Dr. Gabriel Brat}{Nov 2024 \textbf{--} Now}
         \resumeItemListStart
             \resumeItem{Developing real-time EMS triage pipeline using multimodal AI for trauma prediction.}
             \resumeItem{Collaborating with surgeons on AI-assisted decision support systems.}
         \resumeItemListEnd
         
     \resumeSubheading
-      {OpenAI Inc.}{MA, USA}
-      {AI Trainer (Contractor)}{Mar 2025 \textbf{--} Oct 2025}
+      {OpenAI (contractor via Mercor)}{Remote (US)}
+      {AI Trainer}{Mar 2025 \textbf{--} Oct 2025}
         \resumeItemListStart
             % \resumeItem{Training the large EEG model from scratch, researching EEG application on Time-LLM.}
             \resumeItem{Performed high-complexity AI data labeling and evaluation tasks, including instruction following, multimodal reasoning, and safety alignment.}
