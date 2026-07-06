@@ -293,6 +293,16 @@ ul li {
   background-color: #e8f0fe;
   border: 1px solid #c6dafc;
 }
+.annotation.flagship {
+  color: #b31b1b;
+  background-color: #fdeaea;
+  border: 1px solid #f5c6c6;
+}
+.annotation.cited {
+  color: #8a5a00;
+  background-color: #fdf3e0;
+  border: 1px solid #f2d9a8;
+}
 
 /* === Inline Stars Badges === */
 p img[alt="Stars"] {
