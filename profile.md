@@ -17,7 +17,7 @@ NeurIPS 2026, ICML 2026 (Gold Reviewer — top tier), KDD 2026, MICCAI 2026, ICA
 Program Committee
 QNRL Workshop @ IEEE WCCI 2026
 
-Journal Reviewer (2025–present) — 32 journals
+Journal Reviewer (2025–present) — 33 journals
 Oxford University Press National Science Review (NSR)
 IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)
 IEEE Transactions on Neural Networks and Learning Systems (TNNLS)
@@ -50,6 +50,7 @@ IntechOpen AI, Computer Science and Robotics Technology (ACRT)
 Springer Discover Artificial Intelligence
 Frontiers in Surgery
 Journal of Medical Internet Research (JMIR)
+Elsevier Neural Networks
 
 4. Publications
  [Peer-Reviewed - First/Co-first Author]
