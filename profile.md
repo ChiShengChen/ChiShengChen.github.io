@@ -17,7 +17,7 @@ NeurIPS 2026, ICML 2026 (Gold Reviewer — top tier), KDD 2026, MICCAI 2026, ICA
 Program Committee
 QNRL Workshop @ IEEE WCCI 2026
 
-Journal Reviewer (2025–present) — 31 journals
+Journal Reviewer (2025–present) — 32 journals
 Oxford University Press National Science Review (NSR)
 IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)
 IEEE Transactions on Neural Networks and Learning Systems (TNNLS)
@@ -49,11 +49,14 @@ AIMS Public Health
 IntechOpen AI, Computer Science and Robotics Technology (ACRT)
 Springer Discover Artificial Intelligence
 Frontiers in Surgery
+Journal of Medical Internet Research (JMIR)
 
 4. Publications
  [Peer-Reviewed - First/Co-first Author]
   \resumeSubHeadingListStart
     \small{\item{
+
+    [Journal]
 
     \textbf{Chen, C.-S., et al. "Exploring the potential of qeegnet for cross-task and cross-dataset electroencephalography encoding with quantum machine learning"}{ Journal of Signal Processing Systems (2025)} \\ \vspace{3pt}
 
@@ -70,22 +73,24 @@ Frontiers in Surgery
    
     Lai, S.L., \textbf{Chen, C.S., et al. "Intraoperative Detection of Surgical Gauze Using Deep Convolutional Neural Network"}{  Ann Biomed Eng 51, 352–362 (2023), IF=4.219, https://doi.org/10.1007/s10439-022-03033-9 .} \\ \vspace{3pt}
 
-    \textbf{Chen, C.S., et al. "Quantum Reinforcement Learning-Guided Diffusion Model for Image Synthesis via Hybrid Quantum-Classical Generative Model Architectures"}{ arXiv:2509.14163, 2026 IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP).}  \\ \vspace{3pt}
+    [Conference]
 
-     \textbf{Chen, C.S., et al. "Quantum and Classical Machine Learning in Decentralized Finance: Comparative Evidence from Multi-Asset Backtesting of Automated Market Makers"}{ arXiv:2510.15903, 2026 IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP).}  \\ \vspace{3pt}
+    \textbf{Chen, C.S., et al. "Quantum Reinforcement Learning-Guided Diffusion Model for Image Synthesis via Hybrid Quantum-Classical Generative Model Architectures"}{ 2026 IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP), doi: 10.1109/ICASSP55912.2026.11461991, arXiv:2509.14163.}  \\ \vspace{3pt}
+
+     \textbf{Chen, C.S., et al. "Quantum Adaptive Self-Attention for Financial Rebalancing: An Empirical Study on Automated Market Makers in Decentralized Finance"}{ 2026 IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP), doi: 10.1109/ICASSP55912.2026.11460972.}  \\ \vspace{3pt}
      
 
-    \textbf{Chen, C.S., et al. "Quantum Contrastive Learning Framework"}{ arXiv:2408.13919. 2025 IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP), doi: 10.1109/ICASSP49660.2025.10889504 .}  \\ \vspace{3pt}
+    \textbf{Chen, C.S., et al. "Quantum Contrastive Learning Framework"}{ 2025 IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP), doi: 10.1109/ICASSP49660.2025.10889504, arXiv:2408.13919.}  \\ \vspace{3pt}
     
-    \textbf{Chen, C.S., et al. "QEEGNet: Quantum Machine Learning for Enhanced Electroencephalography Encoding"}{arXiv:2407.19214. IEEE International Workshop on Signal Processing Systems (SiPS) 2024, doi: 10.1109/SiPS62058.2024.00035 .}  \\ \vspace{3pt}
+    \textbf{Chen, C.S., et al. "QEEGNet: Quantum Machine Learning for Enhanced Electroencephalography Encoding"}{ IEEE International Workshop on Signal Processing Systems (SiPS) 2024, doi: 10.1109/SiPS62058.2024.00035, arXiv:2407.19214.}  \\ \vspace{3pt}
 
-    \textbf{Chen, C.S., et al. "Q-DPTS: Quantum Differentially Private Time Series Forecasting via Variational Quantum Circuits"}{IEEE GLOBECOM Workshop 2025, arXiv:2508.05036.}
+    \textbf{Chen, C.S., Liu, H.Y. "Predicting Poets' Origins from Verse: A Computational Analysis of Regional Linguistic Fingerprints in the Complete Tang Poems"}{ Digital Humanities 2026 (DH2026), Alliance of Digital Humanities Organizations (ADHO), Short Paper.} \\ \vspace{3pt}
 
-    \textbf{Chen, C.S., et al. "Quantum Reinforcement Learning Trading Agent for Sector Rotation in the Taiwan Stock Market"}{ IEEE QCE QCRL Workshop 2025, arXiv:2506.20930.}    \\ \vspace{3pt}
+    [Workshop]
 
-    \textbf{Chen, C.S., Liu, H.Y. "Predicting Poets' Origins from Verse: A Computational Analysis of Regional Linguistic Fingerprints in the Complete Tang Poems"}{ Digital Humanities 2026 (DH2026), Alliance of Digital Humanities Organizations (ADHO), Short Paper.}
+    \textbf{Chen, C.S., et al. "Q-DPTS: Quantum Differentially Private Time Series Forecasting via Variational Quantum Circuits"}{ IEEE GLOBECOM Workshop 2025, arXiv:2508.05036.} \\ \vspace{3pt}
 
-    
+    \textbf{Chen, C.S., et al. "Quantum Reinforcement Learning Trading Agent for Sector Rotation in the Taiwan Stock Market"}{ IEEE QCE QCRL Workshop 2025, arXiv:2506.20930.}
 
    }
    }
@@ -96,6 +101,8 @@ Frontiers in Surgery
     \small{\item{
    
     Lai, S.L., Chao, Y.C., \textbf{Chen, C.S., et al. "Detection and tracking of a gauze sponge in minimally invasive surgery using a YOLO and R-CNN based model"} {Medical \& Biological Engineering \& Computing (2025), IF=2.6, https://doi.org/10.1007/s11517-025-03471-2 .}\\ \vspace{3pt}
+
+    Liu, H.Y., \textbf{Chen, C.S.} "Gendered Language in Tang Poetry: A Sociolinguistic and Digital Humanities Analysis Based on the Quan Tang Shi." {16th International Conference of Digital Archives and Digital Humanities (DADH 2025).}\\ \vspace{3pt}
     
    Takegami D., et al.\textbf{"Direct imaging of valence orbitals using hard x-ray photoelectron spectroscopy"} {Phys. Rev. Res. 4, 033108 (2022), IF=4.3, https://doi.org/10.1103/PhysRevResearch.4.033108 .}\\ \vspace{3pt}
     
@@ -115,6 +122,8 @@ Frontiers in Surgery
     \textbf{Chen, C.S., et al. "FreqLens: Interpretable Frequency Attribution for Time Series Forecasting"}{ arXiv preprint (2026), 2602.08768.} \\ \vspace{3pt}
     
     \textbf{Chen, C.S., et al. "Quantum Adaptive Self-Attention for Quantum Transformer Models"}{ arXiv preprint (2025),  arXiv:2504.05336.}  \\ \vspace{3pt}
+
+    \textbf{Chen, C.S., et al. "Quantum and Classical Machine Learning in Decentralized Finance: Comparative Evidence from Multi-Asset Backtesting of Automated Market Makers"}{ arXiv preprint (2025), arXiv:2510.15903.}  \\ \vspace{3pt}
     
     % \textbf{Quantum Generative Models for Image Generation: Insights from MNIST and MedMNIST.}{ arXiv preprint (2025),  arXiv:2504.00034.}  \\ \vspace{3pt}
     
@@ -188,14 +197,14 @@ Frontiers in Surgery
             
         \resumeItemListEnd
         
-    % \resumeSubheading
-    %   {Omnis Labs}{MA, USA}
-    %   {Researcher, Co-Founder \& CTO}{Oct 2024 \textbf{--} Now}
-    %     \resumeItemListStart
-    %         \resumeItem{Build AI/algorithm-based risk curator on DeFi, both on AMM and prep DEX.}
-    %         \resumeItem{Building DeFAI infra cross cloud, hyperliquid and several chains/protocols (Curve, Steer, Aster).}
-    %         \resumeItem{3 research papers on AI-driven AMM liquidity provision.}
-    %     \resumeItemListEnd
+    \resumeSubheading
+      {Omnis Labs}{Remote}
+      {Co-Founder}{Sep 2024 \textbf{--} Now}
+        \resumeItemListStart
+            \resumeItem{Build AI/algorithm-based risk curator on DeFi, both on AMM and perp DEX.}
+            \resumeItem{Building DeFAI infra across cloud, Hyperliquid and several chains/protocols (Curve, Steer, Aster).}
+            \resumeItem{3 research papers on AI-driven AMM liquidity provision.}
+        \resumeItemListEnd
         
     \resumeSubheading
       {Bonanza Quant Corporation}{Delaware, USA}
