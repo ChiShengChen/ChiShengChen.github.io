@@ -69,10 +69,6 @@ Elsevier Neural Networks
     \textbf{Chen, C.S., et al. "Improving fine-grained food classification using deep residual learning and selective state space models"}{ PloS one (2025), IF=2.9, https://doi.org/10.1371/journal.pone.0322695 .}  \\ \vspace{3pt}
 
     % \textbf{Device Failures and Adverse Events Associated With Rhinolaryngoscopes: Analysis of the Manufacturer and User Facility Device Experience (MAUDE) Database.}{ JMIR Human Factors (2025), IF=2.6, https://humanfactors.jmir.org/2025/1/e67036 .}  \\ \vspace{3pt}
-    
-    Li, C.T., \textbf {Chen, C.S., et al. "Prediction of antidepressant responses to non-invasive brain stimulation using frontal electroencephalogram signals: Cross-dataset comparisons and validation"}{  Journal of Affective Disorders (2023), IF=6.533, https://doi.org/10.1016/j.jad.2023.08.059 .} \\ \vspace{3pt}
-   
-    Lai, S.L., \textbf{Chen, C.S., et al. "Intraoperative Detection of Surgical Gauze Using Deep Convolutional Neural Network"}{  Ann Biomed Eng 51, 352–362 (2023), IF=4.219, https://doi.org/10.1007/s10439-022-03033-9 .} \\ \vspace{3pt}
 
     [Conference]
 
@@ -100,7 +96,11 @@ Elsevier Neural Networks
    [Peer-Reviewed - Contributing Author]
    \resumeSubHeadingListStart
     \small{\item{
-   
+
+    Li, C.T., \textbf {Chen, C.S., et al. "Prediction of antidepressant responses to non-invasive brain stimulation using frontal electroencephalogram signals: Cross-dataset comparisons and validation"}{  Journal of Affective Disorders (2023), IF=6.533, https://doi.org/10.1016/j.jad.2023.08.059 .} \\ \vspace{3pt}
+
+    Lai, S.L., \textbf{Chen, C.S., et al. "Intraoperative Detection of Surgical Gauze Using Deep Convolutional Neural Network"}{  Ann Biomed Eng 51, 352–362 (2023), IF=4.219, https://doi.org/10.1007/s10439-022-03033-9 .} \\ \vspace{3pt}
+
     Lai, S.L., Chao, Y.C., \textbf{Chen, C.S., et al. "Detection and tracking of a gauze sponge in minimally invasive surgery using a YOLO and R-CNN based model"} {Medical \& Biological Engineering \& Computing (2025), IF=2.6, https://doi.org/10.1007/s11517-025-03471-2 .}\\ \vspace{3pt}
 
     Liu, H.Y., \textbf{Chen, C.S.} "Gendered Language in Tang Poetry: A Sociolinguistic and Digital Humanities Analysis Based on the Quan Tang Shi." {16th International Conference of Digital Archives and Digital Humanities (DADH 2025).}\\ \vspace{3pt}
