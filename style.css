@@ -542,6 +542,20 @@ p img[alt="Stars"] {
   margin-top: 6px;
 }
 
+.selected-pub-info .pub-desc {
+  color: #444;
+  margin-bottom: 6px;
+  line-height: 1.5;
+}
+
+.section-intro {
+  color: #555;
+  font-size: 0.95em;
+  line-height: 1.5;
+  margin: -6px 0 18px;
+  max-width: 760px;
+}
+
 @media (max-width: 600px) {
   .selected-pub {
     flex-direction: column;
