@@ -12,7 +12,7 @@ ORCID: 0000-0003-0807-0217
 
 3. Professional Service
 Conference Reviewer
-NeurIPS 2026, ICML 2026 (Gold Reviewer — top tier), AAAI 2027, KDD 2026, MICCAI 2026, ICASSP 2026, NLDL 2027
+NeurIPS 2026, ICML 2026 (Gold Reviewer — top tier), AAAI 2027, KDD 2026, MICCAI 2026, ICASSP 2026, NLDL 2027, 2026 IEEE 2nd International Conference on Quantum Artificial Intelligence (QAI)
 
 Program Committee
 QNRL Workshop @ IEEE WCCI 2026
