@@ -17,10 +17,11 @@ NeurIPS 2026, ICML 2026 (Gold Reviewer — top tier), AAAI 2027, KDD 2026, MICCA
 Program Committee
 QNRL Workshop @ IEEE WCCI 2026
 
-Journal Reviewer (2025–present) — 34 journals
+Journal Reviewer (2025–present) — 35 journals
 Oxford University Press National Science Review (NSR)
 IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)
 IEEE Transactions on Neural Networks and Learning Systems (TNNLS)
+IEEE Transactions on Automation Science and Engineering (TASE)
 IEEE Transactions on Neural Systems & Rehabilitation Engineering (TNSRE)
 IEEE Transactions on Systems, Man and Cybernetics: Systems (TSMC)
 IEEE Transactions on Human-Machine Systems (THMS)
