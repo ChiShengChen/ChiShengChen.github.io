@@ -17,7 +17,7 @@ NeurIPS 2026, ICML 2026 (Gold Reviewer — top tier), AAAI 2027, KDD 2026, MICCA
 Program Committee
 QNRL Workshop @ IEEE WCCI 2026
 
-Journal Reviewer (2025–present) — 35 journals
+Journal Reviewer (2025–present) — 36 journals
 Oxford University Press National Science Review (NSR)
 IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)
 IEEE Transactions on Neural Networks and Learning Systems (TNNLS)
@@ -30,6 +30,7 @@ IEEE Transactions on Consumer Electronics (TCE)
 IEEE/ACM Transactions on Audio, Speech, and Language Processing (TASLP)
 IEEE Transactions on Cognitive and Developmental Systems (TCDS)
 IEEE Transactions on Emerging Topics in Computational Intelligence (TETCI)
+IEEE Transactions on Quantum Engineering (TQE)
 IEEE Journal of Biomedical and Health Informatics (JBHI)
 BMC Medical Informatics and Decision Making
 IEEE Signal Processing Letters (SPL)
