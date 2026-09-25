@@ -17,7 +17,7 @@ NeurIPS 2026, ICML 2026 (Gold Reviewer — top tier), AAAI 2027, KDD 2026, MICCA
 Program Committee
 QNRL Workshop @ IEEE WCCI 2026
 
-Journal Reviewer (2025–present) — 38 journals
+Journal Reviewer (2025–present) — 39 journals
 Oxford University Press National Science Review (NSR)
 IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)
 IEEE Transactions on Neural Networks and Learning Systems (TNNLS)
@@ -39,6 +39,7 @@ ACM Transactions on Recommender Systems (TORS)
 Tsinghua Science and Technology
 npj Quantum Information
 Scientific Reports (Nature Portfolio)
+ACS Environmental Science & Technology (ES&T)
 EPJ Quantum Technology
 IOP Journal of Neural Engineering
 IOP Physiological Measurement
