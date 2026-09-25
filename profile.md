@@ -158,7 +158,7 @@ Elsevier Ain Shams Engineering Journal (ASEJ)
       % \normalfont{(Admission rate: 0.09\%)}
       }{Taipei, Taiwan}
       {Master of Science in Computer Science and Bioinformatics   
-       \textbf{GPA: 3.74/4.30}}{Sep 2019 \textbf{--} Jun 2021}
+       }{Sep 2019 \textbf{--} Jun 2021}
       
       \emph{Advisor: Prof. Dr. Cheng-Ta Li, MD \& Prof. Chung-Ping Chen}
         \resumeItemListStart
