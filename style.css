@@ -198,6 +198,19 @@ ul li {
   font-size: 0.9em;
 }
 
+/* Non-archival abstracts: own [A1] counter so they never read as part of the numbered list */
+.abstract-list {
+  counter-reset: abs-counter;
+}
+
+.abstract-list li {
+  counter-increment: abs-counter;
+}
+
+.abstract-list li::before {
+  content: "[A" counter(abs-counter) "]";
+}
+
 .pub-list .me {
   font-weight: bold;
   color: #1a73e8;
