@@ -91,7 +91,7 @@ Elsevier Ain Shams Engineering Journal (ASEJ)
 
     [Workshop]
 
-    \textbf{Chen, C.S., Brat, G.A. "Measuring Browser Webcam Gaze Honestly: A Capture-Clock Methodology and Open Reference Implementation"}{ 4th MICCAI Workshop on Data Engineering in Medical Imaging (DEMI 2026), Poster, arXiv:2608.11566.} \\ \vspace{3pt}
+    \textbf{Chen, C.S., Brat, G.A. "Measuring Browser Webcam Gaze Honestly: A Capture-Clock Methodology and Open Reference Implementation"}{ 4th MICCAI Workshop on Data Engineering in Medical Imaging (DEMI 2026), Spotlight talk, arXiv:2608.11566.} \\ \vspace{3pt}
 
     \textbf{Chen, C.S., et al. "Q-DPTS: Quantum Differentially Private Time Series Forecasting via Variational Quantum Circuits"}{ IEEE GLOBECOM Workshop 2025, arXiv:2508.05036.} \\ \vspace{3pt}
 
