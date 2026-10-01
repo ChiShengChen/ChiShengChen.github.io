@@ -208,7 +208,7 @@ Elsevier Ain Shams Engineering Journal (ASEJ)
         
     \resumeSubheading
       {Omnis Labs}{Remote}
-      {Co-Founder}{Sep 2024 \textbf{--} Now}
+      {Co-Founder}{Sep 2024 \textbf{--} May 2026}
         \resumeItemListStart
             \resumeItem{Build AI/algorithm-based risk curator on DeFi, both on AMM and perp DEX.}
             \resumeItem{Building DeFAI infra across cloud, Hyperliquid and several chains/protocols (Curve, Steer, Aster).}
