@@ -194,7 +194,7 @@
 % Chi-Sheng (Michael) Chen is a biomedical AI researcher and entrepreneur specializing in EEG/time-series AI and Quantum Machine Learning, with 15+ peer-reviewed publications (JAD IF=6.5, Physical Review A/B/R, ICASSP, QCE). Beyond academia, he brings diverse industry experience: contributing to RLHF pipelines at OpenAI, co-founding Omnis Labs to build AI-driven DeFi risk management across AMM and perpetual DEX protocols, and directing quantitative trading systems at Bonanza Quant. His research addresses the fundamental challenge of building generalizable AI for non-stationary time-series data, with methods transferable across domains—from brain signals to financial markets. His EEG prediction models are clinically deployed at Taipei Veterans General Hospital, demonstrating real-world translational impact.
 
 \ifindustry
-Chi-Sheng (Michael) Chen is a machine-learning researcher and engineer working across clinical biosignal ML and LLM-agent systems. At Harvard/BIDMC he builds multimodal EMS trauma-triage pipelines (ASR $\rightarrow$ LLM-agent event extraction $\rightarrow$ structured prediction); his EEG-based depression-treatment model is in routine outpatient use at Taipei Veterans General Hospital. He has shipped LLM-agent systems (a US-stock research agent suite, a robotics workcell optimizer) and placed 3rd of 1,300+ teams at Berkeley RDI AgentX-AgentBeats 2026. Prior: Co-Founder/CTO of Neuro Industry (GCP MLOps on 10K+ EEG samples) and Digital IC R\&D Engineer at MediaTek. 49 publications, 491 citations (h-index 13); reviewer for NeurIPS, ICML (Gold Reviewer) and 40 journals.
+Chi-Sheng (Michael) Chen is a machine-learning researcher and engineer working across clinical biosignal ML and LLM-agent systems. At Harvard/BIDMC he builds multimodal EMS trauma-triage pipelines (ASR $\rightarrow$ LLM-agent event extraction $\rightarrow$ structured prediction) over 4M+ patient records; his EEG-based depression-treatment model is in routine outpatient use at Taipei Veterans General Hospital. He has shipped LLM-agent systems (a US-stock research agent suite, a robotics workcell optimizer), cut LLM token usage by 82\% for a quant-trading firm, and placed 3rd of 1,300+ teams at Berkeley RDI AgentX-AgentBeats 2026. Prior: Co-Founder/CTO of Neuro Industry (GCP MLOps on 10K+ EEG samples) and Digital IC R\&D Engineer at MediaTek. 49 publications, 491 citations (h-index 13); reviewer for NeurIPS, ICML (Gold Reviewer) and 40 journals.
 \else
 Chi-Sheng (Michael) Chen builds machine learning for physiological time series along one arc --- from representation, to foundation models, to clinical deployment. He develops interpretable, clinician-interrogable frequency-domain and geometric representations of clinical biosignals (FreqLens, SPD Token Transformer) and scales them into biosignal foundation models (Large Cognition Model). His EEG-based depression-treatment model is in routine outpatient use at Taipei Veterans General Hospital's Precision Depression Intervention Center (PreDIC), and at Harvard/BIDMC he builds multimodal EMS trauma-triage pipelines. He has 49 publications, 491 citations (h-index 13, i10-index 16), ICML 2026 Gold Reviewer recognition, and reviewer service across 40 journals (incl.\ TPAMI, NSR, npj Quantum Information). As a secondary methodological line, he explores hybrid quantum-classical architectures for sequence modeling (QASA, QEEGNet).
 \fi
@@ -208,7 +208,7 @@ Chi-Sheng (Michael) Chen builds machine learning for physiological time series a
       % {Research Fellow}{Nov 2024 \textbf{--} Present}
       {Research Affiliate, Advisor: Prof. Dr. Gabriel Brat}{Nov 2024 \textbf{--} Present}
         \resumeItemListStart
-            \resumeItem{Developing real-time EMS triage pipeline using multimodal AI for trauma prediction.}
+            \resumeItem{Building a real-time EMS trauma-triage pipeline (ASR $\rightarrow$ LLM-agent event extraction $\rightarrow$ structured prediction) over \textbf{4M+ patient records} using multimodal AI.}
             \resumeItem{Collaborating with surgeons on AI-assisted decision support systems.}
         \resumeItemListEnd
         
@@ -216,7 +216,7 @@ Chi-Sheng (Michael) Chen builds machine learning for physiological time series a
       {WhaleForce (subsidiary of VICI Holdings)}{Taipei, Taiwan}
       {Fractional Token Efficiency Research Lead (Advisor)}{Aug 2026 \textbf{--} Present}
         \resumeItemListStart
-            \resumeItem{Advising on LLM token-efficiency research and multi-agent architecture for AI-driven quantitative trading.}
+            \resumeItem{Advising on LLM token-efficiency research and multi-agent architecture for AI-driven quantitative trading; token-efficiency work \textbf{cut LLM token usage by 82\%}.}
         \resumeItemListEnd
 
     \resumeSubheading
@@ -273,8 +273,12 @@ Chi-Sheng (Michael) Chen builds machine learning for physiological time series a
       {Research Assistant, Advisor: Prof. Dr. Cheng-Ta Li }{Sep 2019 \textbf{--} Jun 2021}
         \resumeItemListStart
             % \resumeItem{Conducted brainwave data collection for a study involving patients diagnosed with major depressive disorder.}
+\ifindustry
+            \resumeItem{Built ML models on clinical EEG from major-depressive-disorder patients to predict treatment response.}
+\else
             \resumeItem{Collaborated with researchers and clinicians to identify patterns and trends in brainwave activity related to major depressive disorder.}
             \resumeItem{Utilized machine learning algorithms to develop predictive models based on real-world brainwave data.}
+\fi
         \resumeItemListEnd  
 
     
@@ -292,7 +296,11 @@ Chi-Sheng (Michael) Chen builds machine learning for physiological time series a
       % {Research Internship in Physics of Correlated MatterAdvisor: Dr. Alexander Komarek \& Dr. Li Zhao }{Jul 2018 \textbf{--} Sep 2018}
      {Research Internship, Advisor: Dr. Alexander Komarek \& Dr. Li Zhao }{Jul 2018 \textbf{--} Sep 2018}
         \resumeItemListStart
+\ifindustry
+            \resumeItem{Synthesis and characterization of candidate Co-based chalcogenide superconductors.}
+\else
             \resumeItem{Searching new possible unconventional superconductors  among Co-based quaternary chalcogenides with diamond like structure CuInCo\textsubscript{2}A\textsubscript{4} / AgInCo\textsubscript{2}A\textsubscript{4} (A = Te, Se, S).} 
+\fi
             % \resumeItem{Synthesized Ca\textsubscript{3}Co\textsubscript{2}O\textsubscript{6} via flux method, ReO\textsubscript{3} Rhenium Trioxide Transport.}
 
         \resumeItemListEnd
@@ -401,7 +409,9 @@ Chi-Sheng (Michael) Chen builds machine learning for physiological time series a
       
       \emph{Advisor: Prof. Dr. Cheng-Ta Li, MD \& Prof. Chung-Ping Chen}
         \resumeItemListStart
+\ifindustry\else
             \resumeItem{Machine learning application on non-stationary time series data.}
+\fi
             % \resumeItem{Master Thesis: "EEG Analysis for Prediction of Antidepressant Responses of Transcranial Magnetic Stimulation in Major Depressive Disorder Based on Attentional Convolution Time Series Prototypical Neural Network Model and Classical/Quantum Machine Learning Approaches." Advisor: Prof. Cheng-Ta Li \& Prof. Chung-Ping Chen}
             \resumeItem{The research EEG model for TMS pattern personalized prediction is currently being applied to real outpatient patients in the Precision Depression Intervention Center (PreDIC), Taipei Veterans General Hospital.}
             % \resumeItem{\textbf{Certificate of the 20th National Innovation Award, clinical research category.}}
@@ -417,10 +427,12 @@ Chi-Sheng (Michael) Chen builds machine learning for physiological time series a
       }{Sep 2015 \textbf{--} Jun 2019}
       
       \emph{Bachelor of Science in Interdisciplinary Science Degree Program        }
+\ifindustry\else
       \resumeItemListStart
             \resumeItem{Researching the oxide processing techniques. }
             \resumeItem{Researching the biomedical signal processing on traditional Chinese medicine data. }
         \resumeItemListEnd
+\fi
     
   \resumeSubHeadingListEnd
 
@@ -462,11 +474,7 @@ Chi-Sheng (Michael) Chen builds machine learning for physiological time series a
 
     \textbf{Chen, C.S., et al. ``Exploring the potential of QEEGNet for cross-task and cross-dataset electroencephalography encoding with quantum machine learning''}{ Journal of Signal Processing Systems 98, 5 (2026), https://doi.org/10.1007/s11265-025-01979-2 .} \\ \vspace{1pt}
 
-    Li, C.T., \textbf{Chen, C.S., et al. ``Prediction of antidepressant responses to non-invasive brain stimulation using frontal electroencephalogram signals: Cross-dataset comparisons and validation''}{ Journal of Affective Disorders (2023), https://doi.org/10.1016/j.jad.2023.08.059 . [2nd author; model deployed at Taipei VGH PreDIC]} \\ \vspace{1pt}
-
-    \textbf{Chen, C.S., Kuo, E.J. ``Quantum Adaptive Self-Attention for Quantum Transformer Models''}{ Quantum Science and Technology (2026), https://doi.org/10.1088/2058-9565/ae8b21 .} \\ \vspace{1pt}
-
-    \textbf{Chen, C.S., Brat, G.A. ``Measuring Browser Webcam Gaze Honestly: A Capture-Clock Methodology and Open Reference Implementation''}{ 4th MICCAI Workshop on Data Engineering in Medical Imaging (DEMI 2026), Spotlight talk, arXiv:2608.11566.} \\ \vspace{1pt}
+    Li, C.T., \textbf{Chen, C.S., et al. ``Prediction of antidepressant responses to non-invasive brain stimulation using frontal electroencephalogram signals: Cross-dataset comparisons and validation''}{ Journal of Affective Disorders (2023), https://doi.org/10.1016/j.jad.2023.08.059 . [2nd author; model deployed at Taipei VGH PreDIC]}
     }}
   \resumeSubHeadingListEnd
 

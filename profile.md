@@ -193,7 +193,7 @@ Elsevier Ain Shams Engineering Journal (ASEJ)
       % {Research Fellow}{Nov 2024 \textbf{--} Now}
       {Research Affiliate, Advisor: Prof. Dr. Gabriel Brat}{Nov 2024 \textbf{--} Now}
         \resumeItemListStart
-            \resumeItem{Developing real-time EMS triage pipeline using multimodal AI for trauma prediction.}
+            \resumeItem{Building a real-time EMS trauma-triage pipeline (ASR -> LLM-agent event extraction -> structured prediction) over 4M+ patient records using multimodal AI.}
             \resumeItem{Collaborating with surgeons on AI-assisted decision support systems.}
         \resumeItemListEnd
         
