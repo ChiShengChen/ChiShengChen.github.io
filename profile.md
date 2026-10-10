@@ -191,7 +191,7 @@ Elsevier Ain Shams Engineering Journal (ASEJ)
       {Harvard Medical School \& Beth Israel Deaconess Medical Center}{MA, USA}
       % {Harvard Medical School}{MA, USA}
       % {Research Fellow}{Nov 2024 \textbf{--} Now}
-      {Research Affiliate, Advisor: Prof. Dr. Gabriel Brat}{Nov 2024 \textbf{--} Now}
+      {Research Affiliate (primary appointment), Advisor: Prof. Dr. Gabriel Brat}{Nov 2024 \textbf{--} Now}
         \resumeItemListStart
             \resumeItem{Building a real-time EMS trauma-triage pipeline (ASR -> LLM-agent event extraction -> structured prediction) over 4M+ patient records using multimodal AI.}
             \resumeItem{Co-developed webcam-based open-surgical skill assessment (hand keypoint detection; CLINICCAI 2026 poster) and a capture-clock methodology for browser webcam gaze (DEMI 2026 spotlight talk).}
