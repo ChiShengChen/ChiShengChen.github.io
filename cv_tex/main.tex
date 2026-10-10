@@ -6,6 +6,12 @@
 
 \documentclass[letterpaper,10pt]{article}
 
+% Variant switch. Compiling main.tex alone gives the academic/PhD version.
+% cv_industry.tex defines \CVVARIANT before \input{main.tex} to get the industry version
+% (shorter publication list, compact service, extra Agent & LLM Engineering section).
+\newif\ifindustry
+\ifdefined\CVVARIANT\industrytrue\fi
+
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
@@ -143,7 +149,11 @@
 \begin{center}
     \textbf{\Huge \scshape Chi-Sheng (Michael) Chen (陳麒升)} \\ \vspace{1pt}
     % \small \textbf{AI in Medicine, Time Series, Multi-Modal Learning \textbar \ QML \textbar \  Digital IC Design \textbar \ IoT \textbar \ Blockchain} \\ \vspace{1pt}
+\ifindustry
+    \small \textbf{ML Researcher \& Engineer \textbar \ Clinical Biosignal ML \textbar \ LLM Agents \& Multi-Agent Systems \textbar \ Foundation Models} \\ \vspace{1pt}
+\else
     \small \textbf{Machine Learning for Physiological Time Series \textbar \ Clinical Biosignals \& Foundation Models \textbar \ EEG/BCI \textbar \ Quantum ML} \\ \vspace{1pt}
+\fi
     \small
     % \faMobile \hspace{.5pt} \href{tel:886966903173}{+886 966 903173}
     \faMobile \hspace{.5pt} \href{tel:+13512441084}{+1 (351) 244-1084}
@@ -183,7 +193,11 @@
 
 % Chi-Sheng (Michael) Chen is a biomedical AI researcher and entrepreneur specializing in EEG/time-series AI and Quantum Machine Learning, with 15+ peer-reviewed publications (JAD IF=6.5, Physical Review A/B/R, ICASSP, QCE). Beyond academia, he brings diverse industry experience: contributing to RLHF pipelines at OpenAI, co-founding Omnis Labs to build AI-driven DeFi risk management across AMM and perpetual DEX protocols, and directing quantitative trading systems at Bonanza Quant. His research addresses the fundamental challenge of building generalizable AI for non-stationary time-series data, with methods transferable across domains—from brain signals to financial markets. His EEG prediction models are clinically deployed at Taipei Veterans General Hospital, demonstrating real-world translational impact.
 
+\ifindustry
+Chi-Sheng (Michael) Chen is a machine-learning researcher and engineer working across clinical biosignal ML and LLM-agent systems. At Harvard/BIDMC he builds multimodal EMS trauma-triage pipelines (ASR $\rightarrow$ LLM-agent event extraction $\rightarrow$ structured prediction); his EEG-based depression-treatment model is in routine outpatient use at Taipei Veterans General Hospital. He has shipped LLM-agent systems (a US-stock research agent suite, a robotics workcell optimizer) and placed 3rd of 1,300+ teams at Berkeley RDI AgentX-AgentBeats 2026. Prior: Co-Founder/CTO of Neuro Industry (GCP MLOps on 10K+ EEG samples) and Digital IC R\&D Engineer at MediaTek. 49 publications, 491 citations (h-index 13); reviewer for NeurIPS, ICML (Gold Reviewer) and 40 journals.
+\else
 Chi-Sheng (Michael) Chen builds machine learning for physiological time series along one arc --- from representation, to foundation models, to clinical deployment. He develops interpretable, clinician-interrogable frequency-domain and geometric representations of clinical biosignals (FreqLens, SPD Token Transformer) and scales them into biosignal foundation models (Large Cognition Model). His EEG-based depression-treatment model is in routine outpatient use at Taipei Veterans General Hospital's Precision Depression Intervention Center (PreDIC), and at Harvard/BIDMC he builds multimodal EMS trauma-triage pipelines. He has 49 publications, 491 citations (h-index 13, i10-index 16), ICML 2026 Gold Reviewer recognition, and reviewer service across 40 journals (incl.\ TPAMI, NSR, npj Quantum Information). As a secondary methodological line, he explores hybrid quantum-classical architectures for sequence modeling (QASA, QEEGNet).
+\fi
 
 \section{Research \& Professional Experience}
   \vspace{3pt}
@@ -348,6 +362,21 @@ Chi-Sheng (Michael) Chen builds machine learning for physiological time series a
         
   % \resumeSubHeadingListEnd
 
+\ifindustry
+%----------- AGENT / LLM ENGINEERING (industry variant only) -----------
+\section{Agent \& LLM Engineering}
+  \vspace{2pt}
+  \resumeSubHeadingListStart
+    \small{\item{
+    \textbf{Berkeley RDI AgentX-AgentBeats --- 3rd Place / 1,300+ teams (2026).} \textit{MadGAA}, a multi-agent OSCE medical evaluation system: role-specialized agents (examiner, patient, judge) + verifiable scoring rubric (RAG + tool use + verifier). \\ \vspace{1pt}
+    \textbf{US-stock LLM agent suite (deployed).} Browser agent as an explicit PLAN$\rightarrow$LOCATE$\rightarrow$ACT$\rightarrow$VERIFY state machine with fault-injection recovery; layered SEC 10-K extractor; 22 research agents + 11 placebo controls with lookahead-free backtests, per-provider cost ledger, and eval dashboards. \\ \vspace{1pt}
+    \textbf{Robotics Workcell Optimizer (live).} NL $\rightarrow$ spec $\rightarrow$ robot selection $\rightarrow$ 2D layout $\rightarrow$ 3D preview via multi-LLM abstraction (Claude/OpenAI/Gemini, validation-repair loop) + OR-Tools CP-SAT; ISO 13855 safety as inviolable hard constraints. \\ \vspace{1pt}
+    \textbf{Also:} \textit{flyhypo} (connectome + PubMed + LLM $\rightarrow$ grounded, falsifiable neuron hypotheses); \textit{paper-evidence} (verbatim-quote gate + cross-family judge to block LLM hallucination); two live NYCU RAG physics tutors (Next.js + Gemini + pgvector). \\ \vspace{1pt}
+    \textbf{Stack:} LangChain/LangGraph, ReAct \& function calling, multi-agent orchestration, vLLM, LoRA/QLoRA, SFT/DPO/RLHF, RAG (pgvector/FAISS/Qdrant), OR-Tools, OpenAI/Anthropic/Gemini SDKs.
+    }}
+  \resumeSubHeadingListEnd
+\fi
+
 %----------- EDUCATION -----------
 
 \section{Education}
@@ -416,100 +445,117 @@ Chi-Sheng (Michael) Chen builds machine learning for physiological time series a
 %----------- Publication -----------
 
 % \section{Selected Publications (All 14 peer-reviewed, 20 in submission/preprint   (\href{https://scholar.google.com.tw/citations?user=5XHD7nkAAAAJ&hl=zh-TW&fbclid=IwAR0G4vwwFx9TO00pSx0BiX8r_UK3HcW08gh259uSTqR4ziYBsVdMuL9OQQQ}{publication}))}
-\section{Selected Publications (491 cites, h-index 13, i10-index 16)}
+\ifindustry
+\section{Selected Publications \hfill \normalfont\small (49 total, 491 cites, h-index 13 --- full list on \href{https://scholar.google.com.tw/citations?user=5XHD7nkAAAAJ}{Google Scholar})}
   \vspace{2pt}
-  [Peer-Reviewed - First/Co-first Author]
+   [First author unless noted]
   \resumeSubHeadingListStart
     \small{\item{
 
-    \textit{[Journal]} \\ \vspace{1pt}
+    \textbf{Chen, C.S., et al. ``FreqLens: Interpretable Frequency Attribution for Time Series Forecasting''}{ \textit{Under review}, ICLR 2027; arXiv:2602.08768.} \\ \vspace{1pt}
+
+    \textbf{Chen, C.S., et al. ``Large Cognition Model: Towards Pretrained EEG Foundation Model''}{ arXiv preprint (2025), arXiv:2502.17464 --- \textbf{29 citations}.} \\ \vspace{1pt}
+
+    \textbf{Chen, C.S., Wei, C.S. ``Mind's Eye: Image Recognition by EEG via Multimodal Similarity-Keeping Contrastive Learning''}{ arXiv preprint (2024), arXiv:2406.16910 --- \textbf{32 citations}.} \\ \vspace{1pt}
+
+    \textbf{Chen, C.S., et al. ``Exploring the Potential of Electroencephalography Signal–Based Image Generation Using Diffusion Models: Integrative Framework Combining Mixed Methods and Multimodal Analysis''}{ JMIR Medical Informatics (2025), https://doi.org/10.2196/72027 .} \\ \vspace{1pt}
 
     \textbf{Chen, C.S., et al. ``Exploring the potential of QEEGNet for cross-task and cross-dataset electroencephalography encoding with quantum machine learning''}{ Journal of Signal Processing Systems 98, 5 (2026), https://doi.org/10.1007/s11265-025-01979-2 .} \\ \vspace{1pt}
 
+    Li, C.T., \textbf{Chen, C.S., et al. ``Prediction of antidepressant responses to non-invasive brain stimulation using frontal electroencephalogram signals: Cross-dataset comparisons and validation''}{ Journal of Affective Disorders (2023), https://doi.org/10.1016/j.jad.2023.08.059 . [2nd author; model deployed at Taipei VGH PreDIC]} \\ \vspace{1pt}
+
+    \textbf{Chen, C.S., Kuo, E.J. ``Quantum Adaptive Self-Attention for Quantum Transformer Models''}{ Quantum Science and Technology (2026), https://doi.org/10.1088/2058-9565/ae8b21 .} \\ \vspace{1pt}
+
+    \textbf{Chen, C.S., Brat, G.A. ``Measuring Browser Webcam Gaze Honestly: A Capture-Clock Methodology and Open Reference Implementation''}{ 4th MICCAI Workshop on Data Engineering in Medical Imaging (DEMI 2026), Spotlight talk, arXiv:2608.11566.} \\ \vspace{1pt}
+    }}
+  \resumeSubHeadingListEnd
+
+\else
+\section{Selected Publications (491 cites, h-index 13, i10-index 16)}
+  \vspace{2pt}
+  \small{First author unless noted. Peer-reviewed unless marked \textit{Under review} or arXiv preprint.}
+
+   [Physiological Time Series \& Clinical Biosignals]
+  \resumeSubHeadingListStart
+    \small{\item{
+
+    \textbf{Chen, C.S., et al. ``FreqLens: Interpretable Frequency Attribution for Time Series Forecasting''}{ \textit{Under review}, ICLR 2027; arXiv:2602.08768.} \\ \vspace{1pt}
+
+    \textbf{Chen, C.S., et al. ``A Unified SPD Token Transformer Framework for EEG Classification: Systematic Comparison of Geometric Embeddings''}{ \textit{Under review}, Neurocomputing (Elsevier), 2026; arXiv:2601.21521.} \\ \vspace{1pt}
+
+    \textbf{Chen, C.S., et al. ``Large Cognition Model: Towards Pretrained EEG Foundation Model''}{ arXiv preprint (2025), arXiv:2502.17464 --- \textbf{29 citations}.} \\ \vspace{1pt}
+
+    \textbf{Chen, C.S., Wei, C.S. ``Mind's Eye: Image Recognition by EEG via Multimodal Similarity-Keeping Contrastive Learning''}{ arXiv preprint (2024), arXiv:2406.16910 --- \textbf{32 citations}.} \\ \vspace{1pt}
+
+    \textbf{Chen, C.S., et al. ``Exploring the Potential of Electroencephalography Signal–Based Image Generation Using Diffusion Models: Integrative Framework Combining Mixed Methods and Multimodal Analysis''}{ JMIR Medical Informatics (2025), https://doi.org/10.2196/72027 .} \\ \vspace{1pt}
+
+    \textbf{Chen, C.S., et al. ``Exploring the potential of QEEGNet for cross-task and cross-dataset electroencephalography encoding with quantum machine learning''}{ Journal of Signal Processing Systems 98, 5 (2026), https://doi.org/10.1007/s11265-025-01979-2 .} \\ \vspace{1pt}
+
+    \textbf{Chen, C.S., et al. ``QEEGNet: Quantum Machine Learning for Enhanced Electroencephalography Encoding''}{ IEEE International Workshop on Signal Processing Systems (SiPS) 2024, doi: 10.1109/SiPS62058.2024.00035, arXiv:2407.19214; poster at QTML 2024, Melbourne (non-archival).} \\ \vspace{1pt}
+
+    \textbf{Chen, C.S., Brat, G.A. ``Measuring Browser Webcam Gaze Honestly: A Capture-Clock Methodology and Open Reference Implementation''}{ 4th MICCAI Workshop on Data Engineering in Medical Imaging (DEMI 2026), Spotlight talk, arXiv:2608.11566.} \\ \vspace{1pt}
+
+    Li, C.T., \textbf{Chen, C.S., et al. ``Prediction of antidepressant responses to non-invasive brain stimulation using frontal electroencephalogram signals: Cross-dataset comparisons and validation''}{ Journal of Affective Disorders (2023), https://doi.org/10.1016/j.jad.2023.08.059 . [2nd author; model deployed at Taipei VGH PreDIC]} \\ \vspace{1pt}
+
+    }}
+  \resumeSubHeadingListEnd
+
+   [Quantum Machine Learning]
+  \resumeSubHeadingListStart
+    \small{\item{
 
     \textbf{Chen, C.S., Kuo, E.J. ``Quantum Adaptive Self-Attention for Quantum Transformer Models''}{ Quantum Science and Technology (2026), https://doi.org/10.1088/2058-9565/ae8b21 .} \\ \vspace{1pt}
 
     \textbf{Chen, C.S., et al. ``Unraveling quantum environments: Transformer-assisted learning in Lindblad dynamics''}{ Physical Review A (2025), https://doi.org/10.1103/gsxk-45mk .} \\ \vspace{1pt}
 
-    \textbf{Chen, C.S., et al. ``Exploring the Potential of Electroencephalography Signal–Based Image Generation Using Diffusion Models: Integrative Framework Combining Mixed Methods and Multimodal Analysis''}{ JMIR MI (2025), https://doi.org/10.2196/72027 .} \\ \vspace{1pt}
+    \textbf{Chen, C.S., et al. ``Quantum Reinforcement Learning-Guided Diffusion Model for Image Synthesis via Hybrid Quantum-Classical Generative Model Architectures''}{ 2026 IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP), doi: 10.1109/ICASSP55912.2026.11461991 .} \\ \vspace{1pt}
 
-    \textbf{Chen, C.S., et al. ``Improving fine-grained food classification using deep residual learning and selective state space models''}{ PloS one (2025), https://doi.org/10.1371/journal.pone.0322695 .}  \\ \vspace{1pt}
+    \textbf{Chen, C.S., et al. ``Quantum Adaptive Self-Attention for Financial Rebalancing: An Empirical Study on Automated Market Makers in Decentralized Finance''}{ 2026 IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP), doi: 10.1109/ICASSP55912.2026.11460972 .} \\ \vspace{1pt}
 
-    % \textbf{Device Failures and Adverse Events Associated With Rhinolaryngoscopes: Analysis of the Manufacturer and User Facility Device Experience (MAUDE) Database.}{ JMIR Human Factors (2025), IF=2.6, https://humanfactors.jmir.org/2025/1/e67036 .}  \\ \vspace{1pt}
-
-    \textit{[Conference]} \\ \vspace{1pt}
-
-    \textbf{Chen, C.S., et al. ``Quantum Reinforcement Learning-Guided Diffusion Model for Image Synthesis via Hybrid Quantum-Classical Generative Model Architectures''}{ 2026 IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP), doi: 10.1109/ICASSP55912.2026.11461991 .}  \\ \vspace{1pt}
-
-    \textbf{Chen, C.S., et al. ``Quantum Adaptive Self-Attention for Financial Rebalancing: An Empirical Study on Automated Market Makers in Decentralized Finance''}{ 2026 IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP), doi: 10.1109/ICASSP55912.2026.11460972 .}  \\ \vspace{1pt}
-
-
-    \textbf{Chen, C.S., et al. ``Quantum Multimodal Contrastive Learning Framework''}{ 2025 IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP), doi: 10.1109/ICASSP49660.2025.10889504, arXiv:2408.13919 .}  \\ \vspace{1pt}
-
-    \textbf{Chen, C.S., et al. ``QEEGNet: Quantum Machine Learning for Enhanced Electroencephalography Encoding''}{ IEEE International Workshop on Signal Processing Systems (SiPS) 2024, doi: 10.1109/SiPS62058.2024.00035, arXiv:2407.19214; poster at QTML 2024, Melbourne (non-archival).}  \\ \vspace{1pt}
-
-    \textbf{Chen, C.S., Liu, H.Y. ``Predicting Poets' Origins from Verse: A Computational Analysis of Regional Linguistic Fingerprints in the Complete Tang Poems''}{ Digital Humanities 2026 (DH2026), Alliance of Digital Humanities Organizations (ADHO), Short Paper.} \\ \vspace{1pt}
-
-    \textit{[Workshop]} \\ \vspace{1pt}
-
-    \textbf{Chen, C.S., Brat, G.A. ``Measuring Browser Webcam Gaze Honestly: A Capture-Clock Methodology and Open Reference Implementation''}{ 4th MICCAI Workshop on Data Engineering in Medical Imaging (DEMI 2026), Spotlight talk, arXiv:2608.11566.} \\ \vspace{1pt}
+    \textbf{Chen, C.S., et al. ``Quantum Multimodal Contrastive Learning Framework''}{ 2025 IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP), doi: 10.1109/ICASSP49660.2025.10889504, arXiv:2408.13919 .} \\ \vspace{1pt}
 
     \textbf{Chen, C.S., et al. ``Q-DPTS: Quantum Differentially Private Time Series Forecasting via Variational Quantum Circuits''}{ IEEE GLOBECOM Workshop 2025, arXiv:2508.05036.} \\ \vspace{1pt}
 
-    \textbf{Chen, C.S., et al. ``Quantum Reinforcement Learning Trading Agent for Sector Rotation in the Taiwan Stock Market''}{ IEEE QCE QCRL Workshop 2025, arXiv:2506.20930.}
+    \textbf{Chen, C.S., et al. ``Quantum Reinforcement Learning Trading Agent for Sector Rotation in the Taiwan Stock Market''}{ IEEE QCE QCRL Workshop 2025, arXiv:2506.20930.} \\ \vspace{1pt}
 
-   }
-   }
+    }}
   \resumeSubHeadingListEnd
 
-   [Peer-Reviewed - Contributing Author]
-   \resumeSubHeadingListStart
+   [Computer Vision, Digital Humanities \& Physics]
+  \resumeSubHeadingListStart
     \small{\item{
 
-    Li, C.T., \textbf {Chen, C.S., et al. ``Prediction of antidepressant responses to non-invasive brain stimulation using frontal electroencephalogram signals: Cross-dataset comparisons and validation''}{  Journal of Affective Disorders (2023), https://doi.org/10.1016/j.jad.2023.08.059 .} \\ \vspace{1pt}
+    \textbf{Chen, C.S., et al. ``Improving fine-grained food classification using deep residual learning and selective state space models''}{ PLoS ONE (2025), https://doi.org/10.1371/journal.pone.0322695 .} \\ \vspace{1pt}
 
-    Lai, S.L., \textbf{Chen, C.S., et al. ``Intraoperative Detection of Surgical Gauze Using Deep Convolutional Neural Network''}{  Ann Biomed Eng 51, 352–362 (2023), https://doi.org/10.1007/s10439-022-03033-9 .} \\ \vspace{1pt}
+    \textbf{Chen, C.S., Liu, H.Y. ``Predicting Poets' Origins from Verse: A Computational Analysis of Regional Linguistic Fingerprints in the Complete Tang Poems''}{ Digital Humanities 2026 (DH2026), Alliance of Digital Humanities Organizations (ADHO), Short Paper.} \\ \vspace{1pt}
 
-    Lai, S.L., Chou, Y.C., \textbf{Chen, C.S., et al. ``Detection and tracking of a gauze sponge in minimally invasive surgery using a YOLO and R-CNN based model''} {Medical \& Biological Engineering \& Computing (2025), https://doi.org/10.1007/s11517-025-03471-2 .}\\ \vspace{1pt}
+    Lai, S.L., \textbf{Chen, C.S., et al. ``Intraoperative Detection of Surgical Gauze Using Deep Convolutional Neural Network''}{ Ann Biomed Eng 51, 352–362 (2023), https://doi.org/10.1007/s10439-022-03033-9 . [2nd author]} \\ \vspace{1pt}
 
-    Liu, H.Y., \textbf{Chen, C.S.} ``Gendered Language in Tang Poetry: A Sociolinguistic and Digital Humanities Analysis Based on the Quan Tang Shi.'' {16th International Conference of Digital Archives and Digital Humanities (DADH 2025).}\\ \vspace{1pt}
-    
-   Takegami D., et al. \textbf{``Direct imaging of valence orbitals using hard x-ray photoelectron spectroscopy''} {Phys. Rev. Res. 4, 033108 (2022), https://doi.org/10.1103/PhysRevResearch.4.033108 .}\\ \vspace{1pt}
-    
+    Lai, S.L., Chou, Y.C., \textbf{Chen, C.S., et al. ``Detection and tracking of a gauze sponge in minimally invasive surgery using a YOLO and R-CNN based model''}{ Medical \& Biological Engineering \& Computing (2025), https://doi.org/10.1007/s11517-025-03471-2 . [3rd author]} \\ \vspace{1pt}
+
+    Liu, H.Y., \textbf{Chen, C.S.} ``Gendered Language in Tang Poetry: A Sociolinguistic and Digital Humanities Analysis Based on the Quan Tang Shi.'' {16th International Conference of Digital Archives and Digital Humanities (DADH 2025).} \\ \vspace{1pt}
+
+    Takegami D., et al. \textbf{``Direct imaging of valence orbitals using hard x-ray photoelectron spectroscopy''} {Phys. Rev. Res. 4, 033108 (2022), https://doi.org/10.1103/PhysRevResearch.4.033108 .} \\ \vspace{1pt}
+
     Falke J., et al. \textbf{``Electronic structure of the metallic oxide ReO\textsubscript{3}''} {Phys. Rev. B 103, 115125 (2021), https://doi.org/10.1103/PhysRevB.103.115125 .}
-    
-    }
-   }
-  \resumeSubHeadingListEnd
-
-  
-    [Under Review]
-\resumeSubHeadingListStart
-    \small{\item{
-
-    \textbf{Chen, C.S., et al. ``FreqLens: Interpretable Frequency Attribution for Time Series Forecasting''}{ \textit{Under review}, ICLR 2027; arXiv:2602.08768.} \\ \vspace{1pt}
-
-    \textbf{Chen, C.S., et al. ``A Unified SPD Token Transformer Framework for EEG Classification: Systematic Comparison of Geometric Embeddings''}{ \textit{Under review}, Neurocomputing (Elsevier), 2026; arXiv:2601.21521.}
-
-    }
-   }
-  \resumeSubHeadingListEnd
-
-   [Selected Preprints]
-\resumeSubHeadingListStart
-    \small{\item{
-
-    \textbf{Chen, C.S., Wei, C.S. ``Mind's Eye: Image Recognition by EEG via Multimodal Similarity-Keeping Contrastive Learning''}{ arXiv preprint (2024), arXiv:2406.16910 --- \textbf{32 citations}.}  \\ \vspace{1pt}
-
-    \textbf{Chen, C.S., et al. ``Large Cognition Model: Towards Pretrained EEG Foundation Model''}{ arXiv preprint (2025), arXiv:2502.17464 --- \textbf{29 citations}.}  \\ \vspace{1pt}
 
     Plus 18 further preprints across quantum machine learning, time-series forecasting and medical imaging (full list: \href{https://scholar.google.com.tw/citations?user=5XHD7nkAAAAJ}{Google Scholar}).
-
-    }
-   }
+    }}
   \resumeSubHeadingListEnd
 
+\fi
 
+\ifindustry
+\section{Invited Talks \& Presentations}
+    \vspace{2pt}
+  \resumeSubHeadingListStart
+    \small{\item{
+    \textbf{NVIDIA GTC 2026} (Top 8 Finalist, two posters); \textbf{MICCAI 2026} --- DEMI spotlight talk and CLINICCAI poster; \textbf{IEEE ICASSP 2026} (two orals) and \textbf{2025} (oral); \textbf{IEEE Quantum Week 2025}; \textbf{DH2026} (two short papers); \textbf{QTML 2024} (poster). \\ \vspace{1pt}
+    \textbf{Guest lectures} at NYCU ECE (Wearable Chip Design), NTU CSIE (Advanced Compilers) and NYCU Maker Club; invited seminar, Dept.\ of Applied Physics, Tunghai University (2025--2026).
+    }}
+  \resumeSubHeadingListEnd
+
+\else
 \section{Invited Talks \& Presentations}
     \vspace{2pt}
   \resumeSubHeadingListStart
@@ -542,6 +588,19 @@ Chi-Sheng (Michael) Chen builds machine learning for physiological time series a
     }}
   \resumeSubHeadingListEnd
 
+\fi
+
+\ifindustry
+\section{Professional Service}
+    \vspace{2pt}
+  \resumeSubHeadingListStart
+    \small{\item{
+    \textbf{Conference Reviewer} (2026--2027): NeurIPS, ICML (Gold Reviewer --- top tier), AAAI, KDD, MICCAI, ICASSP, NLDL 2027, IEEE QAI 2026. \textbf{Program Committee:} QNRL Workshop @ IEEE WCCI 2026. \\ \vspace{1pt}
+    \textbf{Journal Reviewer} (2025--present): 40 journals incl.\ TPAMI, TNNLS, TASLP, JBHI, Neural Networks, npj Quantum Information, Scientific Reports; \textbf{IOP Trusted Reviewer} (2026).
+    }}
+  \resumeSubHeadingListEnd
+
+\else
 \section{Professional Service}
     \vspace{2pt}
   \resumeSubHeadingListStart
@@ -575,6 +634,8 @@ Chi-Sheng (Michael) Chen builds machine learning for physiological time series a
     (full list: \href{https://chishengchen.github.io/\#service}{chishengchen.github.io}).
     }}
   \resumeSubHeadingListEnd
+
+\fi
 
 %----------- AWARDS & ACHIEVEMENT-----------
 
