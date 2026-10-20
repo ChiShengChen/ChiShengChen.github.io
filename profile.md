@@ -17,7 +17,7 @@ NeurIPS 2026, ICML 2026 (Gold Reviewer — top tier), AAAI 2027, KDD 2026, MICCA
 Program Committee
 QNRL Workshop @ IEEE WCCI 2026
 
-Journal Reviewer (2025–present) — 40 journals
+Journal Reviewer (2025–present) — 41 journals
 Oxford University Press National Science Review (NSR)
 Oxford University Press Digital Scholarship in the Humanities (DSH)
 IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)
@@ -58,6 +58,7 @@ Frontiers in Surgery
 Journal of Medical Internet Research (JMIR)
 Elsevier Neural Networks
 Elsevier Ain Shams Engineering Journal (ASEJ)
+IET Quantum Communication
 
 4. Publications
  [Peer-Reviewed - First/Co-first Author]
