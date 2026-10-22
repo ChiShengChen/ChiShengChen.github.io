@@ -11,6 +11,11 @@
 % (shorter publication list, compact service, extra Agent & LLM Engineering section).
 \newif\ifindustry
 \ifdefined\CVVARIANT\industrytrue\fi
+% cv_imperial.tex (gitignored: holds the private phone/IELTS/residence macros) defines \CVIMPERIAL to get the academic version adapted for the Imperial
+% application: A4, Taiwan-based contact line, Education first, IELTS, no Omnis APR bullet.
+\newif\ifimperial
+\ifdefined\CVIMPERIAL\imperialtrue\fi
+\ifimperial\setlength{\paperwidth}{210mm}\setlength{\paperheight}{297mm}\fi
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -132,6 +137,11 @@
 
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
 
+% Unfilled facts in the Imperial variant show up in red so they cannot ship by accident
+\newcommand{\TODO}[1]{\textcolor{red}{\textbf{[TODO: #1]}}}
+% UK convention drops the German-style double title
+\ifimperial\def\ProfDr{Prof.}\else\def\ProfDr{Prof. Dr.}\fi
+
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
@@ -157,8 +167,12 @@
     \small \textbf{Machine Learning for Physiological Time Series \textbar \ Clinical Biosignals \& Foundation Models \textbar \ EEG/BCI \textbar \ Quantum ML} \\ \vspace{1pt}
 \fi
     \small
+\ifimperial
+    \faMobile \hspace{.5pt} \ImperialPhones{}
+\else
     % \faMobile \hspace{.5pt} \href{tel:886966903173}{+886 966 903173}
     \faMobile \hspace{.5pt} \href{tel:+13512441084}{+1 (351) 244-1084}
+\fi
     % ||
     \textbar \ 
     \faAt \hspace{.5pt} \href{mailto:m50816m50816@gmail.com}{m50816m50816@gmail.com}
@@ -176,7 +190,11 @@
      % \faMapMarker \hspace{.5pt} \href{https://www.google.com/maps/place/Bogazici+University+North+Campus/@41.0863067,29.0441352,15z/data=!4m5!3m4!1s0x0:0x9d2497b07c8edb2f!8m2!3d41.0863067!4d29.0441352}{Istanbul, Turkey}
     % \faMapMarker \hspace{.5pt} 
     % \href{}{Taoyuan, Taiwan}
+\ifimperial
+    \small Nationality: Taiwan \textbar \ Based in Taiwan; Research Affiliate, Harvard Medical School / BIDMC \\ \vspace{1pt}
+\else
     \small Nationality: Taiwan \textbar \ Based in Cambridge, MA, USA \\ \vspace{1pt}
+\fi
 \end{center}
 \end{CJK*}
 
@@ -196,20 +214,79 @@
 % Chi-Sheng (Michael) Chen is a biomedical AI researcher and entrepreneur specializing in EEG/time-series AI and Quantum Machine Learning, with 15+ peer-reviewed publications (JAD IF=6.5, Physical Review A/B/R, ICASSP, QCE). Beyond academia, he brings diverse industry experience: contributing to RLHF pipelines at OpenAI, co-founding Omnis Labs to build AI-driven DeFi risk management across AMM and perpetual DEX protocols, and directing quantitative trading systems at Bonanza Quant. His research addresses the fundamental challenge of building generalizable AI for non-stationary time-series data, with methods transferable across domains—from brain signals to financial markets. His EEG prediction models are clinically deployed at Taipei Veterans General Hospital, demonstrating real-world translational impact.
 
 \ifindustry
-Chi-Sheng (Michael) Chen is a machine-learning researcher and engineer working across clinical biosignal ML and LLM-agent systems. At Harvard/BIDMC he builds multimodal EMS trauma-triage pipelines (ASR $\rightarrow$ LLM-agent event extraction $\rightarrow$ structured prediction) over 4M+ patient records; his EEG-based depression-treatment model is in routine outpatient use at Taipei Veterans General Hospital. He has shipped LLM-agent systems (a US-stock research agent suite, a robotics workcell optimizer), led LLM token-efficiency research for a quant-trading firm, and placed 3rd of 1,300+ teams at Berkeley RDI AgentX-AgentBeats 2026. Prior: Co-Founder/CTO of Neuro Industry (GCP MLOps on 10K+ EEG samples) and Digital IC R\&D Engineer at MediaTek. 49 publications, 491 citations (h-index 13); reviewer for NeurIPS, ICML (Gold Reviewer) and 43 journals.
+Chi-Sheng (Michael) Chen is a machine-learning researcher and engineer working across clinical biosignal ML and LLM-agent systems. At Harvard/BIDMC he builds multimodal EMS trauma-triage pipelines (ASR $\rightarrow$ LLM-agent event extraction $\rightarrow$ structured prediction) over 4M+ patient records; his EEG-based depression-treatment model is in routine outpatient use at Taipei Veterans General Hospital. He has shipped LLM-agent systems (a US-stock research agent suite, a robotics workcell optimizer), led LLM token-efficiency research for a quant-trading firm, and placed 3rd of 1,300+ teams at Berkeley RDI AgentX-AgentBeats 2026. Prior: Co-Founder/CTO of Neuro Industry (GCP MLOps on 10K+ EEG samples) and Digital IC R\&D Engineer at MediaTek. 49 publications, 500 citations (h-index 13); reviewer for NeurIPS, ICML (Gold Reviewer) and 43 journals.
 \else
-Chi-Sheng (Michael) Chen builds machine learning for physiological time series along one arc --- from representation, to foundation models, to clinical deployment. He develops interpretable, clinician-interrogable frequency-domain and geometric representations of clinical biosignals (FreqLens, SPD Token Transformer) and scales them into biosignal foundation models (Large Cognition Model). His EEG-based depression-treatment model is in routine outpatient use at Taipei Veterans General Hospital's Precision Depression Intervention Center (PreDIC), and at Harvard/BIDMC he builds multimodal EMS trauma-triage pipelines. He has 49 publications, 491 citations (h-index 13, i10-index 16), ICML 2026 Gold Reviewer recognition, and reviewer service across 43 journals (incl.\ TPAMI, NSR, npj Quantum Information). As a secondary methodological line, he explores hybrid quantum-classical architectures for sequence modeling (QASA, QEEGNet).
+Chi-Sheng (Michael) Chen builds machine learning for physiological time series along one arc --- from representation, to foundation models, to clinical deployment. He develops interpretable, clinician-interrogable frequency-domain and geometric representations of clinical biosignals (FreqLens, SPD Token Transformer) and scales them into biosignal foundation models (Large Cognition Model). His EEG-based depression-treatment model is in routine outpatient use at Taipei Veterans General Hospital's Precision Depression Intervention Center (PreDIC), and at Harvard/BIDMC he builds multimodal EMS trauma-triage pipelines. He has 49 publications, 500 citations (h-index 13, i10-index 16), ICML 2026 Gold Reviewer recognition, and reviewer service across 43 journals (incl.\ TPAMI, NSR, npj Quantum Information). As a secondary methodological line, he explores hybrid quantum-classical architectures for sequence modeling (QASA, QEEGNet).
 \fi
+
+%----------- EDUCATION -----------
+% Wrapped in a macro so the Imperial variant can print it first (UK convention)
+\newcommand{\EducationSection}{
+\section{Education}
+  \vspace{3pt}
+  \resumeSubHeadingListStart
+    % \resumeEducationHeading
+    
+    % \resumeSubheading
+    %   {Harvard University
+    %   % \normalfont{(Admission rate: 0.85\%)}
+    %   }{Cambridge, USA}
+    %   {PhD of Engineering in Bioinformatics
+    %   % \textbf{GPA: 97.03/100}
+    %   }{in progress}
+      
+      
+    \resumeSubheading
+      {National Taiwan University (NTU)
+      % \normalfont{(Admission rate: 0.09\%)}
+      }{Taipei, Taiwan}
+      {Master of Science in Biomedical Electronics and Bioinformatics}{Sep 2019 \textbf{--} Jun 2021}
+      
+      \emph{Advisor: \ProfDr{} Cheng-Ta Li, MD \& Prof. Chung-Ping Chen}
+        \resumeItemListStart
+\ifindustry\else
+            \resumeItem{Machine learning application on non-stationary time series data.}
+\fi
+            % \resumeItem{Master Thesis: "EEG Analysis for Prediction of Antidepressant Responses of Transcranial Magnetic Stimulation in Major Depressive Disorder Based on Attentional Convolution Time Series Prototypical Neural Network Model and Classical/Quantum Machine Learning Approaches." Advisor: Prof. Cheng-Ta Li \& Prof. Chung-Ping Chen}
+            \resumeItem{The research EEG model for TMS pattern personalized prediction is currently being applied to real outpatient patients in the Precision Depression Intervention Center (PreDIC), Taipei Veterans General Hospital.}
+            % \resumeItem{\textbf{Certificate of the 20th National Innovation Award, clinical research category.}}
+            \resumeItem{Master's thesis: ``EEG Analysis for Prediction of Antidepressant Responses of Transcranial Magnetic Stimulation in Major Depressive Disorder Based on Attentional Convolution Time Series Prototypical Neural Network Model and Classical/Quantum Machine Learning Approaches.''}
+        \resumeItemListEnd
+      
+    
+    \resumeSubheading
+      {National Chiao Tung University (NCTU) 
+      % \normalfont{(Admission rate: 0.85\%)}
+      }{Hsinchu, Taiwan}
+      {Bachelor of Engineering in Electrophysics
+      % \textbf{GPA: 97.03/100}
+      }{Sep 2015 \textbf{--} Jun 2019}
+      
+      \emph{Bachelor of Science in Interdisciplinary Science Degree Program        }
+\ifindustry\else
+      \resumeItemListStart
+            \resumeItem{Researching the oxide processing techniques. }
+            \resumeItem{Researching the biomedical signal processing on traditional Chinese medicine data. }
+        \resumeItemListEnd
+\fi
+    
+  \resumeSubHeadingListEnd
+}
+
+\ifimperial\EducationSection\fi
 
 \section{Research \& Professional Experience}
   \vspace{3pt}
   \resumeSubHeadingListStart
    \resumeSubheading
-      {Harvard Medical School \& Beth Israel Deaconess Medical Center}{MA, USA}
+      {Harvard Medical School \& Beth Israel Deaconess Medical Center}{\ifimperial Boston, MA, USA\else MA, USA\fi}
       % {Harvard Medical School}{MA, USA}
       % {Research Fellow}{Nov 2024 \textbf{--} Present}
-      {Research Affiliate (primary appointment), Advisor: Prof. Dr. Gabriel Brat}{Nov 2024 \textbf{--} Present}
+      {Research Affiliate (primary appointment), Advisor: \ifimperial Dr Gabriel Brat\else \ProfDr{} Gabriel Brat\fi}{Nov 2024 \textbf{--} Present}
         \resumeItemListStart
+\ifimperial
+            \resumeItem{\ImperialHarvardNote}
+\fi
             \resumeItem{Building a real-time EMS trauma-triage pipeline (ASR $\rightarrow$ LLM-agent event extraction $\rightarrow$ structured prediction) over \textbf{4M+ patient records} using multimodal AI.}
             \resumeItem{Co-developed webcam-based open-surgical skill assessment (hand keypoint detection; CLINICCAI 2026 poster) and a capture-clock methodology for browser webcam gaze (DEMI 2026 spotlight talk).}
         \resumeItemListEnd
@@ -226,7 +303,9 @@ Chi-Sheng (Michael) Chen builds machine learning for physiological time series a
       {Co-Founder}{Sep 2024 \textbf{--} May 2026}
         \resumeItemListStart
             \resumeItem{AI-driven DeFi liquidity positioning protocol with automated market maker (AMM) strategies and backtesting systems.}
+\ifimperial\else
             \resumeItem{Achieved 50\%--120\% base fee APR on WBTC/USDC and ETH/USDC pairs (Katana on SushiSwap) using time-series model-driven AMM strategies.}
+\fi
         \resumeItemListEnd
         
     % \resumeSubheading
@@ -272,7 +351,7 @@ Chi-Sheng (Michael) Chen builds machine learning for physiological time series a
         
     \resumeSubheading
       {Department of Psychiatry, Taipei Veterans General Hospital}{Taipei, Taiwan}
-      {Research Assistant, Advisor: Prof. Dr. Cheng-Ta Li }{Sep 2019 \textbf{--} Jun 2021}
+      {Research Assistant, Advisor: \ProfDr{} Cheng-Ta Li }{Sep 2019 \textbf{--} Jun 2021}
         \resumeItemListStart
             % \resumeItem{Conducted brainwave data collection for a study involving patients diagnosed with major depressive disorder.}
 \ifindustry
@@ -387,57 +466,7 @@ Chi-Sheng (Michael) Chen builds machine learning for physiological time series a
   \resumeSubHeadingListEnd
 \fi
 
-%----------- EDUCATION -----------
-
-\section{Education}
-  \vspace{3pt}
-  \resumeSubHeadingListStart
-    % \resumeEducationHeading
-    
-    % \resumeSubheading
-    %   {Harvard University
-    %   % \normalfont{(Admission rate: 0.85\%)}
-    %   }{Cambridge, USA}
-    %   {PhD of Engineering in Bioinformatics
-    %   % \textbf{GPA: 97.03/100}
-    %   }{in progress}
-      
-      
-    \resumeSubheading
-      {National Taiwan University (NTU)
-      % \normalfont{(Admission rate: 0.09\%)}
-      }{Taipei, Taiwan}
-      {Master of Science in Biomedical Electronics and Bioinformatics}{Sep 2019 \textbf{--} Jun 2021}
-      
-      \emph{Advisor: Prof. Dr. Cheng-Ta Li, MD \& Prof. Chung-Ping Chen}
-        \resumeItemListStart
-\ifindustry\else
-            \resumeItem{Machine learning application on non-stationary time series data.}
-\fi
-            % \resumeItem{Master Thesis: "EEG Analysis for Prediction of Antidepressant Responses of Transcranial Magnetic Stimulation in Major Depressive Disorder Based on Attentional Convolution Time Series Prototypical Neural Network Model and Classical/Quantum Machine Learning Approaches." Advisor: Prof. Cheng-Ta Li \& Prof. Chung-Ping Chen}
-            \resumeItem{The research EEG model for TMS pattern personalized prediction is currently being applied to real outpatient patients in the Precision Depression Intervention Center (PreDIC), Taipei Veterans General Hospital.}
-            % \resumeItem{\textbf{Certificate of the 20th National Innovation Award, clinical research category.}}
-            \resumeItem{Master's thesis: ``EEG Analysis for Prediction of Antidepressant Responses of Transcranial Magnetic Stimulation in Major Depressive Disorder Based on Attentional Convolution Time Series Prototypical Neural Network Model and Classical/Quantum Machine Learning Approaches.''}
-        \resumeItemListEnd
-      
-    
-    \resumeSubheading
-      {National Chiao Tung University (NCTU) 
-      % \normalfont{(Admission rate: 0.85\%)}
-      }{Hsinchu, Taiwan}
-      {Bachelor of Engineering in Electrophysics
-      % \textbf{GPA: 97.03/100}
-      }{Sep 2015 \textbf{--} Jun 2019}
-      
-      \emph{Bachelor of Science in Interdisciplinary Science Degree Program        }
-\ifindustry\else
-      \resumeItemListStart
-            \resumeItem{Researching the oxide processing techniques. }
-            \resumeItem{Researching the biomedical signal processing on traditional Chinese medicine data. }
-        \resumeItemListEnd
-\fi
-    
-  \resumeSubHeadingListEnd
+\ifimperial\else\EducationSection\fi
 
 %----------- SKILLS -----------
 
@@ -448,7 +477,7 @@ Chi-Sheng (Michael) Chen builds machine learning for physiological time series a
         \textbf{AI/ML:}{ Python, PyTorch, HuggingFace, Scikit-learn, MNE, MLflow, R, MATLAB} \\ \vspace{1pt}
         \textbf{Systems:}{ C/C++, JavaScript, Rust, MySQL, Solidity, Git, Docker, GCP, AWS} \\ \vspace{1pt}
         \textbf{Hardware:}{ Verilog, SystemVerilog, UVM, HSPICE, Genus, Verdi, SG-Lint, Perl} \\ \vspace{1pt}
-        \textbf{Languages:}{ Chinese (Native), English (Fluent)}
+        \textbf{Languages:}{ Chinese (Native), English (Fluent\ifimperial; \ImperialEnglish\fi)}
         
         % \textbf{Frameworks}{: X, X, X} \\
         % \textbf{Developer Tools}{: X, X, X} \\
@@ -461,7 +490,7 @@ Chi-Sheng (Michael) Chen builds machine learning for physiological time series a
 
 % \section{Selected Publications (All 14 peer-reviewed, 20 in submission/preprint   (\href{https://scholar.google.com.tw/citations?user=5XHD7nkAAAAJ&hl=zh-TW&fbclid=IwAR0G4vwwFx9TO00pSx0BiX8r_UK3HcW08gh259uSTqR4ziYBsVdMuL9OQQQ}{publication}))}
 \ifindustry
-\section{Selected Publications \hfill \normalfont\small (49 total, 491 cites, h-index 13 --- full list on \href{https://scholar.google.com.tw/citations?user=5XHD7nkAAAAJ}{Google Scholar})}
+\section{Selected Publications \hfill \normalfont\small (49 total, 500 cites, h-index 13 --- full list on \href{https://scholar.google.com.tw/citations?user=5XHD7nkAAAAJ}{Google Scholar})}
   \vspace{2pt}
    [First author unless noted]
   \resumeSubHeadingListStart
@@ -482,7 +511,7 @@ Chi-Sheng (Michael) Chen builds machine learning for physiological time series a
   \resumeSubHeadingListEnd
 
 \else
-\section{Selected Publications (491 cites, h-index 13, i10-index 16)}
+\section{Selected Publications (500 cites, h-index 13, i10-index 16)}
   \vspace{2pt}
   \small{First author unless noted. Peer-reviewed unless marked \textit{Under review} or arXiv preprint.}
 
