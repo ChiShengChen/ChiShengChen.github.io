@@ -37,6 +37,14 @@
   \usepackage{xeCJK}
   \setCJKmainfont{Songti TC}
   \newenvironment{CJK*}[2]{}{}  % no-op shim so the CJKutf8 markup below still compiles
+  % Turn off ff/fi/ffi ligatures so extracted text (ATS, copy-paste) reads "efficiency", not U+FB00 chars.
+  % The Latin Modern shapes are preloaded in the format, so re-read tulmr.fd after changing the features.
+  \def\UnicodeFontTeXLigatures{mapping=tex-text;-liga;}
+  \makeatletter\input{tulmr.fd}
+  % ...and drop cached instances (10pt upright is preloaded) so they reload without ligatures
+  \@for\cv@s:={m/n,m/it,m/sl,m/sc,bx/n,bx/it,b/n}\do{\@for\cv@z:={5,6,7,8,9,10,10.95,12,14.4,17.28,20.74,24.88}\do{%
+    \expandafter\let\csname TU/lmr/\cv@s/\cv@z\endcsname\relax}}
+  \makeatother
 \else
   \usepackage{CJKutf8}
 \fi
@@ -162,7 +170,7 @@
     \textbf{\Huge \scshape Chi-Sheng (Michael) Chen (陳麒升)} \\ \vspace{1pt}
     % \small \textbf{AI in Medicine, Time Series, Multi-Modal Learning \textbar \ QML \textbar \  Digital IC Design \textbar \ IoT \textbar \ Blockchain} \\ \vspace{1pt}
 \ifindustry
-    \small \textbf{ML Researcher \& Engineer \textbar \ Clinical Biosignal ML \textbar \ LLM Agents \& Multi-Agent Systems \textbar \ Foundation Models} \\ \vspace{1pt}
+    \small \textbf{Research Engineer \textbar \ LLM Agents \& Evaluation \textbar \ Time-Series \& Multimodal ML \textbar \ Foundation Models} \\ \vspace{1pt}
 \else
     \small \textbf{Machine Learning for Physiological Time Series \textbar \ Clinical Biosignals \& Foundation Models \textbar \ EEG/BCI \textbar \ Quantum ML} \\ \vspace{1pt}
 \fi
@@ -192,9 +200,11 @@
     % \href{}{Taoyuan, Taiwan}
 \ifimperial
     \small Nationality: Taiwan \textbar \ Based in Taiwan; Research Affiliate, Harvard Medical School / BIDMC \\ \vspace{1pt}
+\else\ifindustry
+    \small Based in Cambridge, MA, USA \\ \vspace{1pt}
 \else
     \small Nationality: Taiwan \textbar \ Based in Cambridge, MA, USA \\ \vspace{1pt}
-\fi
+\fi\fi
 \end{center}
 \end{CJK*}
 
@@ -214,9 +224,9 @@
 % Chi-Sheng (Michael) Chen is a biomedical AI researcher and entrepreneur specializing in EEG/time-series AI and Quantum Machine Learning, with 15+ peer-reviewed publications (JAD IF=6.5, Physical Review A/B/R, ICASSP, QCE). Beyond academia, he brings diverse industry experience: contributing to RLHF pipelines at OpenAI, co-founding Omnis Labs to build AI-driven DeFi risk management across AMM and perpetual DEX protocols, and directing quantitative trading systems at Bonanza Quant. His research addresses the fundamental challenge of building generalizable AI for non-stationary time-series data, with methods transferable across domains—from brain signals to financial markets. His EEG prediction models are clinically deployed at Taipei Veterans General Hospital, demonstrating real-world translational impact.
 
 \ifindustry
-Chi-Sheng (Michael) Chen is a machine-learning researcher and engineer working across clinical biosignal ML and LLM-agent systems. At Harvard/BIDMC he builds multimodal EMS trauma-triage pipelines (ASR $\rightarrow$ LLM-agent event extraction $\rightarrow$ structured prediction) over 4M+ patient records; his EEG-based depression-treatment model is in routine outpatient use at Taipei Veterans General Hospital. He has shipped LLM-agent systems (a US-stock research agent suite, a robotics workcell optimizer), led LLM token-efficiency research for a quant-trading firm, and placed 3rd of 1,300+ teams at Berkeley RDI AgentX-AgentBeats 2026. Prior: Co-Founder/CTO of Neuro Industry (GCP MLOps on 10K+ EEG samples) and Digital IC R\&D Engineer at MediaTek. 49 publications, 500 citations (h-index 13); reviewer for NeurIPS, ICML (Gold Reviewer) and 43 journals.
+Research engineer building LLM-agent systems and time-series/multimodal models, with an emphasis on verifiable evaluation. Building an ASR $\rightarrow$ LLM-agent $\rightarrow$ prediction pipeline over 4M+ EMS records at Harvard/BIDMC; 3rd of 1,300+ teams at Berkeley RDI AgentX-AgentBeats 2026; led LLM token-efficiency research for a quant-trading firm; EEG treatment-response model in routine clinical use. 49 publications, 515 citations; ICML Gold Reviewer.
 \else
-Chi-Sheng (Michael) Chen builds machine learning for physiological time series along one arc --- from representation, to foundation models, to clinical deployment. He develops interpretable, clinician-interrogable frequency-domain and geometric representations of clinical biosignals (FreqLens, SPD Token Transformer) and scales them into biosignal foundation models (Large Cognition Model). His EEG-based depression-treatment model is in routine outpatient use at Taipei Veterans General Hospital's Precision Depression Intervention Center (PreDIC), and at Harvard/BIDMC he builds multimodal EMS trauma-triage pipelines. He has 49 publications, 500 citations (h-index 13, i10-index 16), ICML 2026 Gold Reviewer recognition, and reviewer service across 43 journals (incl.\ TPAMI, NSR, npj Quantum Information). As a secondary methodological line, he explores hybrid quantum-classical architectures for sequence modeling (QASA, QEEGNet).
+Chi-Sheng (Michael) Chen builds machine learning for physiological time series along one arc --- from representation, to foundation models, to clinical deployment. He develops interpretable, clinician-interrogable frequency-domain and geometric representations of clinical biosignals (FreqLens, SPD Token Transformer) and scales them into biosignal foundation models (Large Cognition Model). His EEG-based depression-treatment model is in routine outpatient use at Taipei Veterans General Hospital's Precision Depression Intervention Center (PreDIC), and at Harvard/BIDMC he builds multimodal EMS trauma-triage pipelines. He has 49 publications, 515 citations (h-index 13, i10-index 16), ICML 2026 Gold Reviewer recognition, and reviewer service across 43 journals (incl.\ TPAMI, NSR, npj Quantum Information). As a secondary methodological line, he explores hybrid quantum-classical architectures for sequence modeling (QASA, QEEGNet).
 \fi
 
 %----------- EDUCATION -----------
@@ -241,18 +251,18 @@ Chi-Sheng (Michael) Chen builds machine learning for physiological time series a
       % \normalfont{(Admission rate: 0.09\%)}
       }{Taipei, Taiwan}
       {Master of Science in Biomedical Electronics and Bioinformatics}{Sep 2019 \textbf{--} Jun 2021}
-      
+\ifindustry\else
+
       \emph{Advisor: \ProfDr{} Cheng-Ta Li, MD \& Prof. Chung-Ping Chen}
         \resumeItemListStart
-\ifindustry\else
             \resumeItem{Machine learning application on non-stationary time series data.}
-\fi
             % \resumeItem{Master Thesis: "EEG Analysis for Prediction of Antidepressant Responses of Transcranial Magnetic Stimulation in Major Depressive Disorder Based on Attentional Convolution Time Series Prototypical Neural Network Model and Classical/Quantum Machine Learning Approaches." Advisor: Prof. Cheng-Ta Li \& Prof. Chung-Ping Chen}
             \resumeItem{The research EEG model for TMS pattern personalized prediction is currently being applied to real outpatient patients in the Precision Depression Intervention Center (PreDIC), Taipei Veterans General Hospital.}
             % \resumeItem{\textbf{Certificate of the 20th National Innovation Award, clinical research category.}}
             \resumeItem{Master's thesis: ``EEG Analysis for Prediction of Antidepressant Responses of Transcranial Magnetic Stimulation in Major Depressive Disorder Based on Attentional Convolution Time Series Prototypical Neural Network Model and Classical/Quantum Machine Learning Approaches.''}
         \resumeItemListEnd
-      
+\fi
+
     
     \resumeSubheading
       {National Chiao Tung University (NCTU) 
@@ -275,14 +285,14 @@ Chi-Sheng (Michael) Chen builds machine learning for physiological time series a
 
 \ifimperial\EducationSection\fi
 
-\section{Research \& Professional Experience}
+\ifindustry\section{Experience}\else\section{Research \& Professional Experience}\fi
   \vspace{3pt}
   \resumeSubHeadingListStart
    \resumeSubheading
       {Harvard Medical School \& Beth Israel Deaconess Medical Center}{\ifimperial Boston, MA, USA\else MA, USA\fi}
       % {Harvard Medical School}{MA, USA}
       % {Research Fellow}{Nov 2024 \textbf{--} Present}
-      {Research Affiliate (primary appointment), Advisor: \ifimperial Dr Gabriel Brat\else \ProfDr{} Gabriel Brat\fi}{Nov 2024 \textbf{--} Present}
+      {Research Affiliate (primary appointment), Advisor: \ifimperial Dr Gabriel Brat\else\ifindustry Dr.\ Gabriel Brat\else \ProfDr{} Gabriel Brat\fi\fi}{Nov 2024 \textbf{--} Present}
         \resumeItemListStart
 \ifimperial
             \resumeItem{\ImperialHarvardNote}
@@ -302,9 +312,13 @@ Chi-Sheng (Michael) Chen builds machine learning for physiological time series a
       {Omnis Labs}{Remote}
       {Co-Founder}{Sep 2024 \textbf{--} May 2026}
         \resumeItemListStart
+\ifindustry
+            \resumeItem{AI-driven DeFi liquidity protocol: time-series models drive automated-market-maker (AMM) liquidity positioning, with a backtesting system; ran in production on WBTC/USDC and ETH/USDC pools at 50\%--120\% base fee APR.}
+\else
             \resumeItem{AI-driven DeFi liquidity positioning protocol with automated market maker (AMM) strategies and backtesting systems.}
 \ifimperial\else
             \resumeItem{Achieved 50\%--120\% base fee APR on WBTC/USDC and ETH/USDC pairs (Katana on SushiSwap) using time-series model-driven AMM strategies.}
+\fi
 \fi
         \resumeItemListEnd
         
@@ -329,7 +343,7 @@ Chi-Sheng (Michael) Chen builds machine learning for physiological time series a
       {Department of Computer Science, National Yang Ming Chiao Tung University}{Hsinchu, Taiwan}
       {Research Assistant, Advisor: Prof. Chun-Shu Wei}{Dec 2023 \textbf{--} Aug 2024}
         \resumeItemListStart
-            \resumeItem{Developed MUSE, a multimodal contrastive learning framework for EEG-based image recognition (32 citations).}
+            \resumeItem{Developed MUSE, a multimodal contrastive learning framework for EEG-based image recognition (34 citations).}
             \resumeItem{Research on nonstationary EEG dynamics and foundation models for brain-computer interfaces.}
         \resumeItemListEnd
 
@@ -337,10 +351,15 @@ Chi-Sheng (Michael) Chen builds machine learning for physiological time series a
       {MediaTek Inc.}{Hsinchu, Taiwan}
       {Digital IC R\&D Engineer}{Dec 2021 \textbf{--} Oct 2023}
         \resumeItemListStart
-            \resumeItem{Responsible for microprocessor IP development for flagship 5G smartphones' display and AMBA SoC implement.}
+\ifindustry
+            \resumeItem{Microprocessor IP for flagship 5G smartphone display SoCs: RTL design of a hardware-virtualization architecture and IP verification with UVM/SystemVerilog.}
+\else
+            \resumeItem{Responsible for microprocessor IP development for flagship 5G smartphones' display and AMBA SoC implementation.}
             \resumeItem{Hardware virtualization architecture RTL design and IP verification with UVM and SystemVerilog.}
+\fi
         \resumeItemListEnd
-  
+
+\ifindustry\else
     \resumeSubheading
       {Department of Surgery, National Taiwan University Hospital}{Taipei, Taiwan}
       {Research Assistant, Advisor: Dr. Shuo-Lun Lai }{Jul 2021 \textbf{--} Sep 2021}
@@ -348,14 +367,15 @@ Chi-Sheng (Michael) Chen builds machine learning for physiological time series a
             \resumeItem{Deep learning applications on surgery automation with YOLO-based model.}
             \resumeItem{Developed a prototype for a surgical smoke evacuation system.}
         \resumeItemListEnd
-        
+\fi
+
     \resumeSubheading
       {Department of Psychiatry, Taipei Veterans General Hospital}{Taipei, Taiwan}
-      {Research Assistant, Advisor: \ProfDr{} Cheng-Ta Li }{Sep 2019 \textbf{--} Jun 2021}
+      {Research Assistant, Advisor: \ifindustry Prof.\ Cheng-Ta Li, MD\else \ProfDr{} Cheng-Ta Li \fi}{Sep 2019 \textbf{--} Jun 2021}
         \resumeItemListStart
             % \resumeItem{Conducted brainwave data collection for a study involving patients diagnosed with major depressive disorder.}
 \ifindustry
-            \resumeItem{Built ML models on clinical EEG from major-depressive-disorder patients to predict treatment response.}
+            \resumeItem{Built ML models on clinical EEG from major-depressive-disorder patients to predict treatment response; the model (M.S. thesis work) is in routine outpatient use at Taipei VGH's Precision Depression Intervention Center.}
 \else
             \resumeItem{Collaborated with researchers and clinicians to identify patterns and trends in brainwave activity related to major depressive disorder.}
             \resumeItem{Utilized machine learning algorithms to develop predictive models based on real-world brainwave data.}
@@ -372,22 +392,25 @@ Chi-Sheng (Michael) Chen builds machine learning for physiological time series a
     %     \resumeItemListEnd
 
 
+\ifindustry\else
     \resumeSubheading
       {Max Planck Institute for Chemical Physics of Solids (MPI CPfS)}{Dresden, Germany}
       % {Research Internship in Physics of Correlated MatterAdvisor: Dr. Alexander Komarek \& Dr. Li Zhao }{Jul 2018 \textbf{--} Sep 2018}
      {Research Internship, Advisor: Dr. Alexander Komarek \& Dr. Li Zhao }{Jul 2018 \textbf{--} Sep 2018}
         \resumeItemListStart
-\ifindustry
-            \resumeItem{Synthesis and characterization of candidate Co-based chalcogenide superconductors.}
-\else
-            \resumeItem{Searching new possible unconventional superconductors  among Co-based quaternary chalcogenides with diamond like structure CuInCo\textsubscript{2}A\textsubscript{4} / AgInCo\textsubscript{2}A\textsubscript{4} (A = Te, Se, S).} 
-\fi
+            \resumeItem{Searching new possible unconventional superconductors  among Co-based quaternary chalcogenides with diamond like structure CuInCo\textsubscript{2}A\textsubscript{4} / AgInCo\textsubscript{2}A\textsubscript{4} (A = Te, Se, S).}
             % \resumeItem{Synthesized Ca\textsubscript{3}Co\textsubscript{2}O\textsubscript{6} via flux method, ReO\textsubscript{3} Rhenium Trioxide Transport.}
 
         \resumeItemListEnd
+\fi
 
     \resumeProjectHeading
       {\textbf{Other:} OpenAI (contractor via Mercor) --- AI Trainer, RLHF preference data \& model-behavior evaluation}{\textit{\small Mar 2025 \textbf{--} Oct 2025}}
+\ifindustry
+    \vspace{-6pt}
+    \resumeProjectHeading
+      {\textbf{Earlier:} NTU Hospital Surgery (surgical-video detection); Max Planck Institute CPfS, Dresden (intern)}{\textit{\small 2018 \textbf{--} 2021}}
+\fi
 
     % \resumeSubheading
     %   {Vernace Tech Inc.}{Hsinchu, Taiwan}
@@ -460,8 +483,7 @@ Chi-Sheng (Michael) Chen builds machine learning for physiological time series a
     \textbf{Berkeley RDI AgentX-AgentBeats --- 3rd Place / 1,300+ teams (2026).} \textit{MadGAA}, a multi-agent OSCE medical evaluation system: role-specialized agents (examiner, patient, judge) + verifiable scoring rubric (RAG + tool use + verifier). \href{https://github.com/MadGAA-Lab/OSCE-Project}{\small[code]} \href{https://agentbeats.dev/whats2000/osce-medical-judge}{\small[leaderboard]} \\ \vspace{1pt}
     \textbf{US-stock LLM agent suite (deployed).} Browser agent as an explicit PLAN$\rightarrow$LOCATE$\rightarrow$ACT$\rightarrow$VERIFY state machine with fault-injection recovery; layered SEC 10-K extractor; 22 research agents + 11 placebo controls with lookahead-free backtests, per-provider cost ledger, and eval dashboards. \\ \vspace{1pt}
     \textbf{Robotics Workcell Optimizer (live).} NL $\rightarrow$ spec $\rightarrow$ robot selection $\rightarrow$ 2D layout $\rightarrow$ 3D preview via multi-LLM abstraction (Claude/OpenAI/Gemini, validation-repair loop) + OR-Tools CP-SAT; ISO 13855 safety as inviolable hard constraints. \href{https://github.com/ChiShengChen/robotics-workcell-optimizer}{\small[code]} \href{https://robotics-workcell-demo.vercel.app}{\small[demo]} \\ \vspace{1pt}
-    \textbf{Also:} \textit{flyhypo} (connectome + PubMed + LLM $\rightarrow$ grounded, falsifiable neuron hypotheses) \href{https://github.com/ChiShengChen/flyhypo}{\small[code]}; \textit{paper-evidence} (verbatim-quote gate + cross-family judge to block LLM hallucination) \href{https://github.com/ChiShengChen/paper-evidence}{\small[code]}; two live NYCU RAG physics tutors (Next.js + Gemini + pgvector) \href{https://nycu-ep-general-physics-tutor.vercel.app}{\small[live]}. \\ \vspace{1pt}
-    \textbf{Stack:} LangChain/LangGraph, ReAct \& function calling, multi-agent orchestration, vLLM, LoRA/QLoRA, SFT/DPO/RLHF, RAG (pgvector/FAISS/Qdrant), OR-Tools, OpenAI/Anthropic/Gemini SDKs.
+    \textbf{Also:} \textit{flyhypo} (connectome + PubMed + LLM $\rightarrow$ grounded, falsifiable neuron hypotheses) \href{https://github.com/ChiShengChen/flyhypo}{\small[code]}; \textit{paper-evidence} (verbatim-quote gate + cross-family judge to block LLM hallucination) \href{https://github.com/ChiShengChen/paper-evidence}{\small[code]}; two live NYCU RAG physics tutors (Next.js + Gemini + pgvector) \href{https://nycu-ep-general-physics-tutor.vercel.app}{\small[live]}.
     }}
   \resumeSubHeadingListEnd
 \fi
@@ -473,6 +495,14 @@ Chi-Sheng (Michael) Chen builds machine learning for physiological time series a
 \section{Skills}
   \vspace{2pt}
   \resumeSubHeadingListStart
+\ifindustry
+    \small{\item{
+        \textbf{LLM \& Agents:}{ LangChain/LangGraph, ReAct \& function calling, multi-agent orchestration, RAG (pgvector/FAISS/Qdrant), OpenAI/Anthropic/Gemini SDKs, OR-Tools} \\ \vspace{1pt}
+        \textbf{Training \& Serving:}{ PyTorch, HuggingFace, LoRA/QLoRA, SFT/DPO/RLHF, vLLM, MLflow, scikit-learn} \\ \vspace{1pt}
+        \textbf{Engineering:}{ Python, C/C++, JavaScript, Rust, SQL, Git, Docker, GCP, AWS} \\ \vspace{1pt}
+        \textbf{Languages:}{ Chinese (Native), English (Fluent)}
+    }}
+\else
     \small{\item{
         \textbf{AI/ML:}{ Python, PyTorch, HuggingFace, Scikit-learn, MNE, MLflow, R, MATLAB} \\ \vspace{1pt}
         \textbf{Systems:}{ C/C++, JavaScript, Rust, MySQL, Solidity, Git, Docker, GCP, AWS} \\ \vspace{1pt}
@@ -484,34 +514,35 @@ Chi-Sheng (Michael) Chen builds machine learning for physiological time series a
         % \textbf{Libraries}{: X, X, X} \\
         % \textbf{Applications}{: X, X, X}
     }}
+\fi
   \resumeSubHeadingListEnd
 
 %----------- Publication -----------
 
 % \section{Selected Publications (All 14 peer-reviewed, 20 in submission/preprint   (\href{https://scholar.google.com.tw/citations?user=5XHD7nkAAAAJ&hl=zh-TW&fbclid=IwAR0G4vwwFx9TO00pSx0BiX8r_UK3HcW08gh259uSTqR4ziYBsVdMuL9OQQQ}{publication}))}
 \ifindustry
-\section{Selected Publications \hfill \normalfont\small (49 total, 500 cites, h-index 13 --- full list on \href{https://scholar.google.com.tw/citations?user=5XHD7nkAAAAJ}{Google Scholar})}
+\section{Selected Publications \hfill \normalfont\small (49 total, 515 cites, h-index 13 --- full list on \href{https://scholar.google.com.tw/citations?user=5XHD7nkAAAAJ}{Google Scholar})}
   \vspace{2pt}
    [First author unless noted]
   \resumeSubHeadingListStart
     \small{\item{
 
-    \textbf{Chen, C.S., et al. ``FreqLens: Interpretable Frequency Attribution for Time Series Forecasting''}{ \textit{Under review}, ICLR 2027; arXiv:2602.08768.} \\ \vspace{1pt}
+    \textbf{Chen, C.S., et al. ``FreqLens: Interpretable Frequency Attribution for Time Series Forecasting''}{ \textit{Under review}, ICLR 2027; \href{https://arxiv.org/abs/2602.08768}{arXiv:2602.08768}.} \\ \vspace{1pt}
 
-    \textbf{Chen, C.S., et al. ``Large Cognition Model: Towards Pretrained EEG Foundation Model''}{ arXiv preprint (2025), arXiv:2502.17464 --- \textbf{29 citations}.} \\ \vspace{1pt}
+    \textbf{Chen, C.S., et al. ``Large Cognition Model: Towards Pretrained EEG Foundation Model''}{ arXiv preprint (2025), \href{https://arxiv.org/abs/2502.17464}{arXiv:2502.17464} --- \textbf{30 citations}.} \\ \vspace{1pt}
 
-    \textbf{Chen, C.S., Wei, C.S. ``Mind's Eye: Image Recognition by EEG via Multimodal Similarity-Keeping Contrastive Learning''}{ arXiv preprint (2024), arXiv:2406.16910 --- \textbf{32 citations}.} \\ \vspace{1pt}
+    \textbf{Chen, C.S., Wei, C.S. ``Mind's Eye: Image Recognition by EEG via Multimodal Similarity-Keeping Contrastive Learning''}{ arXiv preprint (2024), \href{https://arxiv.org/abs/2406.16910}{arXiv:2406.16910} --- \textbf{34 citations}.} \\ \vspace{1pt}
 
-    \textbf{Chen, C.S., et al. ``Exploring the Potential of Electroencephalography Signal–Based Image Generation Using Diffusion Models: Integrative Framework Combining Mixed Methods and Multimodal Analysis''}{ JMIR Medical Informatics (2025), https://doi.org/10.2196/72027 .} \\ \vspace{1pt}
+    \textbf{Chen, C.S., et al. ``Quantum Reinforcement Learning-Guided Diffusion Model for Image Synthesis via Hybrid Quantum-Classical Generative Model Architectures''}{ \href{https://doi.org/10.1109/ICASSP55912.2026.11461991}{IEEE ICASSP 2026}, \textbf{oral}.} \\ \vspace{1pt}
 
-    \textbf{Chen, C.S., et al. ``Exploring the potential of QEEGNet for cross-task and cross-dataset electroencephalography encoding with quantum machine learning''}{ Journal of Signal Processing Systems 98, 5 (2026), https://doi.org/10.1007/s11265-025-01979-2 .} \\ \vspace{1pt}
+    \textbf{Chen, C.S., Brat, G.A. ``Measuring Browser Webcam Gaze Honestly: A Capture-Clock Methodology and Open Reference Implementation''}{ MICCAI DEMI Workshop 2026, \textbf{spotlight talk}; \href{https://arxiv.org/abs/2608.11566}{arXiv:2608.11566}.} \\ \vspace{1pt}
 
-    Li, C.T., \textbf{Chen, C.S., et al. ``Prediction of antidepressant responses to non-invasive brain stimulation using frontal electroencephalogram signals: Cross-dataset comparisons and validation''}{ Journal of Affective Disorders (2023), https://doi.org/10.1016/j.jad.2023.08.059 . [2nd author; model deployed at Taipei VGH PreDIC]}
+    Li, C.T., \textbf{Chen, C.S., et al. ``Prediction of antidepressant responses to non-invasive brain stimulation using frontal electroencephalogram signals: Cross-dataset comparisons and validation''}{ \href{https://doi.org/10.1016/j.jad.2023.08.059}{Journal of Affective Disorders (2023)}. [2nd author; model deployed at Taipei VGH PreDIC]}
     }}
   \resumeSubHeadingListEnd
 
 \else
-\section{Selected Publications (500 cites, h-index 13, i10-index 16)}
+\section{Selected Publications (515 cites, h-index 13, i10-index 16)}
   \vspace{2pt}
   \small{First author unless noted. Peer-reviewed unless marked \textit{Under review} or arXiv preprint.}
 
@@ -523,9 +554,9 @@ Chi-Sheng (Michael) Chen builds machine learning for physiological time series a
 
     \textbf{Chen, C.S., et al. ``A Unified SPD Token Transformer Framework for EEG Classification: Systematic Comparison of Geometric Embeddings''}{ \textit{Under review}, Neurocomputing (Elsevier), 2026; arXiv:2601.21521.} \\ \vspace{1pt}
 
-    \textbf{Chen, C.S., et al. ``Large Cognition Model: Towards Pretrained EEG Foundation Model''}{ arXiv preprint (2025), arXiv:2502.17464 --- \textbf{29 citations}.} \\ \vspace{1pt}
+    \textbf{Chen, C.S., et al. ``Large Cognition Model: Towards Pretrained EEG Foundation Model''}{ arXiv preprint (2025), arXiv:2502.17464 --- \textbf{30 citations}.} \\ \vspace{1pt}
 
-    \textbf{Chen, C.S., Wei, C.S. ``Mind's Eye: Image Recognition by EEG via Multimodal Similarity-Keeping Contrastive Learning''}{ arXiv preprint (2024), arXiv:2406.16910 --- \textbf{32 citations}.} \\ \vspace{1pt}
+    \textbf{Chen, C.S., Wei, C.S. ``Mind's Eye: Image Recognition by EEG via Multimodal Similarity-Keeping Contrastive Learning''}{ arXiv preprint (2024), arXiv:2406.16910 --- \textbf{34 citations}.} \\ \vspace{1pt}
 
     \textbf{Chen, C.S., et al. ``Exploring the Potential of Electroencephalography Signal–Based Image Generation Using Diffusion Models: Integrative Framework Combining Mixed Methods and Multimodal Analysis''}{ JMIR Medical Informatics (2025), https://doi.org/10.2196/72027 .} \\ \vspace{1pt}
 
@@ -586,12 +617,13 @@ Chi-Sheng (Michael) Chen builds machine learning for physiological time series a
 \fi
 
 \ifindustry
-\section{Invited Talks \& Presentations}
+\section{Recognition \& Service}
     \vspace{2pt}
   \resumeSubHeadingListStart
     \small{\item{
-    \textbf{NVIDIA GTC 2026} (Top 8 Finalist, two posters); \textbf{MICCAI 2026} --- DEMI spotlight talk and CLINICCAI poster; \textbf{IEEE ICASSP 2026} (two orals) and \textbf{2025} (oral); \textbf{IEEE Quantum Week 2025}; \textbf{DH2026} (two short papers); \textbf{QTML 2024} (poster). \\ \vspace{1pt}
-    \textbf{Guest lectures} at NYCU ECE (Wearable Chip Design), NTU CSIE (Advanced Compilers) and NYCU Maker Club; invited seminar, Dept.\ of Applied Physics, Tunghai University (2025--2026).
+    \textbf{Awards:} NVIDIA GTC 2026 Top 8 Finalist (GPU-accelerated Chinese brain-to-text interface on H100); Berkeley RDI AgentX-AgentBeats 2026, 3rd of 1,300+ teams; 20th National Innovation Award (Taiwan, 2023), clinical research category. \\ \vspace{1pt}
+    \textbf{Talks:} IEEE ICASSP orals (two in 2026, one in 2025); MICCAI 2026 DEMI spotlight talk and CLINICCAI poster; NVIDIA GTC 2026 (two posters); guest lectures at NTU CSIE, NYCU ECE and Chang Gung University BME (2026). \\ \vspace{1pt}
+    \textbf{Reviewing:} NeurIPS, ICML (Gold Reviewer), AAAI, KDD, MICCAI, ICASSP; 43 journals incl.\ IEEE TPAMI, IEEE TNNLS and Neural Networks.
     }}
   \resumeSubHeadingListEnd
 
@@ -632,17 +664,7 @@ Chi-Sheng (Michael) Chen builds machine learning for physiological time series a
 
 \fi
 
-\ifindustry
-\section{Professional Service}
-    \vspace{2pt}
-  \resumeSubHeadingListStart
-    \small{\item{
-    \textbf{Conference Reviewer} (2026--2027): NeurIPS, ICML (Gold Reviewer --- top tier), AAAI, KDD, MICCAI, ICASSP, NLDL 2027, ACM ICAIF 2026, IEEE QAI 2026. \textbf{Program Committee:} QNRL Workshop @ IEEE WCCI 2026. \\ \vspace{1pt}
-    \textbf{Journal Reviewer} (2025--present): 43 journals incl.\ TPAMI, TNNLS, TASLP, JBHI, Neural Networks, npj Quantum Information, Scientific Reports; \textbf{IOP Trusted Reviewer} (2026).
-    }}
-  \resumeSubHeadingListEnd
-
-\else
+\ifindustry\else
 \section{Professional Service}
     \vspace{2pt}
   \resumeSubHeadingListStart
@@ -666,6 +688,7 @@ Chi-Sheng (Michael) Chen builds machine learning for physiological time series a
 
 %----------- AWARDS & ACHIEVEMENT-----------
 
+\ifindustry\else
 \section{Awards \& Achievements}
   \vspace{2pt}
   \resumeSubHeadingListStart
@@ -679,7 +702,7 @@ Chi-Sheng (Michael) Chen builds machine learning for physiological time series a
         
         % \textbf{2017 ARM Design Contest:}{ Round of 10.} \\ \vspace{1pt}
         
-        \textbf{2017 Microsoft International Imagine Cup :}{ 2nd place in Taiwan.} \\ \vspace{1pt}
+        \textbf{2017 Microsoft International Imagine Cup:}{ 2nd place in Taiwan.} \\ \vspace{1pt}
         % \textbf{2017 TECO Green Tech International Contest:}{ Championship.} \\ \vspace{1pt}
 % \textbf{2017 1st Taoyuan Star Startup Contest :}{ Honorable Mention.} \\ \vspace{1pt}
 % \textbf{2017 11th Longterm Innovation and Entrepreneurship Competition:}{ Honorable Mention.} \\ \vspace{1pt}
@@ -689,5 +712,6 @@ Chi-Sheng (Michael) Chen builds machine learning for physiological time series a
         \textbf{2016 International Genetically Engineered Machine Competition (iGEM):}{ World Gold medal, Best Applied Design, Best Part Collection, Best Presentation competition with 300+ university teams.}
     }}
   \resumeSubHeadingListEnd
+\fi
 
 \end{document}
