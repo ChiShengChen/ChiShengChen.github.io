@@ -95,7 +95,6 @@
       <p>
         I build machine-learning systems for clinical time series. My core research develops
         <strong>frequency-domain and geometric representations</strong> of physiological signals
-        (<a href="https://github.com/ChiShengChen/FreqLens" target="_blank">FreqLens</a>, SPD Token Transformer)
         and scales them into <strong>biosignal foundation models</strong> (Large Cognition Model);
         an EEG model I built is deployed in routine outpatient care at Taipei Veterans General Hospital's
         <a href="https://vghtpeimsc.tw/zh-tw/service/detail/248/1" target="_blank">Precision Depression Intervention Center (PreDIC)</a>.
@@ -175,7 +174,7 @@
     My research asks one question: <strong>what does a model actually represent when it learns from a physiological signal, and can that representation be made legible to the clinician who has to act on it?</strong>
     I pursue it along a single arc — from representation, to foundation models, to clinical deployment.
     <strong>Representation:</strong> I develop interpretable, clinician-interrogable frequency-domain and geometric representations of biosignals
-    (<a href="https://github.com/ChiShengChen/FreqLens" target="_blank">FreqLens</a>, FreqToken, SPD Token Transformer).
+    (frequency tokenization, Riemannian SPD embeddings).
     <strong>Foundation models:</strong> I scale these into cross-task, cross-dataset, and multimodal biosignal models
     (Large Cognition Model, frequency-domain world models).
     <strong>Deployment:</strong> my EEG-based depression-treatment model is in routine outpatient use at the
@@ -238,42 +237,7 @@
     </div>
   </div>
 
-  <!-- 3. FreqLens -->
-  <div class="selected-pub">
-    <div class="selected-pub-info">
-      <div class="pub-title">FreqLens: Interpretable Frequency Attribution for Time Series Forecasting</div>
-      <div class="pub-authors"><span class="me">CS Chen</span>, X Zhang, EJ Kuo, GY Chen, Q Xie, F Zhang.</div>
-      <div class="pub-venue">Under review, ICLR 2027</div>
-      <div class="pub-links">
-        <a href="https://arxiv.org/abs/2602.08768">[arXiv]</a>
-        <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=5XHD7nkAAAAJ&pagesize=100&citation_for_view=5XHD7nkAAAAJ:-f6ydRqryjwC">[Scholar]</a>
-      </div>
-      <div class="pub-tags">
-        <span class="tag tag-ml">Time-Series AI</span>
-        <span class="tag tag-ml">Interpretability</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- 4. SPD Token Transformer -->
-  <div class="selected-pub">
-    <div class="selected-pub-info">
-      <div class="pub-title">A Unified SPD Token Transformer Framework for EEG Classification: Systematic Comparison of Geometric Embeddings</div>
-      <div class="pub-authors"><span class="me">CS Chen</span>, EJ Kuo, GY Chen, X Zhang, F Zhang.</div>
-      <div class="pub-venue">Under review, Neurocomputing (Elsevier), 2026</div>
-      <div class="pub-links">
-        <a href="https://arxiv.org/abs/2601.21521">[arXiv]</a>
-        <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=5XHD7nkAAAAJ&pagesize=100&citation_for_view=5XHD7nkAAAAJ:hC7cP41nSMkC">[Scholar]</a>
-      </div>
-      <div class="pub-tags">
-        <span class="tag tag-med">EEG</span>
-        <span class="tag tag-ml">Riemannian Geometry</span>
-        <span class="tag tag-ml">Time-Series AI</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- 5. Large Cognition Model -->
+  <!-- 3. Large Cognition Model -->
   <div class="selected-pub">
     <div class="selected-pub-info">
       <div class="pub-title">Large Cognition Model: Towards Pretrained EEG Foundation Model</div>
@@ -290,7 +254,7 @@
     </div>
   </div>
 
-  <!-- 6. JMIR MI (journal version of NECOMIMI) -->
+  <!-- 4. JMIR MI (journal version of NECOMIMI) -->
   <div class="selected-pub">
     <div class="selected-pub-img">
       <img src="teaser_necomimi.png" alt="EEG-to-image generation with diffusion models (NECOMIMI)">
@@ -312,7 +276,7 @@
     </div>
   </div>
 
-  <!-- 7. QEEGNet (+ JSPS extension) -->
+  <!-- 5. QEEGNet (+ JSPS extension) -->
   <div class="selected-pub">
     <div class="selected-pub-img">
       <img src="teaser_qeegnet.png" alt="QEEGNet quantum EEG encoding">
@@ -350,9 +314,8 @@
     <span class="tag tag-med">Biosignals</span>
   </div>
   <p>
-    My core research develops interpretable, clinician-interrogable representations of physiological time series,
-    including <a href="https://github.com/ChiShengChen/FreqLens" target="_blank">FreqLens</a> for frequency-domain attribution in forecasting
-    and SPD Token Transformers for EEG classification with Riemannian geometry. These representations scale into
+    My core research develops interpretable, clinician-interrogable representations of physiological time series:
+    frequency-domain attribution and tokenization for forecasting, and Riemannian (SPD) embeddings for EEG classification. These representations scale into
     cross-task, cross-dataset biosignal foundation models (Large Cognition Model).
   </p>
 
