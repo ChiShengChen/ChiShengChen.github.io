@@ -733,3 +733,16 @@ body.lightbox-open .sticky-nav {
   color: #333;
   margin: 2px 0 6px;
 }
+
+.pub-finding {
+  font-size: 0.9em;
+  color: #333;
+  margin: 4px 0 2px;
+}
+
+.scholar-stats-note {
+  font-size: 0.75em;
+  color: #777;
+  margin-top: 6px;
+  text-align: right;
+}

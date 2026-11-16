@@ -149,7 +149,8 @@
       <div class="pub-title">Prediction of Antidepressant Responses to Non-Invasive Brain Stimulation Using Frontal EEG Signals</div>
       <div class="pub-authors">CT Li, <span class="me">CS Chen</span>, CM Cheng, CP Chen, JP Chen, MH Chen, YM Bai, et al. <span class="pub-note">[2nd author; derived from my master's thesis]</span></div>
       <div class="pub-venue">Journal of Affective Disorders (JAD), 2023</div>
-      <div class="pub-contrib"><strong>My contribution:</strong> built the EEG machine-learning prediction model (M.S. thesis work) that is now in routine use at PreDIC.</div>
+      <div class="pub-finding"><strong>Finding:</strong> Pretreatment frontal EEG (linear + non-linear features) with a random-forest model predicted response to rTMS (83.3%) and iTBS (88.9%) in 163 patients with treatment-resistant depression; in an independent outpatient cohort (n = 208), patients screened with the prediction before treatment had higher response rates (p = 0.035).</div>
+      <div class="pub-contrib"><strong>My contribution:</strong> built the machine-learning prediction pipeline (SVM / random forest / XGBoost / CatBoost on frontal EEG features) as my M.S. thesis work; the model is now in routine use at PreDIC.</div>
       <div class="pub-links">
         <a href="https://doi.org/10.1016/j.jad.2023.08.059">[DOI]</a>
         <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=5XHD7nkAAAAJ&pagesize=100&citation_for_view=5XHD7nkAAAAJ:qjMakFHDy7sC">[Scholar]</a>
@@ -167,7 +168,8 @@
       <div class="pub-title">Large Cognition Model: Towards Pretrained EEG Foundation Model</div>
       <div class="pub-authors"><span class="me">CS Chen</span>, YJ Chen, AHW Tsai.</div>
       <div class="pub-venue">arXiv preprint, 2025 <span class="pub-note">(30 citations)</span></div>
-      <div class="pub-contrib"><strong>My contribution:</strong> conceived the idea and carried out the work end to end — method design, implementation and experiments.</div>
+      <div class="pub-finding"><strong>Finding:</strong> A transformer EEG foundation model with temporal and spectral attention, pretrained self-supervised, generalizes across subjects, datasets and tasks, and outperforms prior EEG models on several benchmarks (preprint).</div>
+      <div class="pub-contrib"><strong>My contribution:</strong> designed the temporal–spectral attention architecture and the self-supervised pretraining, and ran the cross-dataset, cross-task evaluation.</div>
       <div class="pub-links">
         <a href="https://arxiv.org/abs/2502.17464">[arXiv]</a>
         <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=5XHD7nkAAAAJ&pagesize=100&citation_for_view=5XHD7nkAAAAJ:roLk4NBRz8UC">[Scholar]</a>
@@ -188,7 +190,8 @@
       <div class="pub-title">Exploring the Potential of EEG Signal-Based Image Generation Using Diffusion Models: Integrative Framework Combining Mixed Methods and Multimodal Analysis</div>
       <div class="pub-authors"><span class="me">CS Chen</span>, SH Chang, CW Liu, TM Pan.</div>
       <div class="pub-venue">JMIR Medical Informatics, 13(1), e72027, 2025 <span class="pub-note">(journal version of NECOMIMI)</span></div>
-      <div class="pub-contrib"><strong>My contribution:</strong> conceived the idea and carried out the work end to end — method design, implementation and experiments.</div>
+      <div class="pub-finding"><strong>Finding:</strong> The NERV encoder reached 94.8% (2-way) and 86.8% (4-way) zero-shot EEG–image classification on ThingsEEG, above NICE, MUSE and ATM; a two-stage EEG→diffusion pipeline recovers scene-level semantics, and perturbing visual-cortex channels sharply degrades generation.</div>
+      <div class="pub-contrib"><strong>My contribution:</strong> designed the NERV EEG encoder, the two-stage EEG-to-diffusion generation pipeline and the CAT score for evaluating generated images.</div>
       <div class="pub-links">
         <a href="https://doi.org/10.2196/72027">[DOI]</a>
         <a href="https://arxiv.org/abs/2410.00712">[arXiv: NECOMIMI]</a>
@@ -221,7 +224,8 @@
         <a href="https://doi.org/10.1007/s11265-025-01979-2">[DOI]</a>
         <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=5XHD7nkAAAAJ&pagesize=100&citation_for_view=5XHD7nkAAAAJ:hqOjcs7Dif8C">[Scholar]</a>
       </div>
-      <div class="pub-contrib"><strong>My contribution:</strong> conceived the idea and carried out the work end to end — method design, implementation and experiments.</div>
+      <div class="pub-finding"><strong>Finding:</strong> Adding variational quantum layers to EEGNet outperformed classical EEGNet for most subjects on BCI Competition IV-2a, with better robustness to noise; the journal version tests cross-task and cross-dataset encoding.</div>
+      <div class="pub-contrib"><strong>My contribution:</strong> designed the hybrid quantum–classical architecture and the evaluation, and extended it to cross-task, cross-dataset settings for the journal version.</div>
       <div class="pub-tags">
         <span class="tag tag-quantum">Quantum ML</span>
         <span class="tag tag-med">EEG</span>
@@ -238,7 +242,8 @@
       <div class="pub-title">Quantum Adaptive Self-Attention for Quantum Transformer Models</div>
       <div class="pub-authors"><span class="me">CS Chen</span>, EJ Kuo.</div>
       <div class="pub-venue">Quantum Science and Technology, 11(3), 2026</div>
-      <div class="pub-contrib"><strong>My contribution:</strong> conceived the idea and carried out the work end to end — method design, implementation and experiments.</div>
+      <div class="pub-finding"><strong>Finding:</strong> Replacing one encoder layer's value projection with a 36-parameter quantum circuit improves forecasting on chaotic and trend-dominated series — but a capacity-matched classical bottleneck matches it, so the gain is architectural, not quantum. The trained model runs on a real IBM quantum processor.</div>
+      <div class="pub-contrib"><strong>My contribution:</strong> designed QASA and the capacity-matched-control evaluation protocol, including validation on IBM quantum hardware.</div>
       <div class="pub-links">
         <a href="https://doi.org/10.1088/2058-9565/ae8b21">[DOI]</a>
         <a href="https://arxiv.org/abs/2504.05336">[arXiv]</a>
@@ -274,9 +279,10 @@
       </div>
       <div class="scholar-stat">
     <div class="scholar-stat-value">15</div> <!-- UPDATE: journal-article count -->
-    <div class="scholar-stat-label">of which journal</div>
+    <div class="scholar-stat-label">Journal articles</div>
       </div>
     </div>
+    <div class="scholar-stats-note">Journal articles are included in the peer-reviewed count.</div>
   </a>
   <!-- /SCHOLAR-STATS -->
 
@@ -293,7 +299,7 @@
     I pursue it along a single arc — from representation, to foundation models, to clinical deployment.
   </p>
 
-  <h3>Frequency-Domain &amp; Geometric Representation Learning for Physiological Time Series</h3>
+  <h3>Representation Learning &amp; Biosignal Foundation Models</h3>
   <div class="tags">
     <span class="tag tag-ml">Interpretability</span>
     <span class="tag tag-ml">Frequency-Domain</span>
@@ -301,11 +307,13 @@
     <span class="tag tag-med">Biosignals</span>
   </div>
   <p>
-    My core research develops interpretable, clinician-interrogable representations of physiological time series:
-    frequency-domain attribution and tokenization for forecasting, and Riemannian (SPD) embeddings for EEG classification. These representations scale into
-    cross-task, cross-dataset biosignal foundation models (Large Cognition Model).
+    My core research develops interpretable representations of physiological time series and scales them into
+    cross-task, cross-dataset biosignal foundation models.
   </p>
-  <p class="evidence"><strong>Evidence:</strong> <a href="https://arxiv.org/abs/2502.17464" target="_blank">Large Cognition Model</a> (arXiv 2025, 30 citations).</p>
+  <p class="evidence"><strong>Evidence:</strong>
+    temporal–spectral attention for EEG foundation models — <a href="https://arxiv.org/abs/2502.17464" target="_blank">Large Cognition Model</a> (arXiv 2025, 30 citations);
+    contrastive EEG–image representation learning — <a href="https://arxiv.org/abs/2406.16910" target="_blank">MUSE</a> (arXiv 2024, 34 citations) and the NERV encoder (<a href="https://doi.org/10.2196/72027" target="_blank">JMIR Medical Informatics 2025</a>).
+    <strong>Ongoing work:</strong> frequency-domain attribution and tokenization for forecasting; Riemannian (SPD) embeddings for EEG classification.</p>
 
   <h3>Clinical AI &amp; Deployment</h3>
   <div class="tags">
@@ -454,7 +462,7 @@
     </div>
     <ul>
       <li>Advisor: <a href="https://wd.vghtpe.gov.tw/vghpsy/Fpage.action?muid=4997&fid=5102" target="_blank">Prof. Dr. Cheng-Ta Li, MD</a> &amp; <a href="https://www.ee.ntu.edu.tw/bio1.php?id=74" target="_blank">Prof. Chung-Ping Chen</a></li>
-      <li>Thesis: "EEG Analysis for Prediction of Antidepressant Responses of Transcranial Magnetic Stimulation in Major Depressive Disorder Based on Attentional Convolution Time Series Prototypical Neural Network Model and Classical/Quantum Machine Learning Approaches" <a href="Thesis_library2.pdf">[PDF]</a> <a href="https://hdl.handle.net/11296/58m9z5" target="_blank">[NDLTD]</a></li>
+      <li>Thesis: EEG-based prediction of antidepressant response to transcranial magnetic stimulation in major depression, using attention-based time-series prototypical networks and classical/quantum machine learning. <a href="Thesis_library2.pdf">[PDF]</a> <a href="https://hdl.handle.net/11296/58m9z5" target="_blank">[NDLTD]</a></li>
     </ul>
   </div>
 
