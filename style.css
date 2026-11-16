@@ -719,3 +719,11 @@ body.lightbox-open .sticky-nav {
   padding-top: 12px;
   border-top: 1px solid #ddd;
 }
+
+.evidence {
+  font-size: 0.9em;
+  color: #555;
+  margin-top: -4px;
+  padding-left: 10px;
+  border-left: 3px solid #d2e3fc;
+}
