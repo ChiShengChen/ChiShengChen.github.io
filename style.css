@@ -727,3 +727,9 @@ body.lightbox-open .sticky-nav {
   padding-left: 10px;
   border-left: 3px solid #d2e3fc;
 }
+
+.pub-contrib {
+  font-size: 0.9em;
+  color: #333;
+  margin: 2px 0 6px;
+}

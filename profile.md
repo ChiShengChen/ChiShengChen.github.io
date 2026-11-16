@@ -199,7 +199,7 @@ IET Quantum Communication
       % {Research Fellow}{Nov 2024 \textbf{--} Now}
       {Research Affiliate (primary appointment), Advisor: Prof. Dr. Gabriel Brat}{Nov 2024 \textbf{--} Now}
         \resumeItemListStart
-            \resumeItem{Building a real-time EMS trauma-triage pipeline (ASR -> LLM-agent event extraction -> structured prediction) over 4M+ patient records using multimodal AI.}
+            \resumeItem{Building a real-time EMS trauma-triage pipeline (ASR -> LLM-agent event extraction -> structured prediction) on an EMS database of 4M+ patient records, using multimodal AI.}
             \resumeItem{Co-developed webcam-based open-surgical skill assessment (hand keypoint detection; CLINICCAI 2026 poster) and a capture-clock methodology for browser webcam gaze (DEMI 2026 spotlight talk).}
         \resumeItemListEnd
         
@@ -234,7 +234,7 @@ IET Quantum Communication
       {Researcher, Co-Founder \& CTO }{Mar 2024 \textbf{--} Jan 2025}
         \resumeItemListStart
             % \resumeItem{Training the large EEG model from scratch, researching EEG application on Time-LLM.}
-            \resumeItem{Built GCP-based MLOps pipeline, enabling training on 10K+ EEG samples.}
+            \resumeItem{Built GCP-based MLOps pipeline, enabling training on 10K+ EEG epochs.}
             % \resumeItem{Built the whole AI training infra on GCP, included data cleaning, model training, model deployment, etc.}
             \resumeItem{2 research papers on quantum machine learning on EEG signal processing.}
             \resumeItem{1 research paper on EEG-to-image using diffusion model.}
