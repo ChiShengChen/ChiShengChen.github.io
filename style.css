@@ -683,3 +683,38 @@ body.lightbox-open .sticky-nav {
 .journal-list::-webkit-scrollbar-thumb:hover {
   background: #aaa;
 }
+
+/* === Homepage restructure: text links, folded news, wide metrics card === */
+.links-primary a {
+  font-weight: bold;
+}
+
+.links-secondary {
+  font-size: 0.85em;
+}
+
+.links-secondary a {
+  color: #666;
+}
+
+.news-list {
+  max-height: none;
+  overflow-y: visible;
+  padding-right: 0;
+}
+
+.news-more summary {
+  cursor: pointer;
+  color: #1a0dab;
+  margin-bottom: 8px;
+}
+
+.scholar-stats-wide {
+  margin-top: 18px;
+}
+
+.more-pointer {
+  margin-top: 28px;
+  padding-top: 12px;
+  border-top: 1px solid #ddd;
+}

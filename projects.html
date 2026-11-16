@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Agentic-AI and production projects and technical skills of Chi-Sheng (Michael) Chen.">
+  <link rel="canonical" href="https://chishengchen.github.io/projects.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <title>Projects &amp; Skills – Chi-Sheng (Michael) Chen</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>Chi-Sheng (Michael) Chen 陳麒升</h1>
+  </header>
+
+  <nav class="sticky-nav">
+    <a href="index.html#about">About</a> <span class="sep">/</span>
+    <a href="index.html#selected">Publications</a> <span class="sep">/</span>
+    <a href="index.html#research">Research</a> <span class="sep">/</span>
+    <a href="index.html#experience">Experience</a> <span class="sep">/</span>
+    <a href="projects.html">Projects</a> <span class="sep">/</span>
+    <a href="activities.html">Talks &amp; Service</a> <span class="sep">/</span>
+    <a href="CV_ChiSheng_Chen.pdf?v=2026-11-17b">CV</a>
+  </nav>
+
+  <h2 id="work">Selected Work</h2>
+  <p class="section-intro">Shippable, agentic-AI deliverables — LLM/agent systems that run in production, rank in open competition, or ship as open-source libraries — plus contract and production engineering.</p>
+
+  <h3>Agentic AI &amp; LLM Systems</h3>
+
+  <!-- whaleforce -->
+  <div class="selected-pub">
+    <div class="selected-pub-img">
+      <img src="teaser_whaleforce.png" alt="US-stock LLM browser-agent live UI" loading="lazy">
+    </div>
+    <div class="selected-pub-info">
+      <div class="pub-title">US-Stock LLM Agent Suite (Browser Agent · SEC 10-K Extractor · Strategy Lab)</div>
+      <div class="pub-venue">Independent · Live &amp; deployed · 2026 — led to advisory role at VICI Holdings' WhaleForce division</div>
+      <div class="pub-desc">A browser agent built as an explicit state machine with deterministic fault-injection recovery; a layered SEC&nbsp;10-K item extractor (L1&rarr;L3 with confidence calibration); and a Strategy Lab of 22 research agents + 11 placebo controls, each with lookahead-free backtests, a per-provider cost ledger, and eval dashboards.</div>
+      <div class="pub-links">
+        <a href="https://whaleforce-llm-test.vercel.app/task1" target="_blank">[Live]</a>
+        <a href="https://whaleforce-llm-test.vercel.app/dashboard" target="_blank">[Dashboard]</a>
+        <a href="https://github.com/ChiShengChen/whaleforce-llm-test" target="_blank">[Repo]</a>
+      </div>
+      <div class="pub-tags">
+        <span class="tag tag-tool">Browser Agent</span>
+        <span class="tag tag-ml">LLM Eval</span>
+        <span class="tag tag-quantum">Fintech</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- robotics workcell -->
+  <div class="selected-pub">
+    <div class="selected-pub-img">
+      <img src="teaser_robotics.png" alt="Robotics workcell optimizer live UI with 3D layout and CP-SAT scoring" loading="lazy">
+    </div>
+    <div class="selected-pub-info">
+      <div class="pub-title">Robotics Workcell Layout Optimizer — LLM + CP-SAT</div>
+      <div class="pub-venue">Independent · Live demo · 2026</div>
+      <div class="pub-desc">Natural language &rarr; structured workcell spec &rarr; robot selection &rarr; optimized 2D layout &rarr; interactive re-optimization (Simulated Annealing + OR-Tools CP-SAT) &rarr; 3D animated preview. Multi-LLM abstraction (Claude / OpenAI / Gemini) with a validation-repair loop, cost ledger, and ISO&nbsp;13855 safety separation as inviolable hard constraints.</div>
+      <div class="pub-links">
+        <a href="https://robotics-workcell-demo.vercel.app" target="_blank">[Live Demo]</a>
+        <a href="https://xyz-robotics-backend.onrender.com/docs" target="_blank">[API Docs]</a>
+        <a href="https://github.com/ChiShengChen/robotics-workcell-optimizer" target="_blank">[Repo]</a>
+      </div>
+      <div class="pub-tags">
+        <span class="tag tag-tool">LLM Agent</span>
+        <span class="tag tag-ml">Optimization</span>
+        <span class="tag tag-tool">Robotics</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- flyhypo -->
+  <div class="selected-pub">
+    <div class="selected-pub-img">
+      <img src="teaser_flyhypo.png" alt="flyhypo connectivity graph — evidence for neuron hypotheses" loading="lazy">
+    </div>
+    <div class="selected-pub-info">
+      <div class="pub-title">flyhypo — Grounded Functional-Hypothesis Generator for Fly Neurons</div>
+      <div class="pub-venue">Independent · Proof of concept · 2026</div>
+      <div class="pub-desc">Combines connectome structure (neuPrint) with literature evidence (PubMed) and an LLM (Gemini) to generate falsifiable functional hypotheses for <em>Drosophila</em> cell types — every claim traced to a specific paper id or connectivity number, with verification guards (verbatim re-grep, mis-attribution, number-existence) designed to catch unsupported claims.</div>
+      <div class="pub-links">
+        <a href="https://github.com/ChiShengChen/flyhypo" target="_blank">[Repo]</a>
+      </div>
+      <div class="pub-tags">
+        <span class="tag tag-tool">LLM Agent</span>
+        <span class="tag tag-med">Neuroscience</span>
+        <span class="tag tag-tool">RAG</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- paper-evidence -->
+  <div class="selected-pub">
+    <div class="selected-pub-info">
+      <div class="pub-title">paper-evidence — Grounding LLM Claims in Scientific Literature</div>
+      <div class="pub-venue">Independent · Open-source library · 2026</div>
+      <div class="pub-desc">A verification core where a claim about a source survives only if the source verifiably supports it: a verbatim-quote gate, numbers-must-sit-next-to-their-quote, and an independent cross-family LLM judge for paraphrase/citation faithfulness — plus a literature extractor (saturation search, citation snowball, recall scoring).</div>
+      <div class="pub-links">
+        <a href="https://github.com/ChiShengChen/paper-evidence" target="_blank">[Repo]</a>
+      </div>
+      <div class="pub-tags">
+        <span class="tag tag-tool">Hallucination Guard</span>
+        <span class="tag tag-tool">RAG</span>
+        <span class="tag tag-ml">Fact-Checking</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- MadGAA -->
+  <div class="selected-pub">
+    <div class="selected-pub-info">
+      <div class="pub-title">MadGAA — OSCE Medical Multi-Agent Judge System</div>
+      <div class="pub-venue">Berkeley RDI AgentX&ndash;AgentBeats · 3rd Place, Healthcare Agent track (1,300+ teams overall) · 2026</div>
+      <div class="pub-desc">Co-built a multi-agent LLM evaluation system with role-specialized agents (examiner, patient, judge) and a verifiable scoring rubric (RAG + tool use + verifier).</div>
+      <div class="pub-links">
+        <a href="https://github.com/MadGAA-Lab/OSCE-Project" target="_blank">[Repo]</a>
+      </div>
+      <div class="pub-tags">
+        <span class="tag tag-tool">Multi-Agent</span>
+        <span class="tag tag-tool">RAG</span>
+        <span class="tag tag-med">Medical AI</span>
+        <span class="annotation flagship">3rd, Healthcare track</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- NYCU general physics tutor -->
+  <div class="selected-pub">
+    <div class="selected-pub-img">
+      <img src="teaser_gp_tutor.png" alt="NYCU general-physics AI tutor screenshot" loading="lazy">
+    </div>
+    <div class="selected-pub-info">
+      <div class="pub-title">NYCU General-Physics AI Tutor — RAG, live</div>
+      <div class="pub-venue">Independent build · Serving real students · 2026</div>
+      <div class="pub-desc">RAG tutor over University Physics Ch.1&ndash;31 (Next.js 16 + Gemini 2.5 tiered models + Supabase pgvector) with 20+ learning modes, per-IP rate limiting, daily quota, token-usage logging, a dependency-free Sentry envelope, and CI.</div>
+      <div class="pub-links">
+        <a href="https://nycu-ep-general-physics-tutor.vercel.app" target="_blank">[Live]</a>
+        <a href="https://github.com/ChiShengChen/NYCU-EP-general-physics-tutor" target="_blank">[Repo]</a>
+      </div>
+      <div class="pub-tags">
+        <span class="tag tag-tool">RAG</span>
+        <span class="tag tag-ml">LLM</span>
+        <span class="tag tag-tool">Next.js</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- NYCU laser physics tutor -->
+  <div class="selected-pub">
+    <div class="selected-pub-img">
+      <img src="teaser_ep_tutor.png" alt="NYCU EP Laser-Physics AI Tutor screenshot" loading="lazy">
+    </div>
+    <div class="selected-pub-info">
+      <div class="pub-title">NYCU EP Laser-Physics AI Tutor — RAG, in production</div>
+      <div class="pub-venue">Independent build · Serving real students · 2025&ndash;Present</div>
+      <div class="pub-desc">End-to-end RAG tutoring system (Next.js + Gemini + Supabase pgvector) with 8 learning modes — adaptive quiz, exam simulation, knowledge graph, and spaced repetition. Deployed and used by NYCU Electrophysics students.</div>
+      <div class="pub-links">
+        <a href="https://web-eight-hazel-22.vercel.app" target="_blank">[Live Demo]</a>
+      </div>
+      <div class="pub-tags">
+        <span class="tag tag-tool">RAG</span>
+        <span class="tag tag-ml">LLM</span>
+        <span class="tag tag-tool">Next.js</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- bazaar of fates -->
+  <div class="selected-pub">
+    <div class="selected-pub-img">
+      <img src="teaser_bazaar.png" alt="Bazaar of Fates Western natal wheel" loading="lazy">
+    </div>
+    <div class="selected-pub-info">
+      <div class="pub-title">Bazaar of Fates — 11 Divination Engines + Bilingual AI Readings</div>
+      <div class="pub-venue">Independent · Full-stack (FastAPI + Next.js) · 2026</div>
+      <div class="pub-desc">Eleven traditional divination systems as deterministic Python engines (planet positions validated against Swiss Ephemeris to &lt;0.006&deg;) with streaming bilingual English/&#20013;&#25991; LLM readings. Originated as placebo controls in a quant project, then rebuilt as a standalone full-stack app.</div>
+      <div class="pub-links">
+        <a href="https://github.com/ChiShengChen/bazaar-of-fates" target="_blank">[Repo]</a>
+      </div>
+      <div class="pub-tags">
+        <span class="tag tag-ml">LLM</span>
+        <span class="tag tag-tool">FastAPI</span>
+        <span class="tag tag-tool">Full-Stack</span>
+      </div>
+    </div>
+  </div>
+
+  <h3>Contract &amp; Production</h3>
+
+  <!-- Omnis DeFi protocol -->
+  <div class="selected-pub">
+    <div class="selected-pub-img">
+      <img src="photo_2026-03-02_14-48-39.jpg" alt="Omnis Labs live APR dashboard" loading="lazy">
+    </div>
+    <div class="selected-pub-info">
+      <div class="pub-title">Omnis Labs — AI-Driven DeFi Liquidity Protocol</div>
+      <div class="pub-venue">Co-Founder &amp; Lead AI/Quant Engineer · Live in production · 2024&ndash;May 2026</div>
+      <div class="pub-desc">Automated market-maker strategies driven by time-series ML with full backtesting and MLOps (Docker, CI/CD, on-chain event pipeline, live P&amp;L observability). Production results: <strong>50%&ndash;120% base fee APR</strong> on WBTC/USDC and ETH/USDC pairs.</div>
+      <div class="pub-links">
+        <a href="https://app.omnis.farm/" target="_blank">[Live App]</a>
+      </div>
+      <div class="pub-tags">
+        <span class="tag tag-quantum">Quant</span>
+        <span class="tag tag-tool">Time-Series ML</span>
+        <span class="tag tag-tool">MLOps</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- OpenAI RLHF contract -->
+  <div class="selected-pub">
+    <div class="selected-pub-info">
+      <div class="pub-title">RLHF / Alignment — Contract for OpenAI (via Mercor)</div>
+      <div class="pub-venue">Contract · Remote (US) · Mar 2025 &ndash; Oct 2025</div>
+      <div class="pub-desc">Preference rankings and model-behavior assessments feeding SFT, DPO, and reward modeling across hard reasoning, code, tool-use, and safety-alignment prompts; drove rubric design that improved labeling consistency on ambiguous edges.</div>
+      <div class="pub-tags">
+        <span class="tag tag-ml">RLHF</span>
+        <span class="tag tag-ml">DPO / SFT</span>
+        <span class="tag tag-med">Safety Alignment</span>
+      </div>
+    </div>
+  </div>
+
+  <h2 id="skills">Skills</h2>
+
+  <h3>AI / ML &amp; Deep Learning</h3>
+  <div class="tags">
+    <span class="tag tag-ml">PyTorch</span>
+    <span class="tag tag-ml">JAX</span>
+    <span class="tag tag-ml">HuggingFace Transformers</span>
+    <span class="tag tag-ml">Scikit-learn</span>
+    <span class="tag tag-ml">MLflow</span>
+    <span class="tag tag-ml">Weights &amp; Biases</span>
+    <span class="tag tag-ml">Diffusion Models</span>
+    <span class="tag tag-ml">State Space Models (Mamba)</span>
+    <span class="tag tag-ml">Contrastive Learning</span>
+    <span class="tag tag-ml">GNN</span>
+    <span class="tag tag-ml">MNE-Python (EEG)</span>
+  </div>
+
+  <h3>LLMs, Agents &amp; RAG</h3>
+  <div class="tags">
+    <span class="tag tag-ml">LoRA / QLoRA</span>
+    <span class="tag tag-ml">SFT / DPO / RLHF</span>
+    <span class="tag tag-ml">MoE</span>
+    <span class="tag tag-ml">Quantization (GPTQ / AWQ)</span>
+    <span class="tag tag-ml">vLLM</span>
+    <span class="tag tag-ml">OpenAI SDK</span>
+    <span class="tag tag-ml">Anthropic SDK</span>
+    <span class="tag tag-ml">Gemini SDK</span>
+    <span class="tag tag-ml">LangChain / LangGraph</span>
+    <span class="tag tag-ml">Ollama</span>
+    <span class="tag tag-ml">RAG (pgvector / FAISS / Qdrant)</span>
+    <span class="tag tag-ml">Tool Use / ReAct</span>
+    <span class="tag tag-ml">Multi-Agent Orchestration</span>
+    <span class="tag tag-ml">Prompt Engineering</span>
+  </div>
+
+  <h3>Quantum Machine Learning</h3>
+  <div class="tags">
+    <span class="tag tag-quantum">PennyLane</span>
+    <span class="tag tag-quantum">Qiskit</span>
+    <span class="tag tag-quantum">Cirq</span>
+    <span class="tag tag-quantum">TensorFlow Quantum</span>
+    <span class="tag tag-quantum">Variational Quantum Circuits</span>
+    <span class="tag tag-quantum">Hybrid Quantum-Classical Models</span>
+    <span class="tag tag-quantum">Quantum RL</span>
+  </div>
+
+  <h3>MLOps, Cloud &amp; Infrastructure</h3>
+  <div class="tags">
+    <span class="tag tag-tool">Docker</span>
+    <span class="tag tag-tool">Kubernetes</span>
+    <span class="tag tag-tool">CI/CD (GitHub Actions)</span>
+    <span class="tag tag-tool">GCP (Vertex AI, Cloud Run, BigQuery)</span>
+    <span class="tag tag-tool">AWS</span>
+    <span class="tag tag-tool">Supabase</span>
+    <span class="tag tag-tool">Prometheus / Grafana</span>
+    <span class="tag tag-tool">Model &amp; Feature Versioning</span>
+  </div>
+
+  <h3>Quant &amp; Finance Engineering</h3>
+  <div class="tags">
+    <span class="tag tag-tool">Backtesting</span>
+    <span class="tag tag-tool">Factor Modeling</span>
+    <span class="tag tag-tool">AMM / DEX Strategy Design</span>
+    <span class="tag tag-tool">On-Chain Data Pipelines</span>
+    <span class="tag tag-tool">Event &amp; Sentiment Extraction</span>
+    <span class="tag tag-tool">pandas / NumPy / statsmodels</span>
+    <span class="tag tag-tool">Solidity (read-only)</span>
+  </div>
+
+  <h3>Programming &amp; Systems</h3>
+  <div class="tags">
+    <span class="tag tag-tool">Python</span>
+    <span class="tag tag-tool">C / C++</span>
+    <span class="tag tag-tool">Rust</span>
+    <span class="tag tag-tool">JavaScript / TypeScript</span>
+    <span class="tag tag-tool">Next.js</span>
+    <span class="tag tag-tool">MATLAB</span>
+    <span class="tag tag-tool">R</span>
+    <span class="tag tag-tool">SQL (PostgreSQL / MySQL)</span>
+    <span class="tag tag-tool">Git / Linux</span>
+    <span class="tag tag-tool">Verilog / SystemVerilog / UVM</span>
+  </div>
+
+  <h3>AI-Powered Dev Tools</h3>
+  <div class="tags">
+    <span class="tag tag-ml">Cursor</span>
+    <span class="tag tag-ml">Claude Code</span>
+    <span class="tag tag-ml">GitHub Copilot</span>
+    <span class="tag tag-ml">TDD / Spec-Driven Development</span>
+  </div>
+
+  <h3>Languages</h3>
+  <p>Chinese (Native) &nbsp;·&nbsp; English (Fluent — working in English at Harvard/BIDMC since Nov 2024)</p>
+
+</div>
+
+<div class="lightbox" id="lightbox">
+  <img id="lightbox-img" src="" alt="">
+</div>
+
+<script>
+(function() {
+  var lb = document.getElementById('lightbox');
+  var lbImg = document.getElementById('lightbox-img');
+  function open(src, alt) {
+    lbImg.src = src;
+    lbImg.alt = alt;
+    lb.classList.add('active');
+    document.body.classList.add('lightbox-open');
+    document.body.style.overflow = 'hidden';
+  }
+  function close() {
+    lb.classList.remove('active');
+    document.body.classList.remove('lightbox-open');
+    document.body.style.overflow = '';
+  }
+  document.querySelectorAll('.selected-pub-img img').forEach(function(img) {
+    img.style.cursor = 'zoom-in';
+    img.addEventListener('click', function() { open(this.src, this.alt); });
+  });
+  lb.addEventListener('click', close);
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') close();
+  });
+})();
+</script>
+
+<footer style="text-align: center; padding: 24px 0; margin-top: 40px; border-top: 1px solid #e0e0e0; color: #888; font-size: 14px;">
+  &copy; 2026 Chi-Sheng (Michael) Chen. Last updated: Nov 2026.
+</footer>
+
+</body>
+</html>
